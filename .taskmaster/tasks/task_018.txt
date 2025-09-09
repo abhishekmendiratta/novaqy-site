@@ -1,0 +1,43 @@
+# Task ID: 18
+# Title: Tools directory (coming soon) and future tools
+# Status: pending
+# Dependencies: None
+# Priority: low
+# Description: Create /tools index with placeholders and coming soon badges for the listed utilities (password generator, tip calc, etc.).
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Define tools list and gather requirements [pending]
+### Dependencies: None
+### Description: Identify all utilities to be included in the /tools directory (e.g., password generator, tip calculator) and document their intended features and launch status.
+### Details:
+Consult stakeholders or product documentation to confirm the full list of planned tools and clarify which are to be marked as 'coming soon'.
+
+## 2. Design /tools index layout and placeholders [pending]
+### Dependencies: 18.1
+### Description: Create a wireframe or mockup for the /tools index page, including visual placeholders and 'coming soon' badges for each listed utility.
+### Details:
+Incorporate best practices for coming soon pages, such as clear messaging, consistent branding, and strong calls to action, as recommended by industry examples.
+
+## 3. Implement /tools index page structure [pending]
+### Dependencies: 18.2
+### Description: Develop the /tools index page in the codebase, adding placeholders and 'coming soon' badges for each utility as per the approved design.
+### Details:
+Ensure the page is responsive and visually matches the approved mockup, with clear differentiation between available and upcoming tools.
+
+## 4. Add placeholder content and accessibility features [pending]
+### Dependencies: 18.3
+### Description: Populate each tool's placeholder with brief descriptions and ensure all badges and elements meet accessibility standards (e.g., alt text, ARIA labels).
+### Details:
+Follow accessibility guidelines to ensure the page is usable by screen readers and keyboard navigation.
+
+## 5. Review, test, and deploy /tools index [pending]
+### Dependencies: 18.4
+### Description: Conduct a final review of the /tools index page, perform user acceptance testing, and deploy to the staging or production environment.
+### Details:
+Gather feedback from stakeholders and users, address any issues, and confirm that all placeholders and 'coming soon' badges function as intended.
+

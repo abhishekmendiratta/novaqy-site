@@ -1,0 +1,21 @@
+/*
+  # Security & CSP headers for Cloudflare Pages / static hosting
+  # - CSP is in report-only mode initially to collect violations.
+  # - HSTS is present but will only be effective on HTTPS production domain.
+  # - Adjust sources (e.g., GTM, analytics) as needed and move CSP to enforcement after monitoring.
+*/
+
+  /* Global security headers */
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-XSS-Protection: 0
+
+  /* CSP - report-only mode. Reports POST to /api/csp-report */
+  Content-Security-Policy-Report-Only: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://checkout.stripe.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://api.stripe.com https://sentry.io https://www.google-analytics.com; manifest-src 'self'; report-uri /api/csp-report
+
+  /* Optional: small caching policy for HTML (Cloudflare will override as needed) */
+  /* This is advisory - Cloudflare Pages uses its own caching controls */
+  /* Cache-Control: public, max-age=3600 */

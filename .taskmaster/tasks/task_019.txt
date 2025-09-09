@@ -1,0 +1,82 @@
+# Task ID: 19
+# Title: Monitoring & security
+# Status: done
+# Dependencies: None
+# Priority: medium
+# Description: Set up uptime monitoring, error tracking, enforce HTTPS, CSP headers, and PII handling policies.
+# Details:
+Implemented lightweight observability and security hardening for the Novaqy MVP:
+- Health endpoint: /api/health
+- CSP report endpoint: /api/csp-report (reports are redacted and forwarded to error tracker)
+- Sentry integration helper: web/src/lib/sentry.ts (init, captureException, redactPII)
+- Contact API instrumentation: web/src/pages/api/contact.ts now uses Sentry + PII redaction for notifications and error capture
+- CSP & security headers added to web/public/_headers (CSP in report-only mode)
+- astro.config.mjs uses PUBLIC_SITE_URL when provided
+- PII handling and monitoring docs added under .taskmaster/docs/ (pii-policy.md, monitoring.md)
+
+# Test Strategy:
+- Health: GET /api/health should return 200 and a JSON object with checks (app, supabase_configured, stripe_configured).
+- Uptime: Configure external monitor (StatusCake/Pingdom/Uptrends) to check /, /plans, /success, /api/health and /api/contact at 1–5 minute intervals.
+- Error tracking: Trigger a synthetic error (temporary test endpoint or throw in code path on staging) and confirm event in Sentry with PII redacted.
+- CSP: Deploy headers in report-only; perform actions that would violate CSP (e.g., inline eval) and confirm /api/csp-report receives reports; review reports and then flip to enforcement.
+- HTTPS/HSTS: Verify HTTP -> HTTPS redirect at the production domain and presence of Strict-Transport-Security header.
+- PII: Submit contact form and verify:
+  - Data is stored in Supabase (per RLS and retention policy)
+  - Notification emails do not leak raw PII to logs or error events
+  - Sentry events contain redacted fields only
+
+# Subtasks:
+## 1. Set Up Uptime Monitoring [x]
+### Dependencies: None
+### Description: Implement automated uptime monitoring using tools such as StatusCake, Uptrends, or Pingdom to track website availability and receive alerts for downtime incidents.
+### Details:
+- Created health endpoint at web/src/pages/api/health.ts for external checks.
+- Recommended monitors: /, /plans, /success, /api/health, /api/contact, /api/create-checkout-session
+- Configure alerts to email/SMS and webhook (MONITORING_WEBHOOK) and publish a public status page.
+- Documentation: .taskmaster/docs/monitoring.md
+
+## 2. Integrate Error Tracking [x]
+### Dependencies: None
+### Description: Deploy error tracking solutions to capture, log, and report application errors in real time.
+### Details:
+- Added minimal Sentry helper at web/src/lib/sentry.ts (init, captureException, redactPII).
+- Instrumented key API routes (contact) and added captureException calls with redactPII.
+- Source-map / release integration recommended in CI (Jenkins) for production.
+- Env: SENTRY_DSN, SENTRY_ENV (optional), SENTRY_TRACES_SAMPLE_RATE (optional)
+
+## 3. Enforce HTTPS Across All Endpoints [x]
+### Dependencies: None
+### Description: Ensure all web traffic is securely transmitted by enforcing HTTPS and redirecting HTTP requests.
+### Details:
+- astro.config.mjs updated to use PUBLIC_SITE_URL when set.
+- HSTS header added to web/public/_headers (effective on production HTTPS domain).
+- Recommend enabling "Always Use HTTPS" and "Automatic HTTPS Rewrites" in Cloudflare, and monitoring cert expiry externally.
+
+## 4. Implement Content Security Policy (CSP) Headers [x]
+### Dependencies: None
+### Description: Configure and enforce CSP headers to mitigate cross-site scripting and data injection attacks.
+### Details:
+- Added web/public/_headers with Content-Security-Policy-Report-Only header and other security headers.
+- CSP reports POST to /api/csp-report which redacts PII and forwards to Sentry.
+- Start in report-only mode, review reports, then transition to enforcement.
+
+## 5. Establish PII Handling Policies [x]
+### Dependencies: None
+### Description: Define and enforce policies for the secure collection, storage, and transmission of Personally Identifiable Information (PII).
+### Details:
+- Added .taskmaster/docs/pii-policy.md with data flows, retention, redaction, and access control recommendations.
+- Updated APIs to redact PII before logging or sending to error trackers.
+- Ensured server-only secrets (SUPABASE_SERVICE_ROLE_KEY, STRIPE_SECRET_KEY, ZOHO_CLIENT_SECRET) remain server-side only and not exposed to client bundles.
+
+# Artifacts / Files added
+- web/src/pages/api/health.ts
+- web/src/lib/sentry.ts
+- web/src/pages/api/csp-report.ts
+- web/public/_headers
+- .taskmaster/docs/monitoring.md
+- .taskmaster/docs/pii-policy.md
+- Updated web/src/pages/api/contact.ts (Sentry + redactPII)
+- Updated web/astro.config.mjs to use PUBLIC_SITE_URL
+
+# Completion Notes
+All subtasks implemented in code and documentation above. CSP is deployed in report-only mode; verify reports for 7 days before flipping to enforce. Sentry is initialized only when SENTRY_DSN is present — set SENTRY_DSN in environment for production monitoring.

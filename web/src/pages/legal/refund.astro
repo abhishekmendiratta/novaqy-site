@@ -1,0 +1,119 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDefaultMeta } from '../../lib/seo';
+const meta = getDefaultMeta({
+  title: 'Refund & Returns Policy — Novaqy',
+  description: 'Refund and returns policy placeholder for Novaqy Cloud LLP. Replace with counsel-approved language before publishing.',
+  canonical: '/legal/refund'
+});
+---
+<Base {meta}>
+  <main>
+    <h1>Refund & Returns Policy (Placeholder)</h1>
+
+    <p><strong>Effective Date:</strong> [EFFECTIVE_DATE]</p>
+
+    <section>
+      <h2>Summary (Short)</h2>
+      <p>
+        All sales are final. <strong>Novaqy Cloud LLP</strong> does not accept returns, exchanges, or refunds for purchases of licenses, digital goods, or physical products ordered through our site, except where explicitly required by applicable law or where a manufacturer or supplier warranty applies.
+      </p>
+      <p>
+        Suppliers for certain products may include third parties whose policies restrict returns or refunds. By completing a purchase you acknowledge and accept that supplier policies may restrict returns and refunds.
+      </p>
+    </section>
+
+    <section>
+      <h2>No Returns / No Refunds</h2>
+      <p>
+        Unless otherwise required by applicable law, all purchases are final and non‑refundable. No partial refunds will be issued unless explicitly authorized in writing by an officer of Novaqy Cloud LLP. This policy applies to license purchases from suppliers whose terms prohibit returns and refunds.
+      </p>
+
+      <div style="border: 1px dashed #d00; padding: 10px; margin: 10px 0;">
+        <strong>COUNSEL: INSERT PRECISE EXCEPTIONS</strong>
+        <ul>
+          <li>Manufacturer warranty claims and the exact process to submit a warranty claim (include required documentation and timelines).</li>
+          <li>Any limited refund eligibility (e.g., duplicate charge, billing errors) and the internal review process.</li>
+          <li>Statutory consumer rights in specific jurisdictions that override this policy.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Eligibility for Exceptions (Placeholder)</h2>
+      <p>
+        The only potential exceptions to the "no refund" rule are:
+      </p>
+      <ol>
+        <li>When required by applicable consumer protection law; or</li>
+        <li>When a manufacturer or supplier warranty applies and the supplier or manufacturer authorizes a remedy (repair, replacement, or refund); or</li>
+        <li>Documented billing errors confirmed by Novaqy Cloud LLP.</li>
+      </ol>
+
+      <p>
+        Any purported exception must be requested by emailing <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a> within the timeframe stated by the relevant warranty or law and must include full documentation (order number, proof of purchase, supplier invoice, photos, serial numbers, etc.).
+      </p>
+    </section>
+
+    <section>
+      <h2>How to Submit a Claim</h2>
+      <p>
+        To request a review for a warranty claim or billing error, provide the following to <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a>:
+      </p>
+      <ul>
+        <li>Order number and purchase date</li>
+        <li>Proof of purchase (receipt / invoice)</li>
+        <li>Description of the issue and supporting evidence (photos, logs)</li>
+        <li>Supplier invoice showing supplier name when applicable</li>
+      </ul>
+
+      <p>
+        Submissions that do not include required documentation may be rejected without further review.
+      </p>
+    </section>
+
+    <section>
+      <h2>Chargeback & Dispute Defense (Developer / Admin Guidance)</h2>
+      <p>
+        We maintain detailed records to defend against chargebacks and payment disputes. When a customer completes checkout they have explicitly accepted our Terms and Privacy Policy, and the system records the acceptance evidence (timestamp, IP, user-agent, and terms version).
+      </p>
+
+      <div style="background:#f6f6f6;border-left:4px solid #888;padding:10px;margin:10px 0;">
+        <strong>DEV NOTE:</strong>
+        <ul>
+          <li>Acceptance metadata is recorded in Stripe Checkout session metadata and persisted to our orders table. See <code>/api/create-checkout-session</code> and <code>/api/finalize-order</code>.</li>
+          <li>Attach supplier invoice(s), license activation logs, delivery confirmations, and email threads to the corresponding order record to strengthen dispute evidence.</li>
+          <li>Keep evidence retention and export capabilities (order JSON + Stripe session JSON + supplier invoice) available for at least 18–24 months.</li>
+          <li>Ensure Stripe statement descriptor is consistent and recognizable to reduce consumer confusion (set <code>STRIPE_STATEMENT_DESCRIPTOR</code>).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>No Partial Refunds</h2>
+      <p>
+        Partial refunds are not permitted except in the limited and documented circumstances expressly approved in writing by an authorized representative of Novaqy Cloud LLP or as required by applicable law.
+      </p>
+    </section>
+
+    <section>
+      <h2>Governing Law & Dispute Resolution (Placeholder)</h2>
+      <p>
+        <strong>COUNSEL:</strong> Insert governing law clause, venue, and any arbitration/class-action waiver language here.
+      </p>
+    </section>
+
+    <section>
+      <h2>Acknowledgement</h2>
+      <p>
+        By completing a purchase, you acknowledge that you have read and agree to this Refund & Returns Policy as well as our Terms of Service and Privacy Policy.
+      </p>
+    </section>
+
+    <hr />
+
+    <footer>
+      <p><em>Legal Placeholder — fill in and approve with licensed counsel before publishing.</em></p>
+    </footer>
+  </main>
+</Base>

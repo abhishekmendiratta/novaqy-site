@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-5hce7sga> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Critical CSS inlined to eliminate render-blocking stylesheet for above-the-fold --><link rel="preload" href="/styles/tailwind.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/styles/tailwind.css"></noscript><title>Novaqy — Patient tech support for seniors</title><meta name="description" content="Patient technical support for seniors across United States and Canada. One-time plans with immediate support."><link rel="canonical" href="https://novaqy.com"><meta name="robots" content="index,follow"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Novaqy"><meta property="og:title" content="Novaqy — Patient tech support for seniors"><meta property="og:description" content="Patient technical support for seniors across United States and Canada. One-time plans with immediate support."><meta property="og:image" content="https://novaqy.com/favicon.ico"><meta property="og:url" content="https://novaqy.com"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@novaqy"><meta name="twitter:title" content="Novaqy — Patient tech support for seniors"><meta name="twitter:description" content="Patient technical support for seniors across United States and Canada. One-time plans with immediate support."><meta name="twitter:image" content="https://novaqy.com/favicon.ico"><!-- JSON-LD structured data (Organization + Service) --><script type="application/ld+json">{JSON.stringify(organizationSchema())}</script><script type="application/ld+json">{JSON.stringify(serviceSchema())}</script><style>:root{--font-family-primary: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;--font-size-base: 1.125rem;--line-height-base: 1.6;--color-text: #0f172a;--color-background: #ffffff;--focus-color: #2563eb}html,body{font-family:var(--font-family-primary);font-size:var(--font-size-base);line-height:var(--line-height-base);color:var(--color-text);background-color:var(--color-background);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a[data-astro-cid-5hce7sga],button[data-astro-cid-5hce7sga]{cursor:pointer}.btn[data-astro-cid-5hce7sga],button[data-astro-cid-5hce7sga],input[data-astro-cid-5hce7sga],textarea[data-astro-cid-5hce7sga]{min-height:44px;line-height:1.2}img[data-astro-cid-5hce7sga]{max-width:100%;height:auto;display:block}.hero[data-astro-cid-5hce7sga]{min-height:40vh}:focus-visible[data-astro-cid-5hce7sga]{outline:3px solid var(--focus-color);outline-offset:2px}
+</style></head> <body data-astro-cid-5hce7sga>  <section class="max-w-4xl mx-auto px-6 py-12"> <div class="flex flex-col md:flex-row md:items-start gap-8"> <!-- Prominent click-to-call --> <aside class="md:w-1/3"> <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg"> <h2 class="text-xl font-semibold text-blue-800 mb-3">Call us</h2> <p class="text-sm text-slate-700 mb-4">Immediate help is available. Tap to call on mobile devices.</p> <a href="tel:+18003301234" class="inline-flex items-center justify-center w-full h-12 px-4 rounded-md bg-blue-600 text-white text-center text-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300" aria-label="Call Novaqy at +1 800-330-1234" title="Call us at +1 800-330-1234"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2.2a1 1 0 01.99.86l.2 1.8a1 1 0 01-.27.88l-1.2 1.2a11 11 0 005 5l1.2-1.2a1 1 0 01.88-.27l1.8.2a1 1 0 01.86.99V19a2 2 0 01-2 2H19a16 16 0 01-16-16V5z"></path> </svg> +1 800-330-1234 </a> </div> </aside> <!-- Contact form --> <main class="md:flex-1"> <h1 class="text-3xl font-bold text-slate-900 mb-4">Contact us</h1> <p class="text-slate-700 mb-6">Use the form below and we'll get back to you as soon as possible.</p> <form id="contactForm" class="space-y-6 bg-white p-6 border rounded-lg shadow-sm" novalidate> <div role="status" aria-live="polite" id="formStatus" class="sr-only"></div> <div> <label for="name" class="block text-sm font-medium text-slate-700">Full name</label> <input id="name" name="name" type="text" required aria-required="true" aria-describedby="name-help" class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your full name"> <p id="name-help" class="sr-only">Enter your full name. Required.</p> <p class="mt-1 text-sm text-red-600" id="nameError" aria-live="assertive"></p> </div> <div> <label for="email" class="block text-sm font-medium text-slate-700">Email address</label> <input id="email" name="email" type="email" inputmode="email" required aria-required="true" aria-describedby="email-help" class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com"> <p id="email-help" class="sr-only">We'll use this to reply to you. Required.</p> <p class="mt-1 text-sm text-red-600" id="emailError" aria-live="assertive"></p> </div> <div> <label for="phone" class="block text-sm font-medium text-slate-700">Phone (optional)</label> <input id="phone" name="phone" type="tel" inputmode="tel" aria-describedby="phone-help" class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="+1 800 555 1212"> <p id="phone-help" class="sr-only">Optional. Include country code for fastest contact.</p> <p class="mt-1 text-sm text-red-600" id="phoneError" aria-live="assertive"></p> </div> <div> <label for="preferred_time" class="block text-sm font-medium text-slate-700">Preferred contact time</label> <select id="preferred_time" name="preferred_time" class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"> <option value="">Anytime</option> <option>Morning (9am–12pm)</option> <option>Afternoon (12pm–4pm)</option> <option>Evening (4pm–8pm)</option> </select> <p class="mt-1 text-sm text-red-600" id="preferredTimeError" aria-live="assertive"></p> </div> <div> <label for="message" class="block text-sm font-medium text-slate-700">Message</label> <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="message-help" class="mt-1 block w-full px-3 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tell us how we can help..."></textarea> <p id="message-help" class="sr-only">Describe your request. Required.</p> <p class="mt-1 text-sm text-red-600" id="messageError" aria-live="assertive"></p> </div> <div class="flex items-center gap-4"> <button type="submit" id="submitBtn" class="inline-flex items-center justify-center h-12 px-5 rounded-md bg-slate-900 text-white font-medium hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300">
+Send message
+</button> <div id="spinner" class="hidden" aria-hidden="true" role="status" aria-live="polite"> <span class="text-sm text-slate-600">Sending…</span> </div> <div id="successMessage" class="hidden text-sm text-green-700" role="status" aria-live="polite"></div> </div> </form> </main> </div> </section>  <script type="module">
+    const form = document.getElementById('contactForm')
+    const submitBtn = document.getElementById('submitBtn')
+    const spinner = document.getElementById('spinner')
+    const successMessage = document.getElementById('successMessage')
+    const statusRegion = document.getElementById('formStatus')
+
+    const nameInput = document.getElementById('name')
+    const emailInput = document.getElementById('email')
+    const phoneInput = document.getElementById('phone')
+    const preferredTimeInput = document.getElementById('preferred_time')
+    const messageInput = document.getElementById('message')
+
+    const nameError = document.getElementById('nameError')
+    const emailError = document.getElementById('emailError')
+    const phoneError = document.getElementById('phoneError')
+    const preferredTimeError = document.getElementById('preferredTimeError')
+    const messageError = document.getElementById('messageError')
+
+    function resetErrors() {
+      [nameError, emailError, phoneError, preferredTimeError, messageError].forEach(el => {
+        el.textContent = ''
+      })
+      statusRegion.textContent = ''
+      successMessage.textContent = ''
+      successMessage.classList.add('hidden')
+    }
+
+    function validate() {
+      resetErrors()
+      let valid = true
+      if (!nameInput.value.trim()) {
+        nameError.textContent = 'Please enter your name'
+        valid = false
+      }
+      const emailVal = emailInput.value.trim()
+      if (!emailVal) {
+        emailError.textContent = 'Please enter your email'
+        valid = false
+      } else {
+        // basic email check
+        const re = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/
+        if (!re.test(emailVal)) {
+          emailError.textContent = 'Please enter a valid email'
+          valid = false
+        }
+      }
+      if (!messageInput.value.trim()) {
+        messageError.textContent = 'Please enter a message'
+        valid = false
+      }
+      return valid
+    }
+
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault()
+      if (!validate()) {
+        statusRegion.textContent = 'Form contains errors. See highlighted messages.'
+        return
+      }
+
+      submitBtn.disabled = true
+      spinner.classList.remove('hidden')
+
+      const payload = {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        phone: phoneInput.value.trim() || null,
+        preferred_time: preferredTimeInput.value || null,
+        message: messageInput.value.trim()
+      }
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        const json = await res.json()
+        if (res.ok) {
+          successMessage.textContent = 'Message sent. Thank you — we will contact you shortly.'
+          successMessage.classList.remove('hidden')
+          form.reset()
+          statusRegion.textContent = 'Submission successful'
+
+          // GA4 / GTM event push (avoid sending PII)
+          try {
+            window.dataLayer = window.dataLayer || []
+            window.dataLayer.push({
+              event: 'contact_form_submit',
+              event_category: 'engagement',
+              event_label: 'contact_form',
+              non_interaction: false
+            })
+          } catch (e) {
+            console.warn('dataLayer push failed', e)
+          }
+        } else {
+          const err = json?.error || 'Server error'
+          statusRegion.textContent = err
+        }
+      } catch (err) {
+        statusRegion.textContent = 'Network error. Please try again later.'
+      } finally {
+        submitBtn.disabled = false
+        spinner.classList.add('hidden')
+      }
+    })
+  </script>  </body></html>

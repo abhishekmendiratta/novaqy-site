@@ -1,0 +1,183 @@
+---
+import Base from '../layouts/Base.astro'
+import Icon from '../components/Icon.astro'
+import { getDefaultMeta } from '../lib/seo';
+const meta = getDefaultMeta({
+  title: 'Novaqy — Secure, simple tech support for seniors',
+  description: 'Patient technical support for seniors across United States and Canada. One-time plans and immediate support calls. Call +1 800-330-1234.'
+});
+---
+
+<Base meta={meta}>
+  <main>
+    <!-- HERO + TRUST -->
+    <section role="region" aria-label="Homepage hero" class="min-h-screen flex items-center bg-gradient-to-b from-white to-gray-50">
+      <div class="container mx-auto px-6 py-16 flex flex-col-reverse lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2">
+          <!-- Trust indicators (phone + badges) -->
+          <div class="flex items-center justify-start gap-6 mb-6 text-sm text-gray-600">
+            <a href="tel:+18003301234"
+               class="inline-flex items-center gap-2 text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded interactive"
+               title="Call us"
+               >
+              <!-- phone icon (decorative) -->
+              <Icon name="phone" size="md" class="text-blue-600" interactive />
+              <span class="font-medium">+1 800-330-1234</span>
+              <span class="sr-only">Tap to call</span>
+            </a>
+
+            <span class="inline-flex items-center gap-2" aria-hidden="false">
+              <Icon name="check" size="md" class="text-green-600" interactive />
+              <span class="text-gray-600">Trusted by 10,000+ small businesses</span>
+            </span>
+          </div>
+
+          <h1 class="font-extrabold leading-tight text-gray-900 text-3xl sm:text-4xl md:text-5xl max-w-2xl" style="font-size:clamp(2rem,5vw,2.5rem)">
+            Secure, simple billing for small businesses
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-gray-700 max-w-xl" style="font-size:clamp(1.125rem,3vw,1.25rem)">
+            Manage subscriptions, invoices, and payments with confidence. Built for clarity, accessibility, and fast onboarding.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="/signup"
+               class="inline-flex items-center justify-center px-6 py-4 min-h-[44px] bg-blue-600 text-white rounded-md text-base font-semibold shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+               role="button"
+               >Get started</a>
+
+            <a href="/plans#plans"
+               class="inline-flex items-center justify-center px-6 py-4 min-h-[44px] bg-white text-blue-600 border border-blue-600 rounded-md text-base font-semibold hover:bg-blue-50 focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+               role="button"
+               >View plans</a>
+          </div>
+
+          <p class="mt-6 text-sm text-gray-500">
+            No credit card required • 14‑day free trial
+          </p>
+        </div>
+
+        <div class="lg:w-1/2 flex justify-center" aria-hidden="false">
+          <!-- Decorative illustration (inline SVG) - marked presentational via aria-hidden on complex graphics -->
+          <div class="illustration-wrapper w-full max-w-md mx-auto">
+            <svg class="w-full h-auto" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of dashboard charts and a phone">
+              <rect x="0" y="0" width="600" height="400" rx="16" fill="#EFF6FF"/>
+              <g transform="translate(60,60)">
+                <rect width="420" height="220" rx="12" fill="white" stroke="#DBEAFE"/>
+                <rect x="16" y="18" width="120" height="18" rx="6" fill="#EFF6FF"/>
+                <rect x="16" y="50" width="380" height="10" rx="5" fill="#F8FAFC"/>
+                <rect x="16" y="70" width="220" height="10" rx="5" fill="#E0F2FE"/>
+                <rect x="16" y="92" width="300" height="10" rx="5" fill="#F1F5F9"/>
+                <circle cx="360" cy="140" r="28" fill="#BFDBFE"/>
+                <rect x="340" y="120" width="40" height="40" rx="8" fill="#60A5FA"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN PREVIEW -->
+    <section id="plans" role="region" aria-label="Plan preview" class="bg-white py-12 sm:py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="font-bold text-gray-900 text-xl sm:text-2xl md:text-3xl max-w-xl" style="font-size:clamp(1.25rem,3vw,2rem)">
+            Plans that scale with your business
+          </h2>
+          <p class="mt-2 text-gray-600 text-base sm:text-lg" style="font-size:clamp(1rem,2vw,1.125rem)">
+            Choose a plan that fits your team — upgrade or cancel anytime.
+          </p>
+        </div>
+
+        <ul role="list" class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6" aria-label="Available plans">
+          <!-- Starter -->
+          <li role="listitem" class="card card--hover bg-gray-50 rounded-lg p-6 border border-gray-100 shadow-sm">
+            <h3 id="plan-starter" class="text-lg font-semibold text-gray-900">Starter</h3>
+            <p class="mt-2 text-sm text-gray-600" aria-hidden="true">Best for solo founders</p>
+            <div class="mt-4">
+              <span class="text-2xl font-bold text-gray-900">$0</span>
+              <span class="text-sm text-gray-500">/mo</span>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-600" aria-label="Starter features">
+              <li>Basic invoicing</li>
+              <li>Unlimited customers</li>
+              <li>Email support</li>
+            </ul>
+            <div class="mt-6">
+              <a href="/signup?plan=starter"
+                 class="block w-full text-center px-4 py-3 min-h-[44px] bg-blue-600 text-white rounded-md font-semibold focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+                 >Choose Starter</a>
+            </div>
+          </li>
+
+          <!-- Growth -->
+          <li role="listitem" class="card card--hover bg-white rounded-lg p-6 border-2 border-blue-600 shadow-md">
+            <h3 id="plan-growth" class="text-lg font-semibold text-gray-900">Growth</h3>
+            <p class="mt-2 text-sm text-gray-600">For growing teams</p>
+            <div class="mt-4">
+              <span class="text-2xl font-bold text-gray-900">$29</span>
+              <span class="text-sm text-gray-500">/mo</span>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-600">
+              <li>Everything in Starter</li>
+              <li>Advanced reports</li>
+              <li>Priority email support</li>
+            </ul>
+            <div class="mt-6">
+              <a href="/signup?plan=growth"
+                 class="block w-full text-center px-4 py-3 min-h-[44px] bg-blue-600 text-white rounded-md font-semibold focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+                 >Choose Growth</a>
+            </div>
+          </li>
+
+          <!-- Pro -->
+          <li role="listitem" class="card card--hover bg-gray-50 rounded-lg p-6 border border-gray-100 shadow-sm">
+            <h3 id="plan-pro" class="text-lg font-semibold text-gray-900">Pro</h3>
+            <p class="mt-2 text-sm text-gray-600">For established teams</p>
+            <div class="mt-4">
+              <span class="text-2xl font-bold text-gray-900">$99</span>
+              <span class="text-sm text-gray-500">/mo</span>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-600">
+              <li>Advanced billing automation</li>
+              <li>Dedicated success manager</li>
+              <li>Phone support</li>
+            </ul>
+            <div class="mt-6">
+              <a href="/signup?plan=pro"
+                 class="block w-full text-center px-4 py-3 min-h-[44px] bg-blue-600 text-white rounded-md font-semibold focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+                 >Choose Pro</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LARGE ACCESSIBLE CTAS / FOOTER CTA -->
+    <section role="region" aria-label="Primary actions" class="bg-gradient-to-r from-blue-50 to-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="mx-auto max-w-3xl text-center">
+          <h3 class="font-bold text-gray-900 text-lg sm:text-xl md:text-2xl max-w-xl" style="font-size:clamp(1.125rem,2vw,1.5rem)">
+            Ready to get started?
+          </h3>
+          <p class="mt-2 text-gray-600 text-base sm:text-lg" style="font-size:clamp(1rem,2vw,1.125rem)">
+            Create an account in minutes and start your free trial.
+          </p>
+
+          <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/signup"
+               class="inline-flex items-center justify-center px-8 py-4 min-h-[44px] rounded-lg bg-blue-600 text-white text-lg font-semibold shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+               role="button"
+               >Create account</a>
+
+            <a href="/contact"
+               class="inline-flex items-center justify-center px-8 py-4 min-h-[44px] rounded-lg bg-white text-blue-600 border border-blue-600 text-lg font-semibold hover:bg-blue-50 focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+               role="button"
+               >Contact sales</a>
+          </div>
+
+          <p class="mt-4 text-sm text-gray-500">Need help? Call us at <a href="tel:+18003301234" class="text-blue-600 underline">+1 800-330-1234</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

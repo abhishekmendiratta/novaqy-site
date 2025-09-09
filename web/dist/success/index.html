@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-5hce7sga> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Critical CSS inlined to eliminate render-blocking stylesheet for above-the-fold --><link rel="preload" href="/styles/tailwind.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/styles/tailwind.css"></noscript><title>Payment successful — Novaqy</title><meta name="description" content="Payment confirmed. A support expert will call you shortly. For immediate help call +1 800-330-1234."><link rel="canonical" href="https://novaqy.com"><meta name="robots" content="index,follow"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Novaqy"><meta property="og:title" content="Payment successful — Novaqy"><meta property="og:description" content="Payment confirmed. A support expert will call you shortly. For immediate help call +1 800-330-1234."><meta property="og:image" content="https://novaqy.com/favicon.ico"><meta property="og:url" content="https://novaqy.com"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@novaqy"><meta name="twitter:title" content="Payment successful — Novaqy"><meta name="twitter:description" content="Payment confirmed. A support expert will call you shortly. For immediate help call +1 800-330-1234."><meta name="twitter:image" content="https://novaqy.com/favicon.ico"><!-- JSON-LD structured data (Organization + Service) --><script type="application/ld+json">{JSON.stringify(organizationSchema())}</script><script type="application/ld+json">{JSON.stringify(serviceSchema())}</script><style>:root{--font-family-primary: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;--font-size-base: 1.125rem;--line-height-base: 1.6;--color-text: #0f172a;--color-background: #ffffff;--focus-color: #2563eb}html,body{font-family:var(--font-family-primary);font-size:var(--font-size-base);line-height:var(--line-height-base);color:var(--color-text);background-color:var(--color-background);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a[data-astro-cid-5hce7sga],button[data-astro-cid-5hce7sga]{cursor:pointer}.btn[data-astro-cid-5hce7sga],button[data-astro-cid-5hce7sga],input[data-astro-cid-5hce7sga],textarea[data-astro-cid-5hce7sga]{min-height:44px;line-height:1.2}img[data-astro-cid-5hce7sga]{max-width:100%;height:auto;display:block}.hero[data-astro-cid-5hce7sga]{min-height:40vh}:focus-visible[data-astro-cid-5hce7sga]{outline:3px solid var(--focus-color);outline-offset:2px}
+</style></head> <body data-astro-cid-5hce7sga>  <main class="max-w-3xl mx-auto p-6 text-lg"> <section aria-labelledby="success-heading" class="text-center"> <h1 id="success-heading" class="text-3xl md:text-4xl font-semibold leading-tight mb-4">Payment successful</h1> <p class="text-lg mb-6">Thank you — a support expert will call you shortly.</p> <div class="my-6" id="call-cta-container"> <a id="call-now-link" href="tel:+18003301234" class="inline-flex items-center justify-center bg-[#1e40af] text-white rounded-md px-6 py-4 text-lg font-medium h-[56px] min-w-[220px] focus:outline-none focus:ring-4 focus:ring-[#1e40af]/40" aria-label="Call now +1 800 330 1234" style="display: none;">
+Call Now: +1 800‑330‑1234
+</a> <button id="request-call-btn" class="inline-flex items-center justify-center bg-[#16a34a] text-white rounded-md px-6 py-4 text-lg font-medium h-[56px] min-w-[220px] focus:outline-none focus:ring-4 focus:ring-[#16a34a]/40" style="display: none;">
+Request a call
+</button> </div> <div class="text-left mt-6 bg-gray-50 p-4 rounded" role="region" aria-label="Order summary" aria-live="polite"> <h2 class="text-xl font-semibold mb-2">Order summary</h2> <p class="text-base">Plan: <strong>Individual Plan</strong></p> <p class="text-base">Amount: <strong>$249.00</strong></p> <p class="text-base">Receipt sent to: <strong>email@example.com</strong></p> </div> <p class="mt-6 text-sm text-gray-600">If you need immediate assistance, please call <a href="tel:+18003301234" class="underline">+1 800‑330‑1234</a>.</p> </section> </main> <script type="module">
+  async function init() {
+    const params = new URLSearchParams(window.location.search)
+    const sessionId = params.get('session_id')
+    const callNow = document.getElementById('call-now-link')
+    const requestBtn = document.getElementById('request-call-btn')
+    const summary = document.querySelector('[aria-label="Order summary"]')
+
+    if (!sessionId) {
+      // Show call-now tel link as fallback when there's no session id
+      if (callNow) callNow.style.display = 'inline-flex'
+      return
+    }
+
+    try {
+      const res = await fetch(`/api/finalize-order?session_id=${encodeURIComponent(sessionId)}`)
+      if (!res.ok) throw new Error('Failed to finalize order')
+      const json = await res.json()
+      const order = json?.order
+
+      if (summary && order) {
+        const planElem = summary.querySelector('p:nth-of-type(1) strong')
+        const amountElem = summary.querySelector('p:nth-of-type(2) strong')
+        const receiptElem = summary.querySelector('p:nth-of-type(3) strong')
+
+        if (planElem) planElem.textContent = order.plan_title ?? '—'
+        if (amountElem) amountElem.textContent = order.amount_cents ? `$${(order.amount_cents / 100).toFixed(2)}` : '—'
+        if (receiptElem) receiptElem.textContent = order.customer_email ?? '—'
+
+        // GA4 / GTM purchase event (avoid sending PII)
+        try {
+          window.dataLayer = window.dataLayer || []
+          window.dataLayer.push({
+            event: 'purchase',
+            event_category: 'ecommerce',
+            event_label: order.plan_title ?? 'purchase',
+            value: order.amount_cents ? (order.amount_cents / 100) : undefined,
+            currency: order.currency ?? undefined,
+            non_interaction: false
+          })
+        } catch (e) {
+          console.warn('dataLayer purchase push failed', e)
+        }
+      }
+
+      // Show request-call CTA
+      if (requestBtn) {
+        requestBtn.style.display = 'inline-flex'
+        requestBtn.addEventListener('click', async () => {
+          requestBtn.disabled = true
+          const originalText = requestBtn.textContent
+          requestBtn.textContent = 'Requesting...'
+          try {
+            const r = await fetch('/api/request-call', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                order_id: order?.id ?? order?.stripe_session_id,
+                customer_email: order?.customer_email ?? null,
+                phone: null,
+                notes: 'Customer requested a callback from success page'
+              })
+            })
+            if (!r.ok) throw new Error('Call request failed')
+            requestBtn.textContent = 'Requested — we will call you'
+            requestBtn.classList.remove('bg-[#16a34a]')
+            requestBtn.classList.add('bg-gray-400')
+          } catch (err) {
+            console.error(err)
+            requestBtn.disabled = false
+            requestBtn.textContent = originalText
+            alert('Failed to request a call. Please try again or call support.')
+          }
+        })
+      } else {
+        if (callNow) callNow.style.display = 'inline-flex'
+      }
+    } catch (err) {
+      console.error(err)
+      if (callNow) callNow.style.display = 'inline-flex'
+    }
+  }
+
+  init()
+</script>  </body></html>

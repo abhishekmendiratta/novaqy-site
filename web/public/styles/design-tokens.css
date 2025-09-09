@@ -1,0 +1,84 @@
+/* Design tokens for Novaqy - senior-first baseline
+   Tokens mirror .taskmaster/task_003 documentation and tailwind.config.cjs
+   Use CSS custom properties for non-Tailwind consumers and fallbacks.
+*/
+
+:root{
+  /* Colors */
+  --color-primary: #1e40af;
+  --color-secondary: #0f766e;
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-error: #b91c1c;
+  --color-background: #ffffff;
+  --color-surface: #f9fafb;
+  --color-text: #111827;
+
+  /* Typography */
+  --font-family-primary: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 1.125rem; /* 18px */
+  --font-size-lg: 1.5rem;     /* 24px */
+  --font-size-xl: 1.875rem;   /* 30px */
+  --line-height-base: 1.6;
+
+  /* Spacing & touch */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 44px;
+  --touch-target-min: 44px;
+  --padding-button-vertical: 12px;
+  --padding-button-horizontal: 24px;
+}
+
+/* Base element fallbacks and tokens usage (applied in tailwind.css later) */
+html, body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* Accessible focus style for keyboard users */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Button base to guarantee touch target and padding for non-Tailwind components */
+.btn, button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch-target-min);
+  padding: var(--padding-button-vertical) var(--padding-button-horizontal);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-family: var(--font-family-primary);
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn:focus, button:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Utility classes useful for components that may not use Tailwind directly */
+.u-touch-size {
+  min-width: var(--touch-target-min);
+  min-height: var(--touch-target-min);
+}
+.u-mt-md { margin-top: var(--space-md); }
+.u-mb-md { margin-bottom: var(--space-md); }
+.u-p-sm { padding: var(--space-sm); }
+
+/* Notes:
+ - Use these variables inside components and Tailwind layers where needed.
+ - Tailwind theme is also extended (web/tailwind.config.cjs) so prefer Tailwind tokens in templates for consistency.
+*/

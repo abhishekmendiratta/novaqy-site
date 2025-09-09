@@ -1,0 +1,43 @@
+# Task ID: 9
+# Title: Supabase schema & RLS
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Create contact_submissions, plan_purchases, call_notifications tables and configure Row Level Security rules as specified.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Design contact_submissions table schema [pending]
+### Dependencies: None
+### Description: Define the structure, columns, data types, and constraints for the contact_submissions table in Supabase.
+### Details:
+Specify required fields such as id, user_id, contact_info, message, timestamps, and any necessary indexes or relationships.
+
+## 2. Design plan_purchases table schema [pending]
+### Dependencies: None
+### Description: Define the structure, columns, data types, and constraints for the plan_purchases table in Supabase.
+### Details:
+Include fields such as id, user_id, plan_id, purchase_date, amount, status, and relevant foreign keys.
+
+## 3. Design call_notifications table schema [pending]
+### Dependencies: None
+### Description: Define the structure, columns, data types, and constraints for the call_notifications table in Supabase.
+### Details:
+Add fields like id, user_id, call_time, notification_type, status, and any necessary foreign keys or indexes.
+
+## 4. Configure Row Level Security (RLS) policies for all tables [pending]
+### Dependencies: 9.1, 9.2, 9.3
+### Description: Set up RLS policies for contact_submissions, plan_purchases, and call_notifications tables according to specified access rules.
+### Details:
+Define and enable RLS policies to restrict access based on user roles and ownership, ensuring only authorized users can read or modify records.
+
+## 5. Test and document schema and RLS configuration [pending]
+### Dependencies: 9.4
+### Description: Perform end-to-end testing of all tables and RLS policies, and document the schema and security setup for future reference.
+### Details:
+Run integration tests to validate data integrity and security, and create documentation outlining table structures and RLS rules.
+

@@ -1,0 +1,58 @@
+# Task ID: 8
+# Title: Post-purchase flow and call initiation
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Log order to Supabase, send internal notification email to support, and surface 'Call Now' CTA on /success page.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Implement order logging to Supabase [done]
+### Dependencies: None
+### Description: Develop backend logic to record each completed order in the Supabase database, ensuring all relevant order details are captured.
+### Details:
+Set up the necessary Supabase table(s) and API integration to insert new order records upon purchase completion.
+Implemented:
+- Added OrderRecord type and insertOrder helper in web/src/lib/supabase.ts
+- Created /api/finalize-order to retrieve Stripe session and insert order into `orders` table using service role key.
+- Updated checkout session success_url to include `?session_id={CHECKOUT_SESSION_ID}` in web/src/pages/api/create-checkout-session.ts
+
+## 2. Configure internal notification email to support [pending]
+### Dependencies: 8.1
+### Description: Set up automated email notifications to the support team when a new order is logged.
+### Details:
+Integrate with an email service to trigger an internal notification containing order details immediately after logging the order.
+Notes:
+- User did not provide an email provider API key; left as pending. Will implement SendGrid/Postmark when key provided.
+
+## 3. Design and implement 'Call Now' CTA on /success page [done]
+### Dependencies: 8.1
+### Description: Add a prominent 'Call Now' call-to-action button to the order success page, visible immediately after purchase.
+### Details:
+Ensure the CTA is styled consistently with the site and is only displayed after a successful order.
+Implemented:
+- Updated success page to include hidden tel link and "Request a call" button.
+- Client script calls /api/finalize-order with session_id, populates order summary, and shows "Request a call" CTA.
+
+## 4. Integrate call initiation logic with CTA [done (call-request)]
+### Dependencies: 8.3
+### Description: Connect the 'Call Now' CTA to the appropriate call initiation workflow (e.g., opening a dialer, triggering a web call, or sending a call request).
+### Details:
+Determine the preferred call method and implement the necessary frontend and backend logic to initiate or request a call when the CTA is clicked.
+Implemented:
+- Added /api/request-call POST endpoint that writes to `call_requests` table.
+- success page POSTs to /api/request-call when user clicks "Request a call".
+
+## 5. End-to-end flow validation and error handling [pending]
+### Dependencies: 8.1, 8.2, 8.3, 8.4
+### Description: Test the entire post-purchase flow, including order logging, email notification, CTA display, and call initiation, ensuring robust error handling at each step.
+### Details:
+Simulate successful and failed purchases to confirm the system behaves correctly and gracefully handles errors (e.g., failed email, Supabase downtime).
+- [ ] Test finalize-order with real Stripe session
+- [ ] Verify records in Supabase `orders` and `call_requests` tables
+- [ ] Implement email notification once API key available
+- [ ] Add retry/backoff for failed Supabase inserts if desired

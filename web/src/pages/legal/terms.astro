@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDefaultMeta } from '../../lib/seo';
+const meta = getDefaultMeta({
+  title: 'Terms of Service — Novaqy',
+  description: 'Terms of service for Novaqy Cloud LLP. Placeholder legal text — replace with counsel-approved language before publishing.',
+  canonical: '/legal/terms'
+});
+---
+<Base {meta}>
+  <main class="prose mx-auto p-8">
+    <h1>Terms of Service</h1>
+
+    <div style="border:2px solid #d9534f;padding:12px;background:#fff6f6" role="note" aria-live="polite">
+      <strong>LEGAL COUNSEL NOTE (PLACEHOLDER)</strong>
+      <p>
+        This page contains placeholders and guidance for counsel. DO NOT publish until reviewed.
+      </p>
+      <ul>
+        <li>Insert company legal name, address, and effective date.</li>
+        <li>Insert governing law, dispute resolution, and arbitration clauses.</li>
+        <li>Insert detailed purchase, licensing, and refund clauses (see Refund Policy).</li>
+      </ul>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>
+      These Terms of Service ("Terms") govern your access to and use of the services provided by
+      [COMPANY LEGAL NAME] ("we", "us", "our"). Effective date: <em>PLACEHOLDER</em>.
+    </p>
+
+    <h2>2. Acceptance of Terms</h2>
+    <p>
+      By placing an order, creating an account, or otherwise using our services you acknowledge
+      that you have read and agree to these Terms and our Privacy Policy. At checkout you must
+      explicitly accept these Terms. We record acceptance (timestamp, IP address, user agent,
+      and terms version) for dispute defense.
+    </p>
+
+    <h2>3. Purchases, Licensing & Delivery</h2>
+    <p>
+      Products may include physical goods, software licenses, or digital content. Unless otherwise
+      stated in writing, all purchases are final and non‑refundable. Certain products are sourced
+      from third‑party distributors (e.g., Redington, Ingram Micro) whose policies prohibit returns
+      or refunds; where applicable, purchaser accepts those supplier terms.
+    </p>
+
+    <h2>4. No Returns / No Refunds</h2>
+    <p>
+      Unless explicitly stated otherwise in writing, all sales are final. For details and narrow
+      exceptions (e.g., manufacturer warranty), see our Refund Policy: <a href="/legal/refund">Refund Policy</a>.
+    </p>
+
+    <h2>5. Payment and Billing</h2>
+    <p>
+      Payment processing is handled by our payment processors. Billing descriptors, receipts, and
+      invoices will include our company name. We keep records of payments, delivery, and license
+      activation as evidence for dispute resolution.
+    </p>
+
+    <h2>6. Dispute Resolution & Limitation of Liability</h2>
+    <p>
+      <strong>PLACEHOLDER:</strong> Insert arbitration clause, venue, limitation of liability, and
+      disclaimer of warranties consistent with applicable law.
+    </p>
+
+    <h2>7. Changes to Terms</h2>
+    <p>
+      We may amend these Terms. Material changes will be posted with a new effective date. Continued
+      use after notice constitutes acceptance.
+    </p>
+
+    <h2>8. Contact</h2>
+    <p>
+      Legal contact: <em>legal@example.com</em> (replace). Business/legal address: <em>PLACEHOLDER</em>.
+    </p>
+
+    <hr />
+    <p style="font-size:0.9rem;color:#666">
+      Developer note: Checkout flow must require explicit acceptance checkbox and server-side
+      recording of acceptance (timestamp, IP, user-agent, order id, terms_version). See create-checkout-session
+      API for where metadata is recorded. Preserve evidence (invoices from suppliers, activation logs,
+      emails) for chargeback defense.
+    </p>
+  </main>
+</Base>

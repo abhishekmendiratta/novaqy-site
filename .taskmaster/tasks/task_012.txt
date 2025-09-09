@@ -1,0 +1,42 @@
+# Task ID: 12
+# Title: Accessibility automated tests
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Wire axe-core and Lighthouse CI checks into the pipeline to enforce zero violations and 100 accessibility score.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Integrate axe-core into the test automation framework [done]
+### Dependencies: None
+### Description: Install and configure the axe-core library within the project's automated test suite to enable accessibility scanning.
+### Details:
+Set up axe-core using the appropriate package for your test framework (e.g., npm for JavaScript, pip for Python). Ensure axe-core can be invoked in automated browser sessions.
+
+## 2. Integrate Lighthouse CI into the CI/CD pipeline [done]
+### Dependencies: None
+### Description: Set up Lighthouse CI to run automated accessibility audits as part of the continuous integration pipeline.
+### Details:
+Configure Lighthouse CI with project URLs and ensure it is triggered during pipeline execution. Set thresholds for accessibility scores.
+
+## 3. Configure pipeline enforcement for zero axe-core violations [done]
+### Dependencies: 12.1
+### Description: Implement pipeline logic to fail builds if any axe-core accessibility violations are detected.
+### Details:
+Parse axe-core scan results in the pipeline and add assertions to enforce zero violations before allowing builds to proceed.
+
+## 4. Configure pipeline enforcement for 100 Lighthouse accessibility score [done]
+### Dependencies: 12.2
+### Description: Implement pipeline logic to fail builds if the Lighthouse accessibility score is less than 100.
+### Details:
+Set up Lighthouse CI configuration to enforce a minimum accessibility score of 100, causing the build to fail if unmet.
+
+## 5. Generate and archive accessibility reports for each build [done]
+### Dependencies: 12.1, 12.2
+### Description: Ensure that detailed axe-core and Lighthouse accessibility reports are generated and stored as build artifacts for traceability.
+### Details:
+Configure the pipeline to save JSON or HTML reports from both tools and make them accessible for review after each build.

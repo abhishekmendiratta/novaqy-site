@@ -1,0 +1,17 @@
+# robots.txt for Novaqy
+# Allow all regular crawlers but block sensitive admin endpoints and internal services.
+User-agent: *
+# sensitive endpoints
+Disallow: /api/admin/
+Disallow: /api/zoho/
+Disallow: /supabase/
+# keep API endpoints used by public flows accessible (contact, checkout, request-call)
+Allow: /api/contact
+Allow: /api/create-checkout-session
+Allow: /api/finalize-order
+Allow: /api/request-call
+
+# Sitemap location (dynamic endpoint)
+Sitemap: /sitemap.xml
+# Optional: crawling rate guidance (uncomment if needed)
+# Crawl-delay: 10

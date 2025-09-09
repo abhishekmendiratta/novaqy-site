@@ -1,0 +1,43 @@
+# Task ID: 20
+# Title: Business page and B2B coming soon (/business)
+# Status: pending
+# Dependencies: None
+# Priority: low
+# Description: Add a coming-soon B2B page with business inquiry form and service previews.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Define B2B Service Offerings and Value Proposition [pending]
+### Dependencies: None
+### Description: Identify and document the core B2B services to be previewed on the coming-soon page, including their value propositions and key benefits for business clients.
+### Details:
+Research and summarize the main B2B services to be offered. Draft concise descriptions and value statements to be featured on the page, ensuring alignment with brand messaging and clarity for business audiences.
+
+## 2. Design the Coming Soon B2B Page Layout [pending]
+### Dependencies: 20.1
+### Description: Create a wireframe and visual design for the /business coming-soon page, incorporating branding, a clear headline, service previews, and a prominent call-to-action.
+### Details:
+Ensure the design is visually appealing, professional, and consistent with brand guidelines. Include space for a business inquiry form, service previews, and social media/contact links. Prioritize simplicity and clarity.
+
+## 3. Implement Business Inquiry Form [pending]
+### Dependencies: 20.2
+### Description: Develop and integrate a business inquiry form on the /business page to collect essential information from interested business clients.
+### Details:
+Form should capture company name, contact details, inquiry type, and optional message. Ensure form is accessible, secure, and easy to use. Set up backend handling for submissions (e.g., email notifications or CRM integration).
+
+## 4. Add Service Previews and Visual Elements [pending]
+### Dependencies: 20.2
+### Description: Populate the page with engaging previews of B2B services, including images, icons, or mockups that illustrate upcoming offerings.
+### Details:
+Use inspiring imagery or prototypes to generate excitement and provide visual context for each service. Ensure all visuals are optimized for performance and accessibility.
+
+## 5. Configure SEO, Social Sharing, and Launch Readiness [pending]
+### Dependencies: 20.3, 20.4
+### Description: Optimize the /business page for search engines, add social sharing buttons, and ensure all launch-readiness elements (e.g., privacy policy, contact info) are present.
+### Details:
+Add relevant meta tags, keywords, and structured data for SEO. Implement social sharing buttons to encourage word-of-mouth. Include footer with privacy policy and contact details. Prepare for launch by testing all page elements.
+

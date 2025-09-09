@@ -1,0 +1,43 @@
+# Task ID: 7
+# Title: Payment integration (Stripe Checkout)
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Implement server-side Stripe Checkout session creation, redirect to /success and /cancel, and environment variables wiring.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Configure Stripe environment variables [pending]
+### Dependencies: None
+### Description: Set up and securely store Stripe API keys and relevant environment variables for both development and production environments.
+### Details:
+Ensure STRIPE_SECRET_KEY and STRIPE_PUBLISHABLE_KEY are correctly wired and accessible in the server-side code.
+
+## 2. Implement server-side Stripe Checkout session creation [pending]
+### Dependencies: 7.1
+### Description: Develop backend logic to create a Stripe Checkout session using the Stripe API, including product details and redirect URLs.
+### Details:
+Use the Stripe Checkout Sessions API to generate a session with required parameters such as line items, success_url, and cancel_url.
+
+## 3. Integrate frontend 'Buy Now' flow with backend session creation [pending]
+### Dependencies: 7.2
+### Description: Connect the frontend payment button to the backend endpoint that creates the Stripe Checkout session and handle redirection.
+### Details:
+On button click, call the backend endpoint, retrieve the session ID, and redirect the user to Stripe's hosted Checkout page.
+
+## 4. Handle post-payment redirects to /success and /cancel [pending]
+### Dependencies: 7.3
+### Description: Implement logic to process user redirection after payment completion or cancellation, displaying appropriate messages or actions.
+### Details:
+Configure Stripe session with success and cancel URLs, and build /success and /cancel pages to inform users of payment status.
+
+## 5. Test and validate full Stripe Checkout integration [pending]
+### Dependencies: 7.4
+### Description: Perform comprehensive integration testing to ensure all payment flows, redirects, and environment variable configurations work as intended.
+### Details:
+Test with both valid and invalid payment scenarios, check error handling, and confirm compliance with Stripe's requirements.
+

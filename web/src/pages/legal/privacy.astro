@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDefaultMeta } from '../../lib/seo';
+const meta = getDefaultMeta({
+  title: 'Privacy Policy — Novaqy',
+  description: 'Placeholder privacy policy for Novaqy Cloud LLP. Contains counsel notes and data handling guidance for payment and contact data.',
+  canonical: '/legal/privacy'
+});
+---
+<Base {meta}>
+  <main class="prose mx-auto p-8">
+    <h1>Privacy Policy</h1>
+
+    <div style="border:2px solid #d9534f;padding:12px;background:#fff6f6" role="note" aria-live="polite">
+      <strong>LEGAL COUNSEL NOTE (PLACEHOLDER)</strong>
+      <p>This page contains placeholders and guidance for counsel. DO NOT publish until reviewed.</p>
+      <ul>
+        <li>Insert company legal name, contact email, and DPO if applicable.</li>
+        <li>Specify categories of data collected (payment, contact, device, logs).</li>
+        <li>List third parties: payment processors (Stripe), suppliers, analytics providers.</li>
+        <li>Specify retention, access, correction, deletion, and dispute procedures.</li>
+      </ul>
+    </div>
+
+    <h2>1. Data We Collect</h2>
+    <p>We collect information you provide (name, email), payment-related information via our payment processor, and technical logs (IP, user-agent, timestamps) used for security and dispute defense.</p>
+
+    <h2>2. How We Use Data</h2>
+    <p>We use data to process orders, provide support, prevent fraud, comply with legal obligations, and improve our services.</p>
+
+    <h2>3. Sharing & Third Parties</h2>
+    <p>We share data with payment processors and service providers required to fulfill orders and provide support.</p>
+
+    <h2>4. Your Rights</h2>
+    <p>Depending on jurisdiction, you may have rights to access, correct, or request deletion of your personal data. Submit requests to <em>privacy@example.com</em> (replace).</p>
+
+    <h2>5. Security & Retention</h2>
+    <p>We retain transactional and acceptance logs for dispute defense. Consult counsel for exact retention requirements.</p>
+
+    <h2>6. Contact</h2>
+    <p>Privacy contact: <em>privacy@example.com</em> (replace).</p>
+
+    <hr />
+    <p style="font-size:0.9rem;color:#666">
+      Developer note: Acceptance metadata (timestamp, IP, user-agent, terms_version) is recorded with the Stripe session metadata and captured into the order record on finalize. Preserve these records for chargeback defense.
+    </p>
+  </main>
+</Base>

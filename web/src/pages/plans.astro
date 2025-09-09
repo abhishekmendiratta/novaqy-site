@@ -1,0 +1,186 @@
+---
+import Base from '../layouts/Base.astro'
+import Icon from '../components/Icon.astro' // Import the Icon component
+import { getDefaultMeta } from '../lib/seo';
+import type { Plan } from '../data/plans'
+import { PLANS } from '../data/plans'
+
+const meta = getDefaultMeta({
+  title: 'Novaqy — One-time plans for seniors',
+  description: 'Four one-time senior-friendly plans (Mobile, Individual, Family, Family+) with immediate support calls. Call +1 800-330-1234.'
+});
+
+const plans: Plan[] = PLANS;
+const allFeatures: string[] = Array.from(new Set(plans.flatMap((p: Plan) => p.features)));
+---
+<Base meta={meta}>
+  <main class="text-lg">
+    <section aria-label="Plans" class="bg-white py-12 sm:py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-3xl font-bold text-gray-900">One-time plans</h1>
+          <p class="mt-2 text-gray-600">Four one-time plans — Mobile, Individual, Family, Family+. Large, clear Buy Now buttons and a money-back guarantee.</p>
+          <p class="mt-2 text-sm text-green-700 font-medium">One-time payment • Money-back guarantee • A support expert will call after purchase</p>
+        </div>
+
+        <!-- Comparison table (responsive) -->
+        <div class="mt-8 overflow-x-auto" role="region" aria-label="Plan comparison table">
+          <table class="w-full table-auto border-collapse" role="table" aria-label="Plan feature comparison">
+            <caption class="sr-only">Comparison of Mobile, Individual, Family, and Family+ plans</caption>
+            <thead>
+              <tr class="text-left">
+                <th class="p-3 border-b"></th>
+                {plans.map(plan => (
+                  <th class="p-3 border-b text-left align-top">
+                    <div class="flex flex-col gap-2">
+                      <span class="text-lg font-semibold text-gray-900">{plan.title}</span>
+                      <span class="text-2xl font-bold text-gray-900">{plan.priceLabel}</span>
+                      <span class="text-sm text-gray-600">{plan.duration}</span>
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- Devices -->
+              <tr>
+                <th class="p-3 text-sm text-gray-700 font-medium align-top border-b">Devices</th>
+                {plans.map(plan => (
+                  <td class="p-3 align-top border-b"><span class="text-gray-700">{plan.devices}</span></td>
+                ))}
+              </tr>
+
+              <!-- Support summary -->
+              <tr>
+                <th class="p-3 text-sm text-gray-700 font-medium align-top border-b">Support</th>
+                {plans.map(plan => (
+                  <td class="p-3 align-top border-b"><span class="text-gray-700">{plan.summary}</span></td>
+                ))}
+              </tr>
+
+              <!-- Feature rows -->
+              {allFeatures.map((feature) => (
+                <tr>
+                  <th class="p-3 text-sm text-gray-700 font-medium align-top border-b">{feature}</th>
+                  {plans.map(plan => {
+                    const has = plan.features.includes(feature)
+                      return (
+                      <td class="p-3 align-top border-b">
+                        {has ? (
+                          <span class="inline-flex items-center gap-2 text-green-700">
+                            <Icon name="check" size="md" class="text-green-700" interactive />
+                            <span class="sr-only">Included</span>
+                          </span>
+                        ) : (
+                          <span class="text-gray-400" aria-hidden="true">—</span>
+                        )}
+                      </td>
+                    )
+                  })}
+                </tr>
+              ))}
+
+              <!-- Buy Now row -->
+              <tr>
+                <th class="p-3 text-sm text-gray-700 font-medium align-top border-b">Buy Now</th>
+                {plans.map(plan => (
+                  <td class="p-3 align-top border-b">
+                      <button
+                      type="button"
+                      class="w-full inline-flex items-center justify-center px-6 py-4 min-h-[44px] rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+                      onclick={`buyPlan('${plan.id}')`}
+                    >
+                      Buy Now — {plan.priceLabel}
+                    </button>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Stacked plan cards for small screens / quick overview -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
+          {plans.map(plan => (
+            <article class="card card--hover p-4 border rounded-md bg-white shadow-sm">
+              <h3 class="text-lg font-semibold text-gray-900">{plan.title}</h3>
+              <p class="mt-2 text-sm text-gray-600">{plan.devices} • {plan.duration}</p>
+              <div class="mt-4">
+                <span class="text-2xl font-bold text-gray-900">{plan.priceLabel}</span>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                {plan.features.slice(0,4).map((f) => <li>• {f}</li>)}
+                {plan.features.length > 4 ? <li class="text-gray-500">and more...</li> : null}
+              </ul>
+                <div class="mt-6">
+                <button
+                  type="button"
+                  class="w-full inline-flex items-center justify-center px-6 py-4 min-h-[44px] rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 interactive"
+                  onclick={`buyPlan('${plan.id}')`}
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="mt-6 max-w-2xl mx-auto text-left">
+          <label class="inline-flex items-start gap-3 text-sm text-gray-700">
+            <input id="acceptTermsCheckbox" type="checkbox" class="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+            <span>
+              I have read and agree to the <a href="/legal/terms" class="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="/legal/privacy" class="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            </span>
+          </label>
+          <p class="mt-4 text-sm text-gray-700">All purchases are one-time payments. If you need help after purchase, call us at <a href="tel:+18003301234" class="text-blue-600 underline">+1 800-330-1234</a>.</p>
+          <p class="mt-2 text-sm text-gray-700">Money-back guarantee within 30 days.</p>
+        </div>
+      </div>
+    </section>
+
+    <script type="module">
+      // Client-side helper to initiate checkout session
+      async function buyPlan(planId) {
+        try {
+          const btn = document.activeElement
+          if (btn && btn instanceof HTMLElement) {
+            btn.setAttribute('aria-disabled', 'true')
+            btn.classList.add('opacity-70')
+          }
+          // Ensure buyer has explicitly accepted Terms before creating a checkout session
+          const acceptCheckbox = document.getElementById('acceptTermsCheckbox')
+          const accepted = acceptCheckbox ? acceptCheckbox.checked : false
+          if (!accepted) {
+            throw new Error('You must accept the Terms of Service and Privacy Policy before purchasing.')
+          }
+
+          const res = await fetch('/api/create-checkout-session', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ planId, acceptedTerms: true })
+          })
+          const data = await res.json()
+          if (!res.ok) {
+            throw new Error(data?.error || 'Failed to create checkout session')
+          }
+          // redirect to Stripe Checkout
+          if (data.url) {
+            window.location.href = data.url
+          } else {
+            throw new Error('No redirect URL returned from server')
+          }
+        } catch (err) {
+          console.error(err)
+          alert(err.message || 'Unable to start checkout. Please call +1 800-330-1234 for assistance.')
+        } finally {
+          if (document.activeElement && document.activeElement instanceof HTMLElement) {
+            document.activeElement.removeAttribute('aria-disabled')
+            document.activeElement.classList.remove('opacity-70')
+          }
+        }
+      }
+      window.buyPlan = buyPlan
+    </script>
+  </main>
+</Base>

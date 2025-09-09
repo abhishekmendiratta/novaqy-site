@@ -1,0 +1,97 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDefaultMeta } from '../lib/seo';
+const meta = getDefaultMeta({
+  title: 'Sign contract — Novaqy',
+  description: 'Start the Zoho sign workflow to sign service agreements for Novaqy Cloud LLP. A secure signing link will open in a new tab.',
+  canonical: '/sign-contract'
+});
+---
+<Base {meta}>
+  <main class="min-h-screen bg-white text-slate-900">
+    <div class="max-w-2xl mx-auto p-6">
+      <h1 class="text-2xl font-semibold mb-4">Sign contract</h1>
+
+      <section class="mb-6">
+        <p class="mb-3">
+          Use the form below to start the signing workflow. You will receive a signing link which opens in a new tab.
+        </p>
+        <p class="text-sm text-slate-600 mb-4">
+          This page supports a mock development mode when ZOHO_INTEGRATION_ENABLED is set to <code>false</code>.
+        </p>
+      </section>
+
+      <form id="signForm" class="space-y-4" aria-labelledby="sign-contract-form">
+        <div>
+          <label for="recipientName" class="block text-sm font-medium mb-1">Recipient name</label>
+          <input id="recipientName" name="recipientName" type="text" required aria-required="true" class="w-full border rounded px-3 py-2" />
+        </div>
+
+        <div>
+          <label for="recipientEmail" class="block text-sm font-medium mb-1">Recipient email</label>
+          <input id="recipientEmail" name="recipientEmail" type="email" required aria-required="true" class="w-full border rounded px-3 py-2" />
+        </div>
+
+        <div>
+          <label for="templateId" class="block text-sm font-medium mb-1">Template ID (optional)</label>
+          <input id="templateId" name="templateId" type="text" placeholder="Use default ZOHO_SIGN_TEMPLATE_ID if empty" class="w-full border rounded px-3 py-2" />
+        </div>
+
+        <div>
+          <button id="submitBtn" class="inline-block bg-blue-600 text-white px-4 py-2 rounded" type="submit">Start signing</button>
+        </div>
+
+        <div id="status" role="status" aria-live="polite" class="text-sm text-slate-700 mt-2"></div>
+      </form>
+    </div>
+  </main>
+
+  <script type="module">
+    const form = document.getElementById('signForm');
+    const statusEl = document.getElementById('status');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      statusEl.textContent = '';
+      submitBtn.disabled = true;
+      submitBtn.setAttribute('aria-busy', 'true');
+
+      const formData = new FormData(form);
+      const payload = {
+        recipientName: formData.get('recipientName'),
+        recipientEmail: formData.get('recipientEmail'),
+        templateId: formData.get('templateId') || undefined
+      };
+
+      try {
+        const res = await fetch('/api/sign-contract', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const json = await res.json();
+        if (!res.ok) {
+          statusEl.textContent = json?.error || 'Failed to create signing request';
+          return;
+        }
+
+        const signUrl = json?.signUrl;
+        statusEl.textContent = 'Signing request created. Opening signing URL...';
+        // Open signing URL in a new tab if provided
+        if (signUrl) {
+          window.open(signUrl, '_blank', 'noopener');
+        } else {
+          statusEl.textContent = 'Signing request created. No signing URL returned.';
+        }
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = err?.message || 'Network error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.removeAttribute('aria-busy');
+      }
+    });
+  </script>
+</Base>

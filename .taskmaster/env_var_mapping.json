@@ -1,0 +1,293 @@
+{
+  "generated_at": "2025-09-09T00:50:15+05:30",
+  "description": "Mapping of environment variable names → files where referenced (or expected) and notes about scope (server/client) and purpose. Use this to populate CI/hosting secret store.",
+  "mapping": {
+    "STRIPE_SECRET_KEY": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts",
+        "web/src/pages/api/finalize-order.ts"
+      ],
+      "required": "server",
+      "purpose": "Stripe server secret used to create Checkout Sessions and finalize payments. MUST never be exposed to client."
+    },
+    "STRIPE_PUBLISHABLE_KEY": {
+      "files": [
+        "web/src/pages/plans.astro",
+        "web/src/pages/index.astro"
+      ],
+      "required": "client",
+      "purpose": "Stripe publishable key used on client to redirect or initialize Stripe Checkout (public)."
+    },
+    "STRIPE_PRICE_ID_MOBILE": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts",
+        "web/src/data/plans.ts"
+      ],
+      "required": "server",
+      "purpose": "Price ID for Mobile plan; used by server to create checkout line items."
+    },
+    "STRIPE_PRICE_ID_INDIVIDUAL": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts",
+        "web/src/data/plans.ts"
+      ],
+      "required": "server",
+      "purpose": "Price ID for Individual plan."
+    },
+    "STRIPE_PRICE_ID_FAMILY": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts",
+        "web/src/data/plans.ts"
+      ],
+      "required": "server",
+      "purpose": "Price ID for Family plan."
+    },
+    "STRIPE_PRICE_ID_FAMILY_PLUS": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts",
+        "web/src/data/plans.ts"
+      ],
+      "required": "server",
+      "purpose": "Price ID for Family+ plan."
+    },
+    "STRIPE_WEBHOOK_SECRET": {
+      "files": [
+        "web/src/pages/api/webhooks/stripe.ts (if implemented)",
+        "scripts/ci (optional webhook verifications)"
+      ],
+      "required": "server",
+      "purpose": "Used to verify incoming Stripe webhook signatures. Required if webhooks are enabled."
+    },
+    "TERMS_VERSION": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts"
+      ],
+      "required": "server",
+      "purpose": "Version identifier for terms accepted at checkout; optional but recommended for dispute defense."
+    },
+    "SUPABASE_URL": {
+      "files": [
+        "web/src/lib/supabase.ts",
+        "supabase/migrations/",
+        "web/src/pages/api/*.ts"
+      ],
+      "required": "both",
+      "purpose": "Supabase project URL (client & server usage)."
+    },
+    "SUPABASE_ANON_KEY": {
+      "files": [
+        "web/src/lib/supabase.ts",
+        "web/src/pages/*.astro (client usage)"
+      ],
+      "required": "client",
+      "purpose": "Public anon key for client-side queries (with RLS)."
+    },
+    "SUPABASE_SERVICE_ROLE_KEY": {
+      "files": [
+        "web/src/lib/supabase.ts",
+        "web/src/pages/api/finalize-order.ts",
+        "supabase/migrations/"
+      ],
+      "required": "server",
+      "purpose": "Server-only service role key for trusted inserts/operations and migrations. NEVER expose to browser."
+    },
+    "ZOHO_CLIENT_ID": {
+      "files": [
+        "web/src/lib/zoho.ts",
+        "web/src/pages/api/sign-contract.ts"
+      ],
+      "required": "server",
+      "purpose": "Zoho OAuth client id for Zoho Sign integrations."
+    },
+    "ZOHO_CLIENT_SECRET": {
+      "files": [
+        "web/src/lib/zoho.ts",
+        "web/src/pages/api/sign-contract.ts"
+      ],
+      "required": "server",
+      "purpose": "Zoho OAuth client secret (server only)."
+    },
+    "ZOHO_REFRESH_TOKEN": {
+      "files": [
+        "web/src/lib/zoho.ts",
+        "web/src/pages/api/zoho/callback.ts"
+      ],
+      "required": "server",
+      "purpose": "Long-lived refresh token for Zoho API (obtained after one-time OAuth grant)."
+    },
+    "ZOHO_SIGN_TEMPLATE_ID": {
+      "files": [
+        "web/src/pages/api/sign-contract.ts",
+        "supabase/migrations/010_create_zoho_sign_documents.sql"
+      ],
+      "required": "server",
+      "purpose": "Template ID used when creating Zoho Sign agreements."
+    },
+    "ZOHO_REDIRECT_URI": {
+      "files": [
+        "web/src/lib/zoho.ts",
+        "web/src/pages/api/zoho/callback.ts"
+      ],
+      "required": "server",
+      "purpose": "OAuth redirect URI registered in Zoho app configuration."
+    },
+    "ZOHO_WEBHOOK_SECRET": {
+      "files": [
+        "web/src/pages/api/zoho/webhook.ts (if present)"
+      ],
+      "required": "server",
+      "purpose": "Optional secret to verify Zoho webhook payloads."
+    },
+    "ZOHO_INTEGRATION_ENABLED": {
+      "files": [
+        "web/src/lib/zoho.ts",
+        "web/src/pages/api/sign-contract.ts"
+      ],
+      "required": "server",
+      "purpose": "Toggle to enable/disable real Zoho calls in runtime (useful for dev/mock)."
+    },
+    "GMAIL_CLIENT_ID": {
+      "files": [
+        "web/src/lib/gmail.ts",
+        "web/src/pages/api/contact.ts"
+      ],
+      "required": "server",
+      "purpose": "OAuth client id for sending emails via Gmail API (server)."
+    },
+    "GMAIL_CLIENT_SECRET": {
+      "files": [
+        "web/src/lib/gmail.ts"
+      ],
+      "required": "server",
+      "purpose": "OAuth client secret for Gmail (server)."
+    },
+    "GMAIL_REFRESH_TOKEN": {
+      "files": [
+        "web/src/lib/gmail.ts"
+      ],
+      "required": "server",
+      "purpose": "OAuth refresh token for Gmail to obtain access tokens server-side."
+    },
+    "GMAIL_SENDER": {
+      "files": [
+        "web/src/lib/gmail.ts",
+        "web/src/pages/api/contact.ts"
+      ],
+      "required": "server",
+      "purpose": "Email address used as From (support@novaqy.com). Must be permitted by Google Workspace."
+    },
+    "GA4_MEASUREMENT_ID": {
+      "files": [
+        "web/src/lib/seo.ts",
+        "web/src/pages/_app or layout files (where GA is injected)"
+      ],
+      "required": "client",
+      "purpose": "Google Analytics 4 measurement id used for analytics tracking."
+    },
+    "GTM_CONTAINER_ID": {
+      "files": [
+        "web/src/lib/seo.ts"
+      ],
+      "required": "client",
+      "purpose": "Optional Google Tag Manager container id."
+    },
+    "PUBLIC_SITE_URL": {
+      "files": [
+        "web/src/lib/seo.ts",
+        "web/src/pages/sitemap.xml.ts"
+      ],
+      "required": "both",
+      "purpose": "Canonical site URL used for sitemap generation, meta tags and absolute links."
+    },
+    "TERMS_VERSION": {
+      "files": [
+        "web/src/pages/api/create-checkout-session.ts"
+      ],
+      "required": "server",
+      "purpose": "Optional terms version string recorded in checkout metadata."
+    },
+    "GITHUB_API_KEY": {
+      "files": [
+        "scripts/ci/*",
+        "scripts/integration/*",
+        "Jenkinsfile (if automating GitHub calls)"
+      ],
+      "required": "server",
+      "purpose": "Used for repo automation, issue creation, or API calls in CI."
+    },
+    "CLOUDFLARE_API_TOKEN": {
+      "files": [
+        "docs/Cloudflare-Pages.md",
+        "scripts/ci/*"
+      ],
+      "required": "server",
+      "purpose": "Used for Cloudflare Pages deployments, cache invalidation, and DNS automation."
+    },
+    "CLOUDFLARE_ACCOUNT_ID": {
+      "files": [
+        "docs/Cloudflare-Pages.md"
+      ],
+      "required": "server",
+      "purpose": "Cloudflare account identifier for APIs."
+    },
+    "CLOUDFLARE_ZONE_ID": {
+      "files": [
+        "docs/Cloudflare-Pages.md"
+      ],
+      "required": "server",
+      "purpose": "DNS zone id used for cache and DNS operations."
+    },
+    "LHCI_TOKEN": {
+      "files": [
+        "web/lhci.config.js",
+        "scripts/ci/lhci/*"
+      ],
+      "required": "server",
+      "purpose": "Lighthouse CI token used to upload and manage LH reports in CI."
+    },
+    "JENKINS_USER": {
+      "files": [
+        "Jenkinsfile",
+        "scripts/ci/*"
+      ],
+      "required": "server",
+      "purpose": "Credentials for Jenkins pipeline operations (if Jenkins is used)."
+    },
+    "JENKINS_API_TOKEN": {
+      "files": [
+        "Jenkinsfile",
+        "scripts/ci/*"
+      ],
+      "required": "server",
+      "purpose": "Token for authenticating Jenkins API calls."
+    },
+    "OPENAI_API_KEY": {
+      "files": [
+        ".taskmaster/config or docs referencing AI integrations",
+        "scripts/research (if used)"
+      ],
+      "required": "optional",
+      "purpose": "Optional: used if OpenAI models are used by any automation."
+    },
+    "ANTHROPIC_API_KEY": {
+      "files": [
+        ".taskmaster/config or docs referencing AI integrations"
+      ],
+      "required": "optional",
+      "purpose": "Optional: Anthropics models (if used)."
+    },
+    "PERPLEXITY_API_KEY": {
+      "files": [
+        ".taskmaster/config or docs referencing AI integrations"
+      ],
+      "required": "optional",
+      "purpose": "Optional: Perplexity API for research."
+    }
+  },
+  "notes": {
+    "sensitive": "All server keys (STRIPE_SECRET_KEY, SUPABASE_SERVICE_ROLE_KEY, ZOHO_* client secret/refresh token, GMAIL_* secrets) must be set in the hosting provider / CI secret store and never committed to repository.",
+    "recommendation_1": "Use Cloudflare Pages secret store or GitHub Actions secrets (or your CI secret manager) to store keys. For Jenkins keep secrets in its credentials store.",
+    "recommendation_2": "Provide Stripe test keys and Supabase test project credentials for QA. Keep production keys separate and only set them in production environment.",
+    "recommendation_3": "If you want, I can generate a compact CSV / .env template with placeholders mapped to files so you can copy/paste into your hosting secret UI (Act mode)."
+  }
+}

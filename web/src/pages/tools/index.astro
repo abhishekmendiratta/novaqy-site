@@ -1,0 +1,79 @@
+---
+// Astro + TypeScript page for /tools
+import Base from '../../layouts/Base.astro';
+import Card from '../../components/ui/Card.astro';
+
+interface Tool {
+  name: string;
+  description: string;
+  status: 'Coming Soon' | 'Available';
+}
+
+const tools: Tool[] = [
+  { name: 'Tip Calculator', description: 'Quickly calculate tip amounts and total bill so you don’t have to do the math.', status: 'Coming Soon' },
+  { name: 'Unit Converter', description: 'Convert common units like inches to centimeters or pounds to kilograms.', status: 'Coming Soon' },
+  { name: 'Password Generator', description: 'Create a strong, easy-to-copy password for your accounts.', status: 'Coming Soon' },
+  { name: 'QR Code Generator', description: 'Turn a web link or short text into a QR code you can save or share.', status: 'Coming Soon' },
+  { name: 'Word Counter', description: 'Count words and estimate reading time for a piece of text.', status: 'Coming Soon' },
+  { name: 'Character Counter', description: 'See how many characters are in your message or post.', status: 'Coming Soon' },
+  { name: 'Color Picker', description: 'Pick a color and get the hex code to use in designs or emails.', status: 'Coming Soon' },
+  { name: 'BMI Calculator', description: 'Calculate body mass index (BMI) from simple height and weight inputs.', status: 'Coming Soon' },
+  { name: 'Loan Calculator', description: 'Estimate monthly payments for a loan using amount, term, and interest.', status: 'Coming Soon' },
+  { name: 'Time / Date Calculator', description: 'Add, subtract, or compare dates and times for planning events.', status: 'Coming Soon' }
+];
+
+const meta = {
+  title: 'Tools — Novaqy',
+  description: 'A set of simple utilities designed for seniors. Most tools are coming soon and will be added shortly.'
+};
+---
+
+<Base {meta}>
+  <main class="container mx-auto px-6 py-16" aria-labelledby="tools-title">
+    <header class="mb-8">
+      <h1 id="tools-title" class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Tools Directory</h1>
+      <p class="text-lg text-gray-700 max-w-3xl">Helpful utilities to make everyday tasks easier. All tools are designed with seniors in mind — clear language, large controls, and high contrast. Tools listed here are planned for launch and are currently marked as “Coming Soon.”</p>
+    </header>
+
+    <section aria-labelledby="tools-grid" class="mt-8">
+      <h2 id="tools-grid" class="sr-only">List of tools</h2>
+
+      <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {tools.map((tool) => (
+          <li role="listitem" class="aria-live-polite">
+            <Card title={tool.name}>
+              <p class="text-base text-gray-700 mb-4" style="font-size:18px; line-height:1.6;">
+                {tool.description}
+              </p>
+
+              <div class="flex items-center justify-between gap-4">
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-sm"
+                  role="status"
+                  aria-label={`${tool.name} status`}
+                >
+                  {tool.status}
+                </span>
+
+                <!-- All current tools are Coming Soon per PRD. Buttons are large (min 44px) and accessible. -->
+                <button
+                  class="ml-auto px-4 py-3 min-h-[44px] rounded-md bg-gray-300 text-gray-800 text-sm font-medium disabled:opacity-70 focus:outline-none focus-visible:ring-3 focus-visible:ring-offset-2 focus-visible:ring-amber-300"
+                  disabled
+                  aria-disabled="true"
+                  aria-label={`Coming soon: ${tool.name}`}
+                  title="Coming soon"
+                >
+                  Coming Soon
+                </button>
+              </div>
+            </Card>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <aside class="mt-12 text-sm text-gray-600" aria-hidden="false" role="note">
+      <p><strong>Want a tool sooner?</strong> Email <a class="text-blue-700 underline" href="mailto:support@novaqy.com">support@novaqy.com</a> with your suggestion and we’ll prioritize based on demand.</p>
+    </aside>
+  </main>
+</Base>

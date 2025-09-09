@@ -1,0 +1,1258 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Project initialization and tooling",
+        "description": "Initialize Taskmaster, configure models, create .taskmaster structure, and add initial developer docs.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 8,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Install and initialize Taskmaster in the project",
+            "description": "Install the Taskmaster package (globally or locally) and run the initialization command to set up the base project structure.",
+            "dependencies": [],
+            "details": "Use `npm install -g task-master-ai` or `npm install task-master-ai` as appropriate, then run `task-master init` to initialize the project and generate the initial .taskmaster directory and files.",
+            "status": "pending",
+            "testStrategy": "Verify that the .taskmaster directory and initial configuration files are created in the project root."
+          },
+          {
+            "id": 2,
+            "title": "Configure language models for Taskmaster",
+            "description": "Set up and configure the preferred AI language models for Taskmaster, including primary and fallback options.",
+            "dependencies": [
+              "1.1"
+            ],
+            "details": "Edit the Taskmaster configuration to specify model providers (e.g., Ollama, Qwen 3, Claude) and ensure correct integration for task parsing and generation.",
+            "status": "pending",
+            "testStrategy": "Check that Taskmaster recognizes and uses the configured models by running a sample task parsing operation."
+          },
+          {
+            "id": 3,
+            "title": "Create and organize the .taskmaster project structure",
+            "description": "Ensure the .taskmaster directory contains required subfolders and templates, such as docs, templates, and configuration files.",
+            "dependencies": [
+              "1.1"
+            ],
+            "details": "Verify presence of .taskmaster/docs, .taskmaster/templates, and example PRD files. Add or update templates as needed for project requirements.",
+            "status": "pending",
+            "testStrategy": "List the contents of the .taskmaster directory and confirm all required files and folders are present."
+          },
+          {
+            "id": 4,
+            "title": "Configure initial Taskmaster rules and settings",
+            "description": "Add or customize Taskmaster rules (e.g., coding standards, editor integration) to align with project needs.",
+            "dependencies": [
+              "1.1"
+            ],
+            "details": "Use `task-master rules add <rule>` or edit configuration files to set up rules for tools like Cursor, VSCode, or custom workflows.",
+            "status": "pending",
+            "testStrategy": "Review the Taskmaster configuration and confirm that the specified rules are active and correctly applied."
+          },
+          {
+            "id": 5,
+            "title": "Draft and add initial developer documentation",
+            "description": "Create initial developer documentation covering project setup, Taskmaster usage, and contribution guidelines.",
+            "dependencies": [
+              "1.1",
+              "1.2",
+              "1.3",
+              "1.4"
+            ],
+            "details": "Add documentation files (e.g., README.md, .taskmaster/docs/overview.md) with clear instructions for onboarding and using Taskmaster in the project.",
+            "status": "pending",
+            "testStrategy": "Open the documentation files and verify they provide accurate, step-by-step guidance for new developers."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Set up TypeScript + Astro project skeleton",
+        "description": "Create Astro 4+ site with TypeScript strict mode, Tailwind, and shadcn components placeholder structure.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 8,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create new Astro 4+ project with TypeScript strict mode",
+            "description": "Initialize a new Astro project using the CLI, selecting TypeScript with strict mode enabled during setup.",
+            "dependencies": [],
+            "details": "Run the Astro project creation command (e.g., `npm create astro@latest`), choose TypeScript, and select 'strict' for TypeScript rules when prompted. Confirm project structure and initial files are generated.",
+            "status": "pending",
+            "testStrategy": "Verify that the project initializes successfully, TypeScript files are present, and `tsconfig.json` uses 'strict' settings."
+          },
+          {
+            "id": 2,
+            "title": "Configure and validate TypeScript strict settings",
+            "description": "Ensure `tsconfig.json` is set to strict mode and adjust any necessary compiler options for Astro compatibility.",
+            "dependencies": [
+              "2.1"
+            ],
+            "details": "Edit `tsconfig.json` to extend from `astro/tsconfigs/strict` and confirm strict type checking is enforced. Add or adjust path aliases if needed for component imports.",
+            "status": "pending",
+            "testStrategy": "Run `tsc --noEmit` to confirm there are no type errors and strict mode is enforced."
+          },
+          {
+            "id": 3,
+            "title": "Install and configure Tailwind CSS",
+            "description": "Add Tailwind CSS to the Astro project and set up the required configuration files.",
+            "dependencies": [
+              "2.1"
+            ],
+            "details": "Install Tailwind CSS and its peer dependencies, generate `tailwind.config.js` and `postcss.config.js`, and integrate Tailwind into the Astro project per official documentation.",
+            "status": "pending",
+            "testStrategy": "Add a test class (e.g., `bg-blue-500`) to a component and verify Tailwind styles are applied in the browser."
+          },
+          {
+            "id": 4,
+            "title": "Integrate shadcn component structure",
+            "description": "Set up a placeholder directory and structure for shadcn UI components within the Astro project.",
+            "dependencies": [
+              "2.3"
+            ],
+            "details": "Create a `components/ui` directory, add placeholder files or folders for shadcn components, and document the intended structure for future component development.",
+            "status": "pending",
+            "testStrategy": "Verify the directory exists, contains placeholder files, and is referenced in project documentation or README."
+          },
+          {
+            "id": 5,
+            "title": "Validate project skeleton and document setup",
+            "description": "Test the full project skeleton for correct integration of TypeScript, Tailwind, and shadcn structure, and update developer documentation.",
+            "dependencies": [
+              "2.2",
+              "2.3",
+              "2.4"
+            ],
+            "details": "Run the development server, confirm all integrations work without errors, and update the README with setup and usage instructions.",
+            "status": "pending",
+            "testStrategy": "Start the dev server, check for build errors, and ensure documentation accurately reflects the project setup."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Design system and accessibility baseline",
+        "description": "Implement senior-first design tokens: base 18px typography, color palette, 44px touch targets, and WCAG 2.1 AA checks.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 7,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Define senior-first design token naming conventions",
+            "description": "Establish clear, descriptive, and consistent naming conventions for design tokens, prioritizing accessibility and senior-first principles.",
+            "dependencies": [],
+            "details": "Research best practices for naming design tokens, ensuring names are descriptive, context-aware, and easy to understand for all team members. Document the conventions for categories such as typography, color, and spacing.",
+            "status": "pending",
+            "testStrategy": "Review token names for clarity, consistency, and adherence to documented conventions."
+          },
+          {
+            "id": 2,
+            "title": "Create base 18px typography tokens",
+            "description": "Implement design tokens for typography with a base font size of 18px, including headings, body text, and other relevant text styles.",
+            "dependencies": [
+              "3.1"
+            ],
+            "details": "Define tokens for font size, weight, line height, and font family, ensuring all text styles use 18px as the base for improved readability.",
+            "status": "pending",
+            "testStrategy": "Verify all typography tokens render at the correct size and style in sample components."
+          },
+          {
+            "id": 3,
+            "title": "Develop accessible color palette tokens",
+            "description": "Design and document a color palette using tokens that meet senior-first accessibility needs, including sufficient contrast ratios.",
+            "dependencies": [
+              "3.1"
+            ],
+            "details": "Select and define color tokens for primary, secondary, background, and text colors, ensuring they meet or exceed WCAG 2.1 AA contrast requirements.",
+            "status": "pending",
+            "testStrategy": "Test color combinations using automated contrast checking tools to confirm WCAG 2.1 AA compliance."
+          },
+          {
+            "id": 4,
+            "title": "Implement 44px touch target spacing tokens",
+            "description": "Create spacing and sizing tokens to ensure all interactive elements have a minimum touch target size of 44px.",
+            "dependencies": [
+              "3.1"
+            ],
+            "details": "Define tokens for spacing, padding, and component sizing to guarantee touch targets are accessible for seniors and meet recommended guidelines.",
+            "status": "pending",
+            "testStrategy": "Audit interactive components to confirm all touch targets are at least 44px in both dimensions."
+          },
+          {
+            "id": 5,
+            "title": "Integrate WCAG 2.1 AA accessibility checks",
+            "description": "Establish processes and tools to validate that all design tokens and components meet WCAG 2.1 AA accessibility standards.",
+            "dependencies": [
+              "3.2",
+              "3.3",
+              "3.4"
+            ],
+            "details": "Set up automated and manual accessibility testing workflows to regularly check color contrast, typography, and touch target compliance.",
+            "status": "pending",
+            "testStrategy": "Run accessibility audits using tools like axe-core and manual review to ensure ongoing compliance with WCAG 2.1 AA."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Homepage (/)",
+        "description": "Implement hero, trust indicators (phone +1 800-330-1234), plan preview, and large accessible CTAs.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 6,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Hero Section",
+            "description": "Design and build the homepage hero section with prominent messaging and visuals that clearly communicate the site's value proposition.",
+            "dependencies": [],
+            "details": "Ensure the hero section is visually engaging, uses accessible markup, and adapts responsively to different screen sizes.",
+            "status": "pending",
+            "testStrategy": "Verify hero section renders correctly on desktop and mobile, passes accessibility checks (WCAG 2.1 AA), and displays the intended headline and imagery."
+          },
+          {
+            "id": 2,
+            "title": "Add Trust Indicators",
+            "description": "Display trust indicators prominently, including the phone number +1 800-330-1234 and any additional credibility elements (e.g., badges, testimonials).",
+            "dependencies": [],
+            "details": "Position the phone number for high visibility and ensure it is accessible (e.g., screen reader friendly, tap-to-call on mobile).",
+            "status": "pending",
+            "testStrategy": "Check that the phone number is visible, clickable on mobile, and announced correctly by screen readers."
+          },
+          {
+            "id": 3,
+            "title": "Implement Plan Preview Section",
+            "description": "Create a section previewing available plans or offerings, with clear summaries and visual differentiation between options.",
+            "dependencies": [],
+            "details": "Use accessible cards or list elements, ensure clear contrast and legibility, and provide concise plan descriptions.",
+            "status": "pending",
+            "testStrategy": "Confirm all plans are displayed, content is readable, and section passes accessibility and responsive layout tests."
+          },
+          {
+            "id": 4,
+            "title": "Add Large Accessible CTAs",
+            "description": "Design and implement large, accessible call-to-action buttons that guide users toward key actions (e.g., sign up, contact, view plans).",
+            "dependencies": [],
+            "details": "Ensure CTAs meet minimum touch target size (44px), have sufficient color contrast, and include descriptive labels.",
+            "status": "pending",
+            "testStrategy": "Test CTA visibility, keyboard navigation, screen reader labeling, and tap/click functionality across devices."
+          },
+          {
+            "id": 5,
+            "title": "Integrate and Test Homepage Layout",
+            "description": "Combine all homepage sections (hero, trust indicators, plan preview, CTAs) into a cohesive, accessible layout.",
+            "dependencies": [
+              "4.1",
+              "4.2",
+              "4.3",
+              "4.4"
+            ],
+            "details": "Ensure consistent spacing, alignment, and responsive behavior. Validate overall accessibility and usability.",
+            "status": "pending",
+            "testStrategy": "Perform end-to-end homepage review, including accessibility audit, responsive checks, and user flow validation."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Plans page (/plans)",
+        "description": "Create four one-time plans (Mobile, Individual, Family, Family+) with feature comparison, pricing, and Buy Now CTAs.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 7,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Define Plan Structures and Features",
+            "description": "Specify the details for each of the four one-time plans (Mobile, Individual, Family, Family+), including their unique features and intended user segments.",
+            "dependencies": [],
+            "details": "Research industry standards for plan naming and feature sets. Document the features and limitations for each plan, ensuring clear differentiation.",
+            "status": "pending",
+            "testStrategy": "Review plan definitions with stakeholders and verify that each plan's features are distinct and accurately described."
+          },
+          {
+            "id": 2,
+            "title": "Determine Pricing for Each Plan",
+            "description": "Establish competitive and sustainable pricing for Mobile, Individual, Family, and Family+ plans based on market research and business requirements.",
+            "dependencies": [
+              "5.1"
+            ],
+            "details": "Analyze competitor pricing and consult with business stakeholders to finalize one-time prices for each plan.",
+            "status": "pending",
+            "testStrategy": "Validate pricing with business team and ensure all prices are displayed correctly in mockups."
+          },
+          {
+            "id": 3,
+            "title": "Design Feature Comparison Table",
+            "description": "Create a clear, accessible comparison table that highlights the differences in features and pricing between the four plans.",
+            "dependencies": [
+              "5.1",
+              "5.2"
+            ],
+            "details": "Use best practices for table design and accessibility. Ensure the table is responsive and easy to scan.",
+            "status": "pending",
+            "testStrategy": "Test table readability on multiple devices and with screen readers; confirm all features and prices are accurately represented."
+          },
+          {
+            "id": 4,
+            "title": "Implement Buy Now Call-to-Action Buttons",
+            "description": "Add prominent Buy Now CTAs for each plan, ensuring they are visually distinct and accessible.",
+            "dependencies": [
+              "5.3"
+            ],
+            "details": "Design and place Buy Now buttons in the comparison table or below each plan, following UI/UX best practices.",
+            "status": "pending",
+            "testStrategy": "Verify button visibility, accessibility (keyboard and screen reader), and correct linkage to purchase flow."
+          },
+          {
+            "id": 5,
+            "title": "Develop and Integrate the Plans Page",
+            "description": "Build the /plans page in the project, integrating the comparison table, pricing, and Buy Now CTAs using the established design system.",
+            "dependencies": [
+              "5.4"
+            ],
+            "details": "Use Astro, TypeScript, and Tailwind to implement the page. Ensure consistency with the overall site design and responsiveness.",
+            "status": "pending",
+            "testStrategy": "Perform end-to-end testing of the /plans page, including layout, responsiveness, and CTA functionality."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Contact page and form (/contact)",
+        "description": "Large accessible contact form (name, email, phone, preferred contact time, message) and click-to-call phone prominence.",
+        "status": "pending",
+        "priority": "medium",
+        "complexity": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Design accessible contact form UI",
+            "description": "Create a large, accessible contact form UI that includes fields for name, email, phone, preferred contact time, and message, ensuring compliance with accessibility standards (e.g., proper labels, keyboard navigation, ARIA attributes).",
+            "dependencies": [],
+            "details": "The form should be visually prominent, use semantic HTML, and provide clear error messages for invalid input. Accessibility should be verified against WCAG guidelines.",
+            "status": "pending",
+            "testStrategy": "Manual accessibility testing with screen readers and keyboard navigation; automated checks using axe-core and Lighthouse."
+          },
+          {
+            "id": 2,
+            "title": "Implement form submission logic and Supabase integration",
+            "description": "Develop the backend logic to handle form submissions, storing the data in the Supabase 'contact_submissions' table and handling errors gracefully.",
+            "dependencies": [
+              "6.1"
+            ],
+            "details": "Use Supabase client libraries to insert form data into the database. Validate input on both client and server sides. Ensure sensitive data is handled securely.",
+            "status": "pending",
+            "testStrategy": "Unit and integration tests for form submission; verify data appears in Supabase table after submission."
+          },
+          {
+            "id": 3,
+            "title": "Add click-to-call phone number feature",
+            "description": "Display a prominent, accessible phone number on the contact page with click-to-call functionality for supported devices.",
+            "dependencies": [
+              "6.1"
+            ],
+            "details": "Use a tel: link for the phone number, ensure it is visually distinct, and test on both desktop and mobile devices for accessibility and usability.",
+            "status": "pending",
+            "testStrategy": "Manual testing on multiple devices and browsers to confirm click-to-call works and is accessible."
+          },
+          {
+            "id": 4,
+            "title": "Configure email notifications for new submissions",
+            "description": "Set up automated email notifications to alert relevant parties when a new contact form submission is received.",
+            "dependencies": [
+              "6.2"
+            ],
+            "details": "Use Supabase triggers or edge functions to send emails upon new row insertion in the contact_submissions table. Ensure emails contain all relevant submission details.",
+            "status": "pending",
+            "testStrategy": "Submit test entries and verify email delivery to intended recipients; check for proper formatting and content."
+          },
+          {
+            "id": 5,
+            "title": "Validate accessibility and usability of the contact page",
+            "description": "Conduct comprehensive accessibility and usability testing of the contact page, including the form and click-to-call feature.",
+            "dependencies": [
+              "6.1",
+              "6.3"
+            ],
+            "details": "Perform both automated and manual accessibility audits, gather user feedback, and address any identified issues before launch.",
+            "status": "pending",
+            "testStrategy": "Run axe-core and Lighthouse audits; conduct user testing sessions with assistive technology users."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Payment integration (Stripe Checkout)",
+        "description": "Implement server-side Stripe Checkout session creation, redirect to /success and /cancel, and environment variables wiring.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 9,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Stripe environment variables",
+            "description": "Set up and securely store Stripe API keys and relevant environment variables for both development and production environments.",
+            "dependencies": [],
+            "details": "Ensure STRIPE_SECRET_KEY and STRIPE_PUBLISHABLE_KEY are correctly wired and accessible in the server-side code.",
+            "status": "pending",
+            "testStrategy": "Verify environment variables are loaded and accessible by logging their presence (without exposing secrets) in both environments."
+          },
+          {
+            "id": 2,
+            "title": "Implement server-side Stripe Checkout session creation",
+            "description": "Develop backend logic to create a Stripe Checkout session using the Stripe API, including product details and redirect URLs.",
+            "dependencies": [
+              "7.1"
+            ],
+            "details": "Use the Stripe Checkout Sessions API to generate a session with required parameters such as line items, success_url, and cancel_url.",
+            "status": "pending",
+            "testStrategy": "Unit test session creation with mock data and validate the returned session object contains correct URLs and product info."
+          },
+          {
+            "id": 3,
+            "title": "Integrate frontend 'Buy Now' flow with backend session creation",
+            "description": "Connect the frontend payment button to the backend endpoint that creates the Stripe Checkout session and handle redirection.",
+            "dependencies": [
+              "7.2"
+            ],
+            "details": "On button click, call the backend endpoint, retrieve the session ID, and redirect the user to Stripe's hosted Checkout page.",
+            "status": "pending",
+            "testStrategy": "End-to-end test the flow from button click to Stripe Checkout page, ensuring correct session initiation and redirection."
+          },
+          {
+            "id": 4,
+            "title": "Handle post-payment redirects to /success and /cancel",
+            "description": "Implement logic to process user redirection after payment completion or cancellation, displaying appropriate messages or actions.",
+            "dependencies": [
+              "7.3"
+            ],
+            "details": "Configure Stripe session with success and cancel URLs, and build /success and /cancel pages to inform users of payment status.",
+            "status": "pending",
+            "testStrategy": "Simulate payment completion and cancellation, verifying users are redirected to the correct pages and shown relevant information."
+          },
+          {
+            "id": 5,
+            "title": "Test and validate full Stripe Checkout integration",
+            "description": "Perform comprehensive integration testing to ensure all payment flows, redirects, and environment variable configurations work as intended.",
+            "dependencies": [
+              "7.4"
+            ],
+            "details": "Test with both valid and invalid payment scenarios, check error handling, and confirm compliance with Stripe's requirements.",
+            "status": "pending",
+            "testStrategy": "Run manual and automated tests covering session creation, payment completion, cancellation, and environment variable usage."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Post-purchase flow and call initiation",
+        "description": "Log order to Supabase, send internal notification email to support, and surface 'Call Now' CTA on /success page.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 7,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement order logging to Supabase",
+            "description": "Develop backend logic to record each completed order in the Supabase database, ensuring all relevant order details are captured.",
+            "dependencies": [],
+            "details": "Set up the necessary Supabase table(s) and API integration to insert new order records upon purchase completion.",
+            "status": "pending",
+            "testStrategy": "Verify that a new order entry is created in Supabase for every successful purchase, with all required fields populated."
+          },
+          {
+            "id": 2,
+            "title": "Configure internal notification email to support",
+            "description": "Set up automated email notifications to the support team when a new order is logged.",
+            "dependencies": [
+              "8.1"
+            ],
+            "details": "Integrate with an email service to trigger an internal notification containing order details immediately after logging the order.",
+            "status": "pending",
+            "testStrategy": "Trigger a test order and confirm that the support team receives an email with accurate order information."
+          },
+          {
+            "id": 3,
+            "title": "Design and implement 'Call Now' CTA on /success page",
+            "description": "Add a prominent 'Call Now' call-to-action button to the order success page, visible immediately after purchase.",
+            "dependencies": [
+              "8.1"
+            ],
+            "details": "Ensure the CTA is styled consistently with the site and is only displayed after a successful order.",
+            "status": "pending",
+            "testStrategy": "Complete a test purchase and confirm the 'Call Now' CTA appears on the /success page."
+          },
+          {
+            "id": 4,
+            "title": "Integrate call initiation logic with CTA",
+            "description": "Connect the 'Call Now' CTA to the appropriate call initiation workflow (e.g., opening a dialer, triggering a web call, or sending a call request).",
+            "dependencies": [
+              "8.3"
+            ],
+            "details": "Determine the preferred call method and implement the necessary frontend and backend logic to initiate or request a call when the CTA is clicked.",
+            "status": "pending",
+            "testStrategy": "Click the CTA in a test environment and verify that the call initiation process starts as intended."
+          },
+          {
+            "id": 5,
+            "title": "End-to-end flow validation and error handling",
+            "description": "Test the entire post-purchase flow, including order logging, email notification, CTA display, and call initiation, ensuring robust error handling at each step.",
+            "dependencies": [
+              "8.1",
+              "8.2",
+              "8.3",
+              "8.4"
+            ],
+            "details": "Simulate successful and failed purchases to confirm the system behaves correctly and gracefully handles errors (e.g., failed email, Supabase downtime).",
+            "status": "pending",
+            "testStrategy": "Run comprehensive integration tests covering all success and failure scenarios, and verify user and support team receive appropriate feedback."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Supabase schema & RLS",
+        "description": "Create contact_submissions, plan_purchases, call_notifications tables and configure Row Level Security rules as specified.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 8,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Design contact_submissions table schema",
+            "description": "Define the structure, columns, data types, and constraints for the contact_submissions table in Supabase.",
+            "dependencies": [],
+            "details": "Specify required fields such as id, user_id, contact_info, message, timestamps, and any necessary indexes or relationships.",
+            "status": "pending",
+            "testStrategy": "Verify table creation by inspecting schema in Supabase Studio and inserting sample data to ensure constraints are enforced."
+          },
+          {
+            "id": 2,
+            "title": "Design plan_purchases table schema",
+            "description": "Define the structure, columns, data types, and constraints for the plan_purchases table in Supabase.",
+            "dependencies": [],
+            "details": "Include fields such as id, user_id, plan_id, purchase_date, amount, status, and relevant foreign keys.",
+            "status": "pending",
+            "testStrategy": "Check schema in Supabase Studio and test with sample inserts to validate relationships and constraints."
+          },
+          {
+            "id": 3,
+            "title": "Design call_notifications table schema",
+            "description": "Define the structure, columns, data types, and constraints for the call_notifications table in Supabase.",
+            "dependencies": [],
+            "details": "Add fields like id, user_id, call_time, notification_type, status, and any necessary foreign keys or indexes.",
+            "status": "pending",
+            "testStrategy": "Confirm table structure in Supabase Studio and insert test records to ensure correct schema behavior."
+          },
+          {
+            "id": 4,
+            "title": "Configure Row Level Security (RLS) policies for all tables",
+            "description": "Set up RLS policies for contact_submissions, plan_purchases, and call_notifications tables according to specified access rules.",
+            "dependencies": [
+              "9.1",
+              "9.2",
+              "9.3"
+            ],
+            "details": "Define and enable RLS policies to restrict access based on user roles and ownership, ensuring only authorized users can read or modify records.",
+            "status": "pending",
+            "testStrategy": "Attempt data access as different user roles to confirm RLS policies enforce correct permissions."
+          },
+          {
+            "id": 5,
+            "title": "Test and document schema and RLS configuration",
+            "description": "Perform end-to-end testing of all tables and RLS policies, and document the schema and security setup for future reference.",
+            "dependencies": [
+              "9.4"
+            ],
+            "details": "Run integration tests to validate data integrity and security, and create documentation outlining table structures and RLS rules.",
+            "status": "pending",
+            "testStrategy": "Review test results for all CRUD operations and verify documentation accuracy with the implemented schema and policies."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Zoho Sign integration (/sign-contract)",
+        "description": "Add sign-contract page linking to Zoho Sign template using ZOHO_SIGN_TEMPLATE_ID environment variable.",
+        "status": "pending",
+        "priority": "medium",
+        "complexity": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Zoho Sign API Authentication",
+            "description": "Set up OAuth 2.0 authentication for Zoho Sign API by registering the application, obtaining Client ID and Client Secret, and securely storing credentials.",
+            "dependencies": [],
+            "details": "Follow Zoho's developer console process to register the app and generate required tokens for API access.",
+            "status": "pending",
+            "testStrategy": "Verify successful token generation and API authentication by making a test API call to Zoho Sign."
+          },
+          {
+            "id": 2,
+            "title": "Set Up Zoho Sign Template",
+            "description": "Create or identify the required Zoho Sign template and ensure its Template ID is available via the ZOHO_SIGN_TEMPLATE_ID environment variable.",
+            "dependencies": [
+              "10.1"
+            ],
+            "details": "Upload or configure the reusable contract template in Zoho Sign and document its Template ID for integration.",
+            "status": "pending",
+            "testStrategy": "Confirm template visibility and correct Template ID retrieval in the application environment."
+          },
+          {
+            "id": 3,
+            "title": "Develop /sign-contract Page UI",
+            "description": "Design and implement the /sign-contract page that initiates the signing workflow using the Zoho Sign template.",
+            "dependencies": [
+              "10.2"
+            ],
+            "details": "Create a user interface with clear instructions and a CTA to start the signing process, ensuring accessibility and usability.",
+            "status": "pending",
+            "testStrategy": "Perform UI/UX review and accessibility checks; validate that the page loads and displays template information correctly."
+          },
+          {
+            "id": 4,
+            "title": "Integrate Zoho Sign API for Contract Initiation",
+            "description": "Implement backend logic to trigger Zoho Sign API requests using the template and user data, handling authentication and API responses.",
+            "dependencies": [
+              "10.3"
+            ],
+            "details": "Use Zoho Sign API endpoints to send documents for signature, passing the Template ID and recipient details as required.",
+            "status": "pending",
+            "testStrategy": "Test API integration by sending a contract for signature and verifying receipt and status updates in Zoho Sign."
+          },
+          {
+            "id": 5,
+            "title": "Validate End-to-End Signing Workflow",
+            "description": "Test the complete flow from accessing /sign-contract to successful document signing and status confirmation.",
+            "dependencies": [
+              "10.4"
+            ],
+            "details": "Simulate user interactions, monitor API calls, and confirm that signed documents are tracked and status is updated in the application.",
+            "status": "pending",
+            "testStrategy": "Perform integration tests covering all edge cases, including error handling and confirmation of signed contracts."
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Legal pages (terms, privacy, refund)",
+        "description": "Add placeholder legal pages under /legal with clear placeholders to be filled by counsel.",
+        "status": "pending",
+        "priority": "low",
+        "complexity": 3,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create /legal route and directory structure",
+            "description": "Set up the /legal route and corresponding directory in the project to house all legal placeholder pages.",
+            "dependencies": [],
+            "details": "Ensure the /legal path is accessible and ready to serve multiple legal documents as separate pages.",
+            "status": "pending",
+            "testStrategy": "Verify that navigating to /legal and its subpaths returns the correct placeholder pages without errors."
+          },
+          {
+            "id": 2,
+            "title": "Add placeholder Terms of Service page",
+            "description": "Implement a placeholder Terms of Service page under /legal/terms with clear markers for legal counsel input.",
+            "dependencies": [
+              "11.1"
+            ],
+            "details": "Include headings and sections commonly required in terms documents, such as user obligations, disclaimers, and governing law, with prominent placeholder text.",
+            "status": "pending",
+            "testStrategy": "Check that /legal/terms displays all placeholder sections and clearly indicates where legal content is needed."
+          },
+          {
+            "id": 3,
+            "title": "Add placeholder Privacy Policy page",
+            "description": "Implement a placeholder Privacy Policy page under /legal/privacy with clear markers for legal counsel input.",
+            "dependencies": [
+              "11.1"
+            ],
+            "details": "Structure the page to include sections for data collection, use, sharing, user rights, and compliance statements, all marked as placeholders.",
+            "status": "pending",
+            "testStrategy": "Ensure /legal/privacy loads with all required sections and placeholder text for legal review."
+          },
+          {
+            "id": 4,
+            "title": "Add placeholder Refund Policy page",
+            "description": "Implement a placeholder Refund Policy page under /legal/refund with clear markers for legal counsel input.",
+            "dependencies": [
+              "11.1"
+            ],
+            "details": "Provide standard sections such as eligibility, process, and exceptions, with clear placeholder notes for legal content.",
+            "status": "pending",
+            "testStrategy": "Confirm /legal/refund renders with all placeholder sections and is ready for legal input."
+          },
+          {
+            "id": 5,
+            "title": "Insert guidance and placeholder annotations for legal counsel",
+            "description": "Add explicit instructions and annotations within each legal page to guide legal counsel on required content.",
+            "dependencies": [
+              "11.2",
+              "11.3",
+              "11.4"
+            ],
+            "details": "Use comments or visible notes to indicate where legal text must be inserted and what topics must be covered, referencing compliance requirements where relevant.",
+            "status": "pending",
+            "testStrategy": "Review each legal page to ensure all placeholders are clearly marked and guidance is unambiguous for legal counsel."
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Accessibility automated tests",
+        "description": "Wire axe-core and Lighthouse CI checks into the pipeline to enforce zero violations and 100 accessibility score.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 8,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Integrate axe-core into the test automation framework",
+            "description": "Install and configure the axe-core library within the project's automated test suite to enable accessibility scanning.",
+            "dependencies": [],
+            "details": "Set up axe-core using the appropriate package for your test framework (e.g., npm for JavaScript, pip for Python). Ensure axe-core can be invoked in automated browser sessions.",
+            "status": "pending",
+            "testStrategy": "Verify axe-core is correctly installed and can run a basic accessibility scan on a sample page, producing a report of violations."
+          },
+          {
+            "id": 2,
+            "title": "Integrate Lighthouse CI into the CI/CD pipeline",
+            "description": "Set up Lighthouse CI to run automated accessibility audits as part of the continuous integration pipeline.",
+            "dependencies": [],
+            "details": "Configure Lighthouse CI with project URLs and ensure it is triggered during pipeline execution. Set thresholds for accessibility scores.",
+            "status": "pending",
+            "testStrategy": "Run the pipeline and confirm Lighthouse CI produces accessibility reports with scores for each build."
+          },
+          {
+            "id": 3,
+            "title": "Configure pipeline enforcement for zero axe-core violations",
+            "description": "Implement pipeline logic to fail builds if any axe-core accessibility violations are detected.",
+            "dependencies": [
+              "12.1"
+            ],
+            "details": "Parse axe-core scan results in the pipeline and add assertions to enforce zero violations before allowing builds to proceed.",
+            "status": "pending",
+            "testStrategy": "Intentionally introduce an accessibility violation and verify that the pipeline fails as expected."
+          },
+          {
+            "id": 4,
+            "title": "Configure pipeline enforcement for 100 Lighthouse accessibility score",
+            "description": "Implement pipeline logic to fail builds if the Lighthouse accessibility score is less than 100.",
+            "dependencies": [
+              "12.2"
+            ],
+            "details": "Set up Lighthouse CI configuration to enforce a minimum accessibility score of 100, causing the build to fail if unmet.",
+            "status": "pending",
+            "testStrategy": "Lower the accessibility score on a test page and confirm the pipeline fails when the score is below 100."
+          },
+          {
+            "id": 5,
+            "title": "Generate and archive accessibility reports for each build",
+            "description": "Ensure that detailed axe-core and Lighthouse accessibility reports are generated and stored as build artifacts for traceability.",
+            "dependencies": [
+              "12.1",
+              "12.2"
+            ],
+            "details": "Configure the pipeline to save JSON or HTML reports from both tools and make them accessible for review after each build.",
+            "status": "pending",
+            "testStrategy": "Check that reports are generated and archived for every build, and that they contain comprehensive accessibility findings."
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "title": "CI/CD pipeline (Jenkins)",
+        "description": "Implement Jenkins pipeline stages: typecheck, lint, tests, build, Lighthouse CI, accessibility, deploy to Cloudflare Pages.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 8,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Jenkins Pipeline and Source Integration",
+            "description": "Set up a Jenkins Pipeline job, connect it to the source code repository, and create an initial Jenkinsfile with stage definitions.",
+            "dependencies": [],
+            "details": "Ensure Jenkins is installed with required plugins (Pipeline, Blue Ocean). Configure repository access (e.g., GitHub, GitLab) and initialize a Jenkinsfile with placeholders for all required stages.",
+            "status": "pending",
+            "testStrategy": "Verify that Jenkins can poll the repository and trigger the pipeline on code changes. Confirm that the pipeline initializes and all stages are recognized."
+          },
+          {
+            "id": 2,
+            "title": "Implement Typecheck, Lint, and Test Stages",
+            "description": "Add pipeline stages for type checking, linting, and running automated tests, ensuring code quality and correctness.",
+            "dependencies": [
+              "13.1"
+            ],
+            "details": "Define separate stages in the Jenkinsfile for typecheck (e.g., TypeScript, Flow), lint (e.g., ESLint), and tests (e.g., Jest, Mocha). Configure each to fail the pipeline on errors.",
+            "status": "pending",
+            "testStrategy": "Push code with intentional type, lint, and test errors to verify each stage fails as expected and provides clear feedback."
+          },
+          {
+            "id": 3,
+            "title": "Implement Build Stage",
+            "description": "Add a build stage to compile or bundle the application, preparing artifacts for further analysis and deployment.",
+            "dependencies": [
+              "13.2"
+            ],
+            "details": "Configure the build step (e.g., npm run build, webpack) in the Jenkinsfile. Ensure build artifacts are stored for use in later stages.",
+            "status": "pending",
+            "testStrategy": "Trigger the pipeline and confirm that the build stage completes successfully and outputs the expected artifacts."
+          },
+          {
+            "id": 4,
+            "title": "Integrate Lighthouse CI and Accessibility Checks",
+            "description": "Add stages to run Lighthouse CI for performance and best practices, and automated accessibility checks (e.g., axe-core).",
+            "dependencies": [
+              "13.3"
+            ],
+            "details": "Install and configure Lighthouse CI and accessibility tools. Add Jenkinsfile stages to run these tools against the built application, collecting and archiving reports.",
+            "status": "pending",
+            "testStrategy": "Run the pipeline and verify that Lighthouse and accessibility reports are generated and archived. Confirm failures are reported if thresholds are not met."
+          },
+          {
+            "id": 5,
+            "title": "Deploy to Cloudflare Pages",
+            "description": "Add a deployment stage to publish the built application to Cloudflare Pages, automating production delivery.",
+            "dependencies": [
+              "13.4"
+            ],
+            "details": "Configure deployment credentials and scripts in Jenkins. Add a deploy stage in the Jenkinsfile to upload artifacts to Cloudflare Pages, handling secrets securely.",
+            "status": "pending",
+            "testStrategy": "Trigger a full pipeline run and verify that a successful build is deployed to Cloudflare Pages. Confirm deployment status and accessibility of the live site."
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "title": "Cloudflare Pages deployment",
+        "description": "Configure Cloudflare Pages deployment with GitHub integration, edge functions, and caching policy.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 7,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Connect Cloudflare Pages to GitHub Repository",
+            "description": "Set up Cloudflare Pages to connect with the target GitHub repository, enabling automatic deployments on code changes.",
+            "dependencies": [],
+            "details": "Log in to the Cloudflare dashboard, navigate to Workers & Pages, and use the 'Connect to Git' option to authorize and select the desired GitHub repository. Ensure the Cloudflare GitHub App is installed and authorized for the repository.",
+            "status": "pending",
+            "testStrategy": "Push a commit to the connected GitHub repository and verify that Cloudflare Pages triggers a deployment and updates the build status."
+          },
+          {
+            "id": 2,
+            "title": "Configure Build Settings and Environment Variables",
+            "description": "Set up build commands, output directory, and any required environment variables for the Pages project.",
+            "dependencies": [
+              "14.1"
+            ],
+            "details": "In the Cloudflare Pages project settings, specify the build command, output directory, and add necessary environment variables for the deployment process.",
+            "status": "pending",
+            "testStrategy": "Trigger a deployment and confirm that the build completes successfully using the specified settings and environment variables."
+          },
+          {
+            "id": 3,
+            "title": "Integrate Edge Functions",
+            "description": "Add and configure Cloudflare Pages Functions (edge functions) to handle dynamic or server-side logic as needed.",
+            "dependencies": [
+              "14.2"
+            ],
+            "details": "Create a /functions directory in the project repository and implement required edge functions according to Cloudflare Pages documentation. Deploy and verify function execution.",
+            "status": "pending",
+            "testStrategy": "Deploy changes and test endpoints or routes handled by edge functions to ensure correct execution and response."
+          },
+          {
+            "id": 4,
+            "title": "Set Up Caching Policy",
+            "description": "Define and configure caching rules for static assets and dynamic routes to optimize performance and control content freshness.",
+            "dependencies": [
+              "14.3"
+            ],
+            "details": "Use Cloudflare Pages project settings and edge function headers to specify cache-control policies for different routes and assets.",
+            "status": "pending",
+            "testStrategy": "Deploy the site and inspect HTTP response headers for cache-control directives. Validate cache behavior using browser dev tools and Cloudflare analytics."
+          },
+          {
+            "id": 5,
+            "title": "Validate Deployment and Monitor Status",
+            "description": "Verify the end-to-end deployment, including GitHub integration, edge functions, and caching, and set up monitoring for ongoing deployments.",
+            "dependencies": [
+              "14.4"
+            ],
+            "details": "Test the deployed site for correct content, function execution, and caching. Enable deployment notifications and monitor build and deployment status in both Cloudflare and GitHub.",
+            "status": "pending",
+            "testStrategy": "Perform manual and automated tests on the live site, review deployment logs, and confirm that monitoring and notifications are functioning as expected."
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "title": "SEO and schema.org metadata",
+        "description": "Add meta tags, Open Graph, Twitter cards, sitemap generation, robots.txt and organization/service schema.",
+        "status": "pending",
+        "priority": "medium",
+        "complexity": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement meta tags for SEO",
+            "description": "Add essential meta tags (title, description, canonical, viewport, etc.) to all relevant pages to improve search engine visibility and control how pages appear in search results.",
+            "dependencies": [],
+            "details": "Ensure each page has unique and descriptive meta tags. Validate using SEO tools to confirm correct rendering and absence of duplicates.",
+            "status": "pending",
+            "testStrategy": "Use browser developer tools and online SEO analyzers to verify presence, uniqueness, and correctness of meta tags on all major pages."
+          },
+          {
+            "id": 2,
+            "title": "Add Open Graph and Twitter Card metadata",
+            "description": "Integrate Open Graph and Twitter Card tags to optimize how pages are displayed when shared on social media platforms.",
+            "dependencies": [],
+            "details": "Include properties such as og:title, og:description, og:image, twitter:card, and twitter:site. Ensure images and descriptions are relevant and meet platform requirements.",
+            "status": "pending",
+            "testStrategy": "Test with Facebook Sharing Debugger and Twitter Card Validator to confirm correct rendering and troubleshoot any issues."
+          },
+          {
+            "id": 3,
+            "title": "Generate and configure sitemap.xml",
+            "description": "Create a dynamic sitemap.xml file that lists all important URLs, ensuring search engines can efficiently crawl the site.",
+            "dependencies": [],
+            "details": "Automate sitemap generation to update with new or removed pages. Submit sitemap to Google Search Console and Bing Webmaster Tools.",
+            "status": "pending",
+            "testStrategy": "Validate sitemap structure using online validators and confirm successful submission and indexing in search engine webmaster tools."
+          },
+          {
+            "id": 4,
+            "title": "Create and optimize robots.txt",
+            "description": "Develop a robots.txt file to control and optimize search engine crawler access to site resources.",
+            "dependencies": [],
+            "details": "Disallow sensitive or irrelevant paths, allow important resources, and reference the sitemap location. Review for conflicts or accidental blocking.",
+            "status": "pending",
+            "testStrategy": "Use robots.txt testing tools to verify correct directives and ensure no critical resources are blocked."
+          },
+          {
+            "id": 5,
+            "title": "Implement organization and service schema.org structured data",
+            "description": "Add JSON-LD structured data for Organization and Service schema to improve search engine understanding and eligibility for rich results.",
+            "dependencies": [],
+            "details": "Map site content to appropriate schema.org types and properties. Validate markup using Google's Rich Results Test and Schema Markup Validator.",
+            "status": "pending",
+            "testStrategy": "Check for errors and warnings in structured data using Google's testing tools and monitor for enhanced search result features."
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "title": "Analytics and email notifications",
+        "description": "Integrate GA4 for event tracking and configure Google Workspace email notifications for purchases and contact form.",
+        "status": "pending",
+        "priority": "medium",
+        "complexity": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set up GA4 property and connect to website",
+            "description": "Create a Google Analytics 4 property and ensure it is properly linked to the website using Google Tag Manager.",
+            "dependencies": [],
+            "details": "This includes creating the GA4 property in the Google Analytics admin panel and installing the GA4 Configuration tag via Google Tag Manager on all relevant pages.",
+            "status": "pending",
+            "testStrategy": "Verify data flow by checking real-time reports in GA4 after installation."
+          },
+          {
+            "id": 2,
+            "title": "Define and document required events for tracking",
+            "description": "Identify and document all key user actions to be tracked as events, such as purchases and contact form submissions.",
+            "dependencies": [
+              "16.1"
+            ],
+            "details": "Work with stakeholders to create a measurement plan specifying event names, parameters, and triggers for each tracked action.",
+            "status": "pending",
+            "testStrategy": "Review documentation with stakeholders and confirm completeness before implementation."
+          },
+          {
+            "id": 3,
+            "title": "Implement GA4 event tracking for purchases and contact form",
+            "description": "Configure Google Tag Manager to fire GA4 event tags for purchase completions and contact form submissions, including relevant parameters.",
+            "dependencies": [
+              "16.2"
+            ],
+            "details": "Set up triggers in GTM for purchase confirmation and contact form submission events, and configure GA4 event tags with appropriate event names and parameters.",
+            "status": "pending",
+            "testStrategy": "Use GTM Preview mode and GA4 DebugView to confirm events fire correctly and parameters are captured."
+          },
+          {
+            "id": 4,
+            "title": "Configure Google Workspace email notifications",
+            "description": "Set up automated email notifications in Google Workspace for both purchase events and contact form submissions.",
+            "dependencies": [
+              "16.3"
+            ],
+            "details": "Implement email notifications using Google Workspace tools (e.g., Gmail filters, Google Apps Script, or third-party integrations) to alert relevant team members when a purchase or contact form submission occurs.",
+            "status": "pending",
+            "testStrategy": "Trigger test purchases and form submissions to verify that emails are sent and received as expected."
+          },
+          {
+            "id": 5,
+            "title": "Test, validate, and document analytics and notification workflows",
+            "description": "Perform end-to-end testing of event tracking and email notifications, validate data accuracy, and document the setup for future maintenance.",
+            "dependencies": [
+              "16.4"
+            ],
+            "details": "Test all tracked events and notification flows, compare GA4 data with actual transactions and form submissions, and create documentation outlining the configuration and troubleshooting steps.",
+            "status": "pending",
+            "testStrategy": "Cross-check GA4 event logs and email notifications with actual user actions; review documentation with technical and non-technical stakeholders."
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "title": "Performance budget and optimizations",
+        "description": "Enforce CSS <50KB and JS <20KB, inline critical CSS, optimize images (WebP/AVIF), and prefer system fonts.",
+        "status": "pending",
+        "priority": "high",
+        "complexity": 8,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Minify and enforce CSS size budget",
+            "description": "Minify all CSS files and ensure total CSS payload does not exceed 50KB, using tools like CSSNano or CleanCSS.",
+            "dependencies": [],
+            "details": "Apply minification and compression (e.g., Gzip/Brotli) to CSS. Audit and remove unused styles with tools like PurifyCSS or UnCSS. Validate final build size is under 50KB.",
+            "status": "pending",
+            "testStrategy": "Automated build check for CSS file size; manual inspection of unused styles removal."
+          },
+          {
+            "id": 2,
+            "title": "Minify and enforce JS size budget",
+            "description": "Minify all JavaScript files and ensure total JS payload does not exceed 20KB, using tools like UglifyJS or JSCompress.",
+            "dependencies": [],
+            "details": "Apply minification and compression (e.g., Gzip/Brotli) to JS. Remove unused code via tree shaking and dead code elimination. Validate final build size is under 20KB.",
+            "status": "pending",
+            "testStrategy": "Automated build check for JS file size; manual inspection of unused code removal."
+          },
+          {
+            "id": 3,
+            "title": "Inline critical CSS for above-the-fold content",
+            "description": "Identify and inline critical CSS required for above-the-fold rendering to reduce render-blocking resources.",
+            "dependencies": [
+              "17.1"
+            ],
+            "details": "Use tools or manual analysis to extract critical CSS and inject it directly into HTML head. Ensure only essential styles are inlined.",
+            "status": "pending",
+            "testStrategy": "Lighthouse or WebPageTest audit for render-blocking CSS; visual inspection of above-the-fold content."
+          },
+          {
+            "id": 4,
+            "title": "Optimize images using WebP and AVIF formats",
+            "description": "Convert and serve images in modern formats (WebP/AVIF) to reduce file size and improve load times.",
+            "dependencies": [],
+            "details": "Audit all image assets, convert to WebP/AVIF using automated tools, and update markup to prefer these formats with fallbacks as needed.",
+            "status": "pending",
+            "testStrategy": "Automated image format check; measure image payload reduction; browser compatibility testing."
+          },
+          {
+            "id": 5,
+            "title": "Implement system font stack",
+            "description": "Update CSS to use system font stacks for body and UI text, avoiding custom font downloads.",
+            "dependencies": [],
+            "details": "Replace custom font declarations with system font stacks (e.g., 'system-ui, -apple-system, BlinkMacSystemFont, ...'). Remove unused font files.",
+            "status": "pending",
+            "testStrategy": "Visual inspection for font rendering; audit network requests for font files."
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "Tools directory (coming soon) and future tools",
+        "description": "Create /tools index with placeholders and coming soon badges for the listed utilities (password generator, tip calc, etc.).",
+        "status": "pending",
+        "priority": "low",
+        "complexity": 2,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Define tools list and gather requirements",
+            "description": "Identify all utilities to be included in the /tools directory (e.g., password generator, tip calculator) and document their intended features and launch status.",
+            "dependencies": [],
+            "details": "Consult stakeholders or product documentation to confirm the full list of planned tools and clarify which are to be marked as 'coming soon'.",
+            "status": "pending",
+            "testStrategy": "Verify that the documented list matches stakeholder expectations and includes all required utilities."
+          },
+          {
+            "id": 2,
+            "title": "Design /tools index layout and placeholders",
+            "description": "Create a wireframe or mockup for the /tools index page, including visual placeholders and 'coming soon' badges for each listed utility.",
+            "dependencies": [
+              "18.1"
+            ],
+            "details": "Incorporate best practices for coming soon pages, such as clear messaging, consistent branding, and strong calls to action, as recommended by industry examples.",
+            "status": "pending",
+            "testStrategy": "Review the design with stakeholders and ensure all required elements (placeholders, badges, branding) are present."
+          },
+          {
+            "id": 3,
+            "title": "Implement /tools index page structure",
+            "description": "Develop the /tools index page in the codebase, adding placeholders and 'coming soon' badges for each utility as per the approved design.",
+            "dependencies": [
+              "18.2"
+            ],
+            "details": "Ensure the page is responsive and visually matches the approved mockup, with clear differentiation between available and upcoming tools.",
+            "status": "pending",
+            "testStrategy": "Perform cross-browser and device testing to confirm correct display of placeholders and badges."
+          },
+          {
+            "id": 4,
+            "title": "Add placeholder content and accessibility features",
+            "description": "Populate each tool's placeholder with brief descriptions and ensure all badges and elements meet accessibility standards (e.g., alt text, ARIA labels).",
+            "dependencies": [
+              "18.3"
+            ],
+            "details": "Follow accessibility guidelines to ensure the page is usable by screen readers and keyboard navigation.",
+            "status": "pending",
+            "testStrategy": "Use accessibility testing tools and manual checks to validate compliance."
+          },
+          {
+            "id": 5,
+            "title": "Review, test, and deploy /tools index",
+            "description": "Conduct a final review of the /tools index page, perform user acceptance testing, and deploy to the staging or production environment.",
+            "dependencies": [
+              "18.4"
+            ],
+            "details": "Gather feedback from stakeholders and users, address any issues, and confirm that all placeholders and 'coming soon' badges function as intended.",
+            "status": "pending",
+            "testStrategy": "Complete a checklist-based review and obtain sign-off from stakeholders before deployment."
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "Monitoring & security",
+        "description": "Set up uptime monitoring, error tracking, enforce HTTPS, CSP headers, and PII handling policies.",
+        "status": "pending",
+        "priority": "medium",
+        "complexity": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set Up Uptime Monitoring",
+            "description": "Implement automated uptime monitoring using tools such as StatusCake, Uptrends, or Pingdom to track website availability and receive alerts for downtime incidents.",
+            "dependencies": [],
+            "details": "Configure monitors for HTTP/HTTPS endpoints, set alerting thresholds, and establish public status pages for transparency.",
+            "status": "pending",
+            "testStrategy": "Simulate downtime events and verify that alerts are triggered and status pages update accordingly."
+          },
+          {
+            "id": 2,
+            "title": "Integrate Error Tracking",
+            "description": "Deploy error tracking solutions to capture, log, and report application errors in real time.",
+            "dependencies": [],
+            "details": "Integrate with platforms like Sentry or Alerty for automated error detection, stack trace collection, and notification workflows.",
+            "status": "pending",
+            "testStrategy": "Introduce known errors in a test environment and confirm that they are logged, reported, and actionable notifications are sent."
+          },
+          {
+            "id": 3,
+            "title": "Enforce HTTPS Across All Endpoints",
+            "description": "Ensure all web traffic is securely transmitted by enforcing HTTPS and redirecting HTTP requests.",
+            "dependencies": [],
+            "details": "Configure SSL certificates, update server settings to force HTTPS, and monitor certificate expiry.",
+            "status": "pending",
+            "testStrategy": "Attempt HTTP connections and verify automatic redirection to HTTPS; check certificate validity and renewal alerts."
+          },
+          {
+            "id": 4,
+            "title": "Implement Content Security Policy (CSP) Headers",
+            "description": "Configure and enforce CSP headers to mitigate cross-site scripting and data injection attacks.",
+            "dependencies": [],
+            "details": "Define a strict CSP policy in server or application configuration, monitor for violations, and adjust as needed for functionality.",
+            "status": "pending",
+            "testStrategy": "Use browser developer tools and automated scanners to verify CSP header presence and test for blocked unsafe content."
+          },
+          {
+            "id": 5,
+            "title": "Establish PII Handling Policies",
+            "description": "Define and enforce policies for the secure collection, storage, and transmission of Personally Identifiable Information (PII).",
+            "dependencies": [],
+            "details": "Document PII data flows, apply encryption at rest and in transit, restrict access, and ensure compliance with relevant regulations.",
+            "status": "pending",
+            "testStrategy": "Conduct audits of data storage and transmission, verify encryption, and review access controls for PII."
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "Business page and B2B coming soon (/business)",
+        "description": "Add a coming-soon B2B page with business inquiry form and service previews.",
+        "status": "pending",
+        "priority": "low",
+        "complexity": 2,
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Define B2B Service Offerings and Value Proposition",
+            "description": "Identify and document the core B2B services to be previewed on the coming-soon page, including their value propositions and key benefits for business clients.",
+            "dependencies": [],
+            "details": "Research and summarize the main B2B services to be offered. Draft concise descriptions and value statements to be featured on the page, ensuring alignment with brand messaging and clarity for business audiences.",
+            "status": "pending",
+            "testStrategy": "Review service descriptions with stakeholders for accuracy and clarity; verify that each service preview aligns with business goals."
+          },
+          {
+            "id": 2,
+            "title": "Design the Coming Soon B2B Page Layout",
+            "description": "Create a wireframe and visual design for the /business coming-soon page, incorporating branding, a clear headline, service previews, and a prominent call-to-action.",
+            "dependencies": [
+              "20.1"
+            ],
+            "details": "Ensure the design is visually appealing, professional, and consistent with brand guidelines. Include space for a business inquiry form, service previews, and social media/contact links. Prioritize simplicity and clarity.",
+            "status": "pending",
+            "testStrategy": "Conduct design reviews with stakeholders; test for visual clarity and brand consistency across devices."
+          },
+          {
+            "id": 3,
+            "title": "Implement Business Inquiry Form",
+            "description": "Develop and integrate a business inquiry form on the /business page to collect essential information from interested business clients.",
+            "dependencies": [
+              "20.2"
+            ],
+            "details": "Form should capture company name, contact details, inquiry type, and optional message. Ensure form is accessible, secure, and easy to use. Set up backend handling for submissions (e.g., email notifications or CRM integration).",
+            "status": "pending",
+            "testStrategy": "Test form submission, validation, and data handling; verify accessibility and security best practices."
+          },
+          {
+            "id": 4,
+            "title": "Add Service Previews and Visual Elements",
+            "description": "Populate the page with engaging previews of B2B services, including images, icons, or mockups that illustrate upcoming offerings.",
+            "dependencies": [
+              "20.2"
+            ],
+            "details": "Use inspiring imagery or prototypes to generate excitement and provide visual context for each service. Ensure all visuals are optimized for performance and accessibility.",
+            "status": "pending",
+            "testStrategy": "Verify that all service previews display correctly on multiple devices and meet accessibility standards."
+          },
+          {
+            "id": 5,
+            "title": "Configure SEO, Social Sharing, and Launch Readiness",
+            "description": "Optimize the /business page for search engines, add social sharing buttons, and ensure all launch-readiness elements (e.g., privacy policy, contact info) are present.",
+            "dependencies": [
+              "20.3",
+              "20.4"
+            ],
+            "details": "Add relevant meta tags, keywords, and structured data for SEO. Implement social sharing buttons to encourage word-of-mouth. Include footer with privacy policy and contact details. Prepare for launch by testing all page elements.",
+            "status": "pending",
+            "testStrategy": "Run SEO audits, test social sharing functionality, and perform a pre-launch checklist to confirm all requirements are met."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-22T18:43:18.698Z",
+      "updated": "2025-08-22T18:43:18.699Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

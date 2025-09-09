@@ -1,0 +1,348 @@
+# Novaqy MVP - Product Requirements Document
+
+## Project Overview
+Build a minimalistic, blazing-fast website for Novaqy Cloud LLP, a technical support company serving seniors (55+) across US and Canada. Focus on one-time plan purchases with immediate support call initiation.
+
+## Business Context
+- **Company**: Novaqy Cloud LLP (branded as "Novaqy")
+- **Target Audience**: Seniors aged 55+ who need patient technical support
+- **Geographic Coverage**: United States and Canada
+- **Business Model**: One-time plan purchases (not subscriptions) with immediate support fulfillment
+- **Support**: Phone +1 800-330-1234 | Hours: 7:30 AM - 7:30 PM PST
+
+## Core Requirements
+
+### Performance Requirements (McMaster-Carr Speed)
+- **Page Load Time**: Under 1 second for all pages
+- **Lighthouse Performance**: 95+ on all pages
+- **First Contentful Paint**: Under 0.5 seconds
+- **Bundle Size**: CSS under 50KB, JavaScript under 20KB
+- **Static Generation**: All pages pre-built at build time
+- **Edge Caching**: Aggressive caching via Cloudflare
+
+### Senior-First Accessibility (WCAG 2.1 AA)
+- **Font Size**: 18px minimum throughout platform
+- **Contrast Ratio**: 4.5:1 minimum for all text
+- **Touch Targets**: 44px minimum for all interactive elements
+- **Navigation**: Simple, consistent, maximum 3 levels deep
+- **No Auto-play**: No auto-advancing content or videos
+- **Clear Language**: Jargon-free, patient explanations
+- **Error Handling**: Friendly, actionable error messages
+- **Keyboard Navigation**: Full keyboard accessibility
+- **Screen Reader**: Complete NVDA, JAWS, VoiceOver compatibility
+
+### Technology Stack
+- **Frontend**: Astro 4+ with TypeScript (strict mode only)
+- **Styling**: Tailwind CSS 3+ with senior-friendly configuration
+- **Components**: Shadcn/ui (curated selection, senior-adapted)
+- **Backend**: Supabase (database, auth, real-time features)
+- **Hosting**: Cloudflare Pages with edge functions
+- **Repository**: GitHub with automated deployments
+- **CI/CD**: Jenkins pipeline (typecheck, lint, accessibility, performance)
+- **Analytics**: Google Analytics 4
+- **Email**: Google Workspace integration
+
+## Page Requirements
+
+### 1. Homepage (/)
+- **Hero Section**: Clear value proposition for seniors
+- **Trust Indicators**: Phone number, hours, US/Canada coverage
+- **Service Overview**: Technical support focus, patient approach
+- **Plan Preview**: Brief overview with "View Plans" CTA
+- **Call-to-Action**: Large "Get Support Now" and "View Plans" buttons
+- **Contact Prominence**: Phone number in header and hero section
+
+### 2. Plans (/plans)
+- **Four One-Time Plans**: Mobile, Individual, Family, Family+
+- **Clear Comparison**: Feature lists, pricing, value propositions
+- **Large CTAs**: "Buy Now" buttons (44px+ height)
+- **Money-Back Guarantee**: Prominent display of refund policy
+- **No Subscription Confusion**: Clearly state "one-time payment"
+
+#### Plan Details:
+**Mobile Plan - $149**
+- 1 year Mobile Antivirus protection of your choice
+- Technical support for up to 10 devices for one year
+- Great for year-round device protection
+- Avoid third-party support costs
+
+**Individual Plan - $249**
+- 1 year antivirus for Phone + PC
+- Unlimited support (1 Computer, 1 Phone) for one year
+- Value-Added Services Bundle:
+  - General diagnostics and troubleshooting
+  - Setup and installation assistance
+  - Driver and application software support
+  - Anti-spyware setup and optimization
+  - Security software installation and management
+  - Computer optimization and memory management
+  - Software update management
+  - 1/2 hour PC training session
+  - Monthly scheduled PC tune-up call
+  - Email configuration and assistance
+
+**Family Plan - $349**
+- 3 years antivirus protection
+- Unlimited support for up to 5 devices for 1 year
+- Complete Value-Added Services Bundle (same as Individual)
+
+**Family+ Plan - $449**
+- 3 years antivirus protection
+- 2 years technical support for 10 devices
+- Complete Value-Added Services Bundle (same as Individual)
+
+### 3. Company/About (/about)
+- **Company Story**: Focus on senior-friendly mission
+- **Team Approach**: Patient, knowledgeable technicians
+- **Coverage Area**: US and Canada emphasis
+- **Experience**: Technology expertise with senior focus
+- **Values**: Patience, clarity, reliability, respect
+
+### 4. Contact (/contact)
+- **Phone Prominence**: +1 800-330-1234 prominently displayed
+- **Hours**: 7:30 AM - 7:30 PM PST clearly stated
+- **Contact Form**: Large, accessible form design
+- **Form Fields**: Name, email, phone, preferred contact time, message
+- **Multiple Options**: Phone, email, contact form
+- **Response Expectations**: Clear response time commitments
+
+### 5. Legal Pages
+- **Terms of Service (/legal/terms)** - Placeholder template
+- **Privacy Policy (/legal/privacy)** - Placeholder template  
+- **Refund Policy (/legal/refund)** - Placeholder template
+- **Note**: All legal pages will use placeholder content to be updated later
+
+### 6. Payment Flow Pages
+- **Payment Success (/success)**: 
+  - Confirmation message
+  - Order summary
+  - Large "Call Now" CTA: +1 800-330-1234
+  - "A support expert will call you shortly" message
+  - Next steps information
+- **Payment Cancel (/cancel)**:
+  - Friendly cancellation message
+  - Alternative contact options
+  - Easy return to plans
+
+### 7. Remote Tool Disclaimer (/remote-disclaimer)
+- **Disclaimer Content**: Remote access terms and conditions
+- **Security Information**: Data protection during remote sessions
+- **Consent Requirements**: Clear consent checkboxes
+- **Legal Protection**: Liability limitations
+- **Placeholder Content**: To be updated with legal review
+
+### 8. Contract Signing (/sign-contract)
+- **Zoho Sign Integration**: Link to contract template
+- **Clear Instructions**: Step-by-step signing process
+- **Service Agreement**: Master service agreement template
+- **Environment Variable**: ZOHO_SIGN_TEMPLATE_ID (placeholder)
+
+### 9. B2B Services (/business)
+- **Coming Soon Page**: Professional B2B service preview
+- **Business Focus**: Enterprise and SMB IT services
+- **Contact Information**: Business inquiry form
+- **Service Preview**: Managed IT, cloud services, cybersecurity
+- **Launch Timeline**: Expected availability information
+
+### 10. Tools (/tools)
+- **Tools Directory**: Grid of available utility tools
+- **Coming Soon Badges**: All tools marked "Coming Soon"
+- **Tool Categories**: Calculators, converters, generators, utilities
+- **Future Tools Preview**:
+  - Tip Calculator
+  - Unit Converter
+  - Password Generator
+  - QR Code Generator
+  - Word Counter
+  - Character Counter
+  - Color Picker
+  - BMI Calculator
+  - Loan Calculator
+  - Time/Date Calculator
+
+## Design System Requirements
+
+### Branding
+- **Company**: Novaqy Cloud LLP (branded as "Novaqy")
+- **Logo**: Available (to be provided)
+- **Colors**: Blue and Blue-Green high-contrast palette
+- **Typography**: Senior-friendly fonts, 18px minimum
+- **Visual Style**: Clean, minimal, professional
+
+### Color Palette (High Contrast for Seniors)
+- **Primary Blue**: #1e40af (blue-800) with white text (7:1 contrast)
+- **Secondary Blue-Green**: #0f766e (teal-700) with white text (6:1 contrast)
+- **Success**: #15803d (green-700) with white text (5.5:1 contrast)
+- **Warning**: #b45309 (amber-700) with white text (4.8:1 contrast)
+- **Error**: #b91c1c (red-700) with white text (5.2:1 contrast)
+- **Background**: #ffffff (white) / #f9fafb (gray-50)
+
+### Typography Scale (Senior-Optimized)
+- **Base**: 18px (1.125rem) minimum
+- **Scale**: 18px, 20px, 24px, 30px, 36px, 48px, 64px
+- **Line Height**: 1.6 minimum for readability
+- **Font Family**: System fonts for reliability and speed
+
+### Component Requirements
+- **Buttons**: Large (44px+ height), high contrast, clear hover states
+- **Forms**: Single-column layout, large inputs (44px+ height), clear labels
+- **Cards**: Clean layouts with generous padding, clear hierarchies
+- **Navigation**: Horizontal menu, clear focus indicators
+- **CTAs**: Obvious, action-oriented text, high contrast
+
+## Payment Integration
+
+### Stripe Checkout Sessions
+- **Flow**: Click "Buy Now" → Stripe Checkout → Success/Cancel pages
+- **Plans**: Four checkout sessions (Mobile, Individual, Family, Family+)
+- **Success Behavior**: Redirect to /success with session data
+- **Cancel Behavior**: Redirect to /cancel with messaging
+- **Environment Variables**:
+  - STRIPE_SECRET_KEY (server-side)
+  - STRIPE_PUBLISHABLE_KEY (client-side)
+  - STRIPE_PRICE_ID_MOBILE
+  - STRIPE_PRICE_ID_INDIVIDUAL
+  - STRIPE_PRICE_ID_FAMILY
+  - STRIPE_PRICE_ID_FAMILY_PLUS
+
+### Post-Purchase Call Initiation
+- **Success Page**: Large "Call Now" button with +1 800-330-1234
+- **Customer Message**: "A support expert will call you shortly"
+- **Internal Notification**: Email to support team via Google Workspace
+- **Order Data**: Customer info and plan details logged to Supabase
+
+## Supabase Integration
+
+### Database Schema
+```sql
+-- Contact form submissions
+CREATE TABLE contact_submissions (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    phone TEXT,
+    preferred_contact_time TEXT,
+    message TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Plan purchases (one-time payments)
+CREATE TABLE plan_purchases (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    stripe_session_id TEXT UNIQUE NOT NULL,
+    customer_name TEXT NOT NULL,
+    customer_email TEXT NOT NULL,
+    customer_phone TEXT,
+    plan_type TEXT NOT NULL, -- 'mobile', 'individual', 'family', 'family_plus'
+    amount_paid INTEGER NOT NULL, -- in cents
+    payment_status TEXT DEFAULT 'pending',
+    call_initiated BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Call notifications for support team
+CREATE TABLE call_notifications (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    purchase_id UUID REFERENCES plan_purchases(id),
+    customer_name TEXT NOT NULL,
+    customer_phone TEXT NOT NULL,
+    plan_type TEXT NOT NULL,
+    notification_sent BOOLEAN DEFAULT FALSE,
+    call_completed BOOLEAN DEFAULT FALSE,
+    notes TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+```
+
+### Row Level Security (RLS)
+- Enable RLS on all tables
+- Allow anonymous inserts for contact_submissions
+- Restrict plan_purchases to authenticated sessions only
+- Admin-only access for call_notifications
+
+## SEO Requirements
+
+### Technical SEO
+- **Sitemap**: Auto-generated XML sitemap
+- **Robots.txt**: Proper crawler guidance
+- **Meta Tags**: Complete title, description, canonical for all pages
+- **Open Graph**: Facebook, LinkedIn sharing optimization
+- **Twitter Cards**: Twitter sharing optimization
+- **Schema.org**: Organization, Service, and FAQ structured data
+
+### Target Keywords
+- **Primary**: "technical support for seniors", "senior tech help"
+- **Geographic**: "tech support US Canada", "senior computer help"
+- **Service-based**: "one-time tech support", "antivirus seniors"
+- **Long-tail**: "patient computer help seniors", "setup help older adults"
+
+### Content Requirements
+- **H1 tags**: Clear, keyword-rich headings on all pages
+- **Internal Linking**: Clear navigation between related pages
+- **Page Titles**: Descriptive, under 60 characters
+- **Meta Descriptions**: Compelling, under 160 characters
+- **Alt Text**: Descriptive alt text for all images
+
+## Integration Requirements
+
+### Google Workspace
+- **Email Notifications**: Purchase confirmations and call requests
+- **Contact Form**: Form submissions sent to support email
+- **Domain Email**: Professional email addresses (@novaqy.com)
+
+### Google Analytics 4
+- **Event Tracking**: Page views, form submissions, plan purchases
+- **Conversion Goals**: Plan purchases, contact form completions
+- **Senior User Insights**: Age demographics, device types, behavior flow
+
+### Zoho Sign Integration
+- **Template ID**: Environment variable ZOHO_SIGN_TEMPLATE_ID
+- **Contract Link**: Direct link to service agreement signing
+- **Integration Point**: /sign-contract page with clear instructions
+- **Future Enhancement**: Automated contract sending post-purchase
+
+### Jenkins CI/CD Pipeline
+- **Code Quality**: TypeScript strict mode, ESLint, Prettier
+- **Testing**: Unit tests for utilities, integration tests for forms
+- **Accessibility**: Automated axe-core testing (zero violations)
+- **Performance**: Lighthouse CI (Performance ≥95, Accessibility 100)
+- **Deployment**: Automatic deployment to Cloudflare Pages on merge
+
+## Success Criteria
+
+### Performance Metrics
+- **Lighthouse Scores**: Performance 95+, Accessibility 100, SEO 95+
+- **Core Web Vitals**: LCP <1.2s, FID <100ms, CLS <0.1
+- **Page Load Speed**: Under 1 second for all pages
+- **Bundle Analysis**: No unnecessary dependencies in production
+
+### Accessibility Validation
+- **Screen Reader**: Compatible with NVDA, JAWS, VoiceOver
+- **Keyboard Navigation**: All functionality accessible via keyboard
+- **Color Contrast**: WCAG 2.1 AA compliance verified
+- **Text Scaling**: Readable at 200% browser zoom
+- **Senior Testing**: Validated with 55+ user feedback
+
+### Business Metrics
+- **Conversion Rate**: Plan purchase completion rate
+- **Contact Form Completion**: Contact submission rate
+- **Call Initiation**: Successful post-purchase call connections
+- **Customer Satisfaction**: Positive feedback on support experience
+
+## Technical Constraints
+- **TypeScript Strict**: No JavaScript files, strict type checking
+- **No Heavy Frameworks**: Astro only, no React/Vue/Angular
+- **Performance Budget**: Strict bundle size limits
+- **Browser Support**: Modern browsers + graceful degradation
+- **Mobile First**: Responsive design starting from 320px
+- **Senior Accessibility**: Non-negotiable WCAG 2.1 AA compliance
+
+## Deployment Requirements
+- **Domain**: Namecheap domain (to be connected to Cloudflare)
+- **Hosting**: Cloudflare Pages with automatic deployments
+- **SSL**: Automatic SSL certificate provisioning
+- **CDN**: Global CDN with edge caching
+- **Environment**: Staging and production environments
+- **Monitoring**: Uptime monitoring and error tracking
+
+This MVP will serve as the foundation for Novaqy's senior-focused technical support business, with clear upgrade paths for additional tools, B2B services, and enhanced automation.

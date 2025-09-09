@@ -1,0 +1,11 @@
+---
+// Simple accessible button placeholder for shadcn-style UI
+export interface Props {
+  variant?: 'primary' | 'secondary'
+  type?: 'button' | 'submit'
+}
+const { variant = 'primary', type = 'button' } = Astro.props as Props
+---
+<button class={variant === 'primary' ? 'px-4 py-3 bg-blue-800 text-white rounded-md text-base' : 'px-4 py-3 bg-gray-200 text-gray-900 rounded-md text-base'} type={type}>
+  <slot />
+</button>

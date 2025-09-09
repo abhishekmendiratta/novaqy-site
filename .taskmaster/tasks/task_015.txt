@@ -1,0 +1,43 @@
+# Task ID: 15
+# Title: SEO and schema.org metadata
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: Add meta tags, Open Graph, Twitter cards, sitemap generation, robots.txt and organization/service schema.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Implement meta tags for SEO [pending]
+### Dependencies: None
+### Description: Add essential meta tags (title, description, canonical, viewport, etc.) to all relevant pages to improve search engine visibility and control how pages appear in search results.
+### Details:
+Ensure each page has unique and descriptive meta tags. Validate using SEO tools to confirm correct rendering and absence of duplicates.
+
+## 2. Add Open Graph and Twitter Card metadata [pending]
+### Dependencies: None
+### Description: Integrate Open Graph and Twitter Card tags to optimize how pages are displayed when shared on social media platforms.
+### Details:
+Include properties such as og:title, og:description, og:image, twitter:card, and twitter:site. Ensure images and descriptions are relevant and meet platform requirements.
+
+## 3. Generate and configure sitemap.xml [pending]
+### Dependencies: None
+### Description: Create a dynamic sitemap.xml file that lists all important URLs, ensuring search engines can efficiently crawl the site.
+### Details:
+Automate sitemap generation to update with new or removed pages. Submit sitemap to Google Search Console and Bing Webmaster Tools.
+
+## 4. Create and optimize robots.txt [pending]
+### Dependencies: None
+### Description: Develop a robots.txt file to control and optimize search engine crawler access to site resources.
+### Details:
+Disallow sensitive or irrelevant paths, allow important resources, and reference the sitemap location. Review for conflicts or accidental blocking.
+
+## 5. Implement organization and service schema.org structured data [pending]
+### Dependencies: None
+### Description: Add JSON-LD structured data for Organization and Service schema to improve search engine understanding and eligibility for rich results.
+### Details:
+Map site content to appropriate schema.org types and properties. Validate markup using Google's Rich Results Test and Schema Markup Validator.
+

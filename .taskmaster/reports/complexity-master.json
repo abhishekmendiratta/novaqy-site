@@ -1,0 +1,173 @@
+{
+	"meta": {
+		"generatedAt": "2025-08-22T18:56:23.054Z",
+		"tasksAnalyzed": 20,
+		"totalTasks": 20,
+		"analysisCount": 20,
+		"thresholdScore": 5,
+		"projectName": "Taskmaster",
+		"usedResearch": true
+	},
+	"complexityAnalysis": [
+		{
+			"taskId": 1,
+			"taskTitle": "Project initialization and tooling",
+			"complexityScore": 8,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Break down initialization into: tool installation, configuration, .taskmaster structure setup, developer documentation, CI setup, environment variable management, and model provider documentation.",
+			"reasoning": "Project initialization involves multiple toolchains, configuration steps, documentation, and CI integration. Each step has dependencies and potential pitfalls, requiring careful sequencing and validation. Industry best practices recommend explicit separation of environment setup, documentation, and CI for maintainability and onboarding efficiency."
+		},
+		{
+			"taskId": 14,
+			"taskTitle": "Cloudflare Pages deployment",
+			"complexityScore": 7,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Expand deployment into: GitHub integration, build settings, environment variable management, edge function setup, CDN/caching configuration, and post-deploy smoke testing.",
+			"reasoning": "Deploying to Cloudflare Pages requires coordination between source control, build pipelines, serverless endpoints, and CDN policies. Each aspect (integration, configuration, edge functions, caching, testing) is distinct and should be validated independently for reliability and security."
+		},
+		{
+			"taskId": 9,
+			"taskTitle": "Supabase schema & RLS",
+			"complexityScore": 8,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Decompose into: table creation, RLS policy definition, service role setup, admin role configuration, access audit logging, migration scripting, and schema documentation.",
+			"reasoning": "Database schema and security configuration are high-risk and require granular control. Best practices dictate separating table design, security policies, role management, audit logging, and migration/documentation to ensure compliance and maintainability."
+		},
+		{
+			"taskId": 18,
+			"taskTitle": "Tools directory (coming soon) and future tools",
+			"complexityScore": 2,
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "Keep as: index page creation and placeholder badge setup for each tool.",
+			"reasoning": "This is a simple UI placeholder task with minimal logic or integration. No further decomposition is needed beyond the two existing subtasks."
+		},
+		{
+			"taskId": 10,
+			"taskTitle": "Zoho Sign integration (/sign-contract)",
+			"complexityScore": 5,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Expand to: page creation, environment variable wiring, Zoho Sign API/link integration, and manual/automated signing flow testing.",
+			"reasoning": "Integrating an external signing service involves UI, environment management, API/link setup, and testing. Adding a dedicated integration/test subtask aligns with best practices for third-party service reliability."
+		},
+		{
+			"taskId": 12,
+			"taskTitle": "Accessibility automated tests",
+			"complexityScore": 8,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Expand into: axe-core CI integration, Lighthouse CI setup, custom accessibility test case authoring, color contrast automation, local test documentation, reporting, and remediation workflow.",
+			"reasoning": "Automated accessibility enforcement requires multiple tools, custom test authoring, reporting, and remediation. Industry standards recommend explicit separation of CI integration, test writing, and documentation for sustainable compliance."
+		},
+		{
+			"taskId": 7,
+			"taskTitle": "Payment integration (Stripe Checkout)",
+			"complexityScore": 9,
+			"recommendedSubtasks": 8,
+			"expansionPrompt": "Expand to: serverless endpoint creation, environment variable management, Stripe session wiring, webhook handling, Supabase logging, client-side integration, redirect logic, and end-to-end test automation.",
+			"reasoning": "Payment integration is high-complexity due to security, multi-system coordination, and error handling. Each integration point (server, client, webhook, logging, testing) should be isolated for reliability and auditability."
+		},
+		{
+			"taskId": 13,
+			"taskTitle": "CI/CD pipeline (Jenkins)",
+			"complexityScore": 8,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Expand into: typecheck, lint, unit test, build, Lighthouse CI, accessibility checks, deployment, and pipeline failure notification.",
+			"reasoning": "Modern CI/CD pipelines are multi-stage and require explicit steps for validation, quality, and deployment. Adding notification and error handling subtasks aligns with best practices for robust delivery."
+		},
+		{
+			"taskId": 8,
+			"taskTitle": "Post-purchase flow and call initiation",
+			"complexityScore": 7,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Expand to: Supabase logging, notification email setup, call notification entry, admin view creation, success page CTA, and support process documentation.",
+			"reasoning": "Post-purchase flows span backend logging, notification, UI, and support documentation. Each should be a distinct subtask to ensure traceability and operational clarity."
+		},
+		{
+			"taskId": 15,
+			"taskTitle": "SEO and schema.org metadata",
+			"complexityScore": 5,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Expand into: meta/Open Graph tag setup, sitemap/robots.txt generation, schema.org JSON-LD integration, and SEO validation/testing.",
+			"reasoning": "SEO implementation involves multiple file types and validation steps. Adding a dedicated SEO validation/testing subtask ensures completeness and compliance with search engine standards."
+		},
+		{
+			"taskId": 2,
+			"taskTitle": "Set up TypeScript + Astro project skeleton",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on set up typescript + astro project skeleton.",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 3,
+			"taskTitle": "Design system and accessibility baseline",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on design system and accessibility baseline.",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 4,
+			"taskTitle": "Homepage (/)",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on homepage (/).",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 5,
+			"taskTitle": "Plans page (/plans)",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on plans page (/plans).",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 6,
+			"taskTitle": "Contact page and form (/contact)",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on contact page and form (/contact).",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 11,
+			"taskTitle": "Legal pages (terms, privacy, refund)",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on legal pages (terms, privacy, refund).",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 16,
+			"taskTitle": "Analytics and email notifications",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on analytics and email notifications.",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 17,
+			"taskTitle": "Performance budget and optimizations",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on performance budget and optimizations.",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 19,
+			"taskTitle": "Monitoring & security",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on monitoring & security.",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		},
+		{
+			"taskId": 20,
+			"taskTitle": "Business page and B2B coming soon (/business)",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down this task with a focus on business page and b2b coming soon (/business).",
+			"reasoning": "Automatically added due to missing analysis in AI response."
+		}
+	]
+}

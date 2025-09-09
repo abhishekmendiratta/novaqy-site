@@ -1,0 +1,336 @@
+---
+import Base from '../layouts/Base.astro'
+import { getDefaultMeta } from '../lib/seo';
+const PHONE = '+1 800-330-1234'
+const TEL = '+18003301234'
+const meta = getDefaultMeta({
+  title: 'Business Services — Coming Soon | Novaqy',
+  description: 'Novaqy B2B services coming soon — managed IT, cloud migrations, cybersecurity, and backups. Contact us for enterprise and SMB inquiries.',
+  canonical: `${import.meta.env.PUBLIC_SITE_URL}/business`,
+  image: `${import.meta.env.PUBLIC_SITE_URL}/social/business.svg`
+});
+---
+
+<Base meta={meta}>
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <header class="text-center mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-3">B2B Services — Coming soon</h1>
+      <p class="text-lg text-slate-700 max-w-3xl mx-auto">Professional IT services for enterprise and small-to-medium businesses. Managed IT, secure cloud migrations, enterprise-grade cybersecurity, and reliable backups — tailored for teams who need dependable support.</p>
+      <p class="mt-4 text-slate-600">Expected availability: Q4 — Join the interest list below and we'll contact you with launch details.</p>
+
+      <div class="mt-6 flex justify-center gap-4">
+        <a
+          href={`tel:${TEL}`}
+          class="inline-flex items-center justify-center h-12 px-6 rounded-md bg-blue-600 text-white text-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        >
+          Call sales: {PHONE}
+        </a>
+
+        <a
+          href="#businessForm"
+          class="inline-flex items-center justify-center h-12 px-6 rounded-md border border-slate-900 text-slate-900 bg-white text-lg font-medium hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-300"
+        >
+          Request business info
+        </a>
+      </div>
+    </header>
+
+    <!-- Services preview -->
+    <section aria-labelledby="services-heading" class="mb-10">
+      <h2 id="services-heading" class="sr-only">B2B service previews</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="p-6 border rounded-lg shadow-sm bg-white">
+          <div class="flex items-start gap-4">
+            <svg class="h-10 w-10 text-blue-600" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 7h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 11h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-slate-900">Managed IT</h3>
+              <p class="text-slate-700 mt-1">Proactive device and network support for teams — ticketing, maintenance, and remote troubleshooting with clear SLAs.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-6 border rounded-lg shadow-sm bg-white">
+          <div class="flex items-start gap-4">
+            <svg class="h-10 w-10 text-teal-700" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-slate-900">Cloud migration & management</h3>
+              <p class="text-slate-700 mt-1">Secure, low-downtime cloud migrations and ongoing management with cost controls and backup strategies.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-6 border rounded-lg shadow-sm bg-white">
+          <div class="flex items-start gap-4">
+            <svg class="h-10 w-10 text-amber-700" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 11l7 11 7-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-slate-900">Cybersecurity & compliance</h3>
+              <p class="text-slate-700 mt-1">Endpoint protection, basic SOC practices, and guidance to meet common compliance needs for SMBs.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-6 border rounded-lg shadow-sm bg-white">
+          <div class="flex items-start gap-4">
+            <svg class="h-10 w-10 text-green-700" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 11h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-slate-900">Managed backups & recovery</h3>
+              <p class="text-slate-700 mt-1">Automated backups and tested recovery plans to keep critical business data safe and accessible.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Business inquiry form -->
+    <section class="bg-white p-6 border rounded-lg shadow-sm" aria-labelledby="inquiry-heading">
+      <h2 id="inquiry-heading" class="text-2xl font-bold text-slate-900 mb-3">Business inquiry</h2>
+      <p class="text-slate-700 mb-6">Tell us a little about your company and the services you’re interested in. We’ll respond promptly with next steps.</p>
+
+      <form id="businessForm" class="space-y-6" novalidate>
+        <div role="status" aria-live="polite" id="formStatus" class="sr-only"></div>
+
+        <div>
+          <label for="company" class="block text-sm font-medium text-slate-700">Company name</label>
+          <input id="company" name="company" type="text" required aria-required="true"
+            class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Your company or organization" />
+          <p class="mt-1 text-sm text-red-600" id="companyError" aria-live="assertive"></p>
+        </div>
+
+        <div>
+          <label for="contact_name" class="block text-sm font-medium text-slate-700">Contact name</label>
+          <input id="contact_name" name="contact_name" type="text" required aria-required="true"
+            class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Full name" />
+          <p class="mt-1 text-sm text-red-600" id="contactNameError" aria-live="assertive"></p>
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-slate-700">Email address</label>
+          <input id="email" name="email" type="email" inputmode="email" required aria-required="true"
+            class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="you@company.com" />
+          <p class="mt-1 text-sm text-red-600" id="emailError" aria-live="assertive"></p>
+        </div>
+
+        <div>
+          <label for="phone" class="block text-sm font-medium text-slate-700">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel"
+            class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="+1 800 555 1212" />
+          <p class="mt-1 text-sm text-red-600" id="phoneError" aria-live="assertive"></p>
+        </div>
+
+        <div>
+          <label for="inquiry_type" class="block text-sm font-medium text-slate-700">Inquiry type</label>
+          <select id="inquiry_type" name="inquiry_type"
+            class="mt-1 block w-full h-12 px-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Select a type</option>
+            <option>Managed IT</option>
+            <option>Cloud migration</option>
+            <option>Cybersecurity</option>
+            <option>Backups & recovery</option>
+            <option>Other</option>
+          </select>
+          <p class="mt-1 text-sm text-red-600" id="inquiryTypeError" aria-live="assertive"></p>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+          <textarea id="message" name="message" rows="6" required aria-required="true"
+            class="mt-1 block w-full px-3 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Describe your needs or questions..."></textarea>
+          <p class="mt-1 text-sm text-red-600" id="messageError" aria-live="assertive"></p>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <button
+            type="submit"
+            id="submitBtn"
+            class="inline-flex items-center justify-center h-12 px-5 rounded-md bg-slate-900 text-white font-medium hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300"
+          >
+            Send inquiry
+          </button>
+
+          <div id="spinner" class="hidden" aria-hidden="true" role="status" aria-live="polite">
+            <span class="text-sm text-slate-600">Sending…</span>
+          </div>
+
+          <div id="successMessage" class="hidden text-sm text-green-700" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+
+      <p class="mt-4 text-sm text-slate-600">By submitting you agree to our <a class="text-blue-600 underline" href="/legal/privacy">privacy policy</a>.</p>
+    </section>
+
+    <!-- Social sharing -->
+    <footer class="mt-8 text-center">
+      <p class="text-sm text-slate-600 mb-3">Share this page</p>
+      <div class="flex justify-center gap-3">
+        <a
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(import.meta.env.PUBLIC_SITE_URL + '/business')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center h-10 px-3 rounded-md border bg-white text-slate-900 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300"
+        >
+          Facebook
+        </a>
+        <a
+          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(import.meta.env.PUBLIC_SITE_URL + '/business')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center h-10 px-3 rounded-md border bg-white text-slate-900 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+  </section>
+
+  <script type="module">
+    const form = document.getElementById('businessForm')
+    const submitBtn = document.getElementById('submitBtn')
+    const spinner = document.getElementById('spinner')
+    const successMessage = document.getElementById('successMessage')
+    const statusRegion = document.getElementById('formStatus')
+
+    const companyInput = document.getElementById('company')
+    const contactInput = document.getElementById('contact_name')
+    const emailInput = document.getElementById('email')
+    const phoneInput = document.getElementById('phone')
+    const inquiryTypeInput = document.getElementById('inquiry_type')
+    const messageInput = document.getElementById('message')
+
+    const companyError = document.getElementById('companyError')
+    const contactNameError = document.getElementById('contactNameError')
+    const emailError = document.getElementById('emailError')
+    const phoneError = document.getElementById('phoneError')
+    const inquiryTypeError = document.getElementById('inquiryTypeError')
+    const messageError = document.getElementById('messageError')
+
+    function resetErrors() {
+      [companyError, contactNameError, emailError, phoneError, inquiryTypeError, messageError].forEach(el => {
+        el.textContent = ''
+      })
+      statusRegion.textContent = ''
+      successMessage.textContent = ''
+      successMessage.classList.add('hidden')
+    }
+
+    function validateEmail(email) {
+      return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)
+    }
+
+    function validate() {
+      resetErrors()
+      let valid = true
+      if (!companyInput.value.trim()) {
+        companyError.textContent = 'Please enter your company name'
+        valid = false
+      }
+      if (!contactInput.value.trim()) {
+        contactNameError.textContent = 'Please enter a contact name'
+        valid = false
+      }
+      const emailVal = emailInput.value.trim()
+      if (!emailVal) {
+        emailError.textContent = 'Please enter an email'
+        valid = false
+      } else if (!validateEmail(emailVal)) {
+        emailError.textContent = 'Please enter a valid email'
+        valid = false
+      }
+      if (!messageInput.value.trim()) {
+        messageError.textContent = 'Please enter a message'
+        valid = false
+      }
+      return valid
+    }
+
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault()
+      if (!validate()) {
+        statusRegion.textContent = 'Form contains errors. See highlighted messages.'
+        return
+      }
+
+      submitBtn.disabled = true
+      spinner.classList.remove('hidden')
+
+      const compiledMessage = `B2B Inquiry — Company: ${companyInput.value.trim()} — Type: ${inquiryTypeInput.value || '-'}\n\nContact: ${contactInput.value.trim()}\nEmail: ${emailInput.value.trim()}\nPhone: ${phoneInput.value.trim() || '-'}\n\nMessage:\n${messageInput.value.trim()}`
+
+      const payload = {
+        name: contactInput.value.trim(),
+        email: emailInput.value.trim(),
+        phone: phoneInput.value.trim() || null,
+        preferred_time: null,
+        message: compiledMessage
+      }
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        const json = await res.json()
+        if (res.ok) {
+          successMessage.textContent = 'Inquiry sent. Thank you — we will contact you shortly.'
+          successMessage.classList.remove('hidden')
+          form.reset()
+          statusRegion.textContent = 'Submission successful'
+          try {
+            window.dataLayer = window.dataLayer || []
+            window.dataLayer.push({
+              event: 'b2b_inquiry_submit',
+              event_category: 'engagement',
+              event_label: 'b2b_inquiry',
+              non_interaction: false
+            })
+          } catch (e) {
+            console.warn('dataLayer push failed', e)
+          }
+        } else {
+          const err = json?.error || 'Server error'
+          statusRegion.textContent = err
+        }
+      } catch (err) {
+        statusRegion.textContent = 'Network error. Please try again later.'
+      } finally {
+        submitBtn.disabled = false
+        spinner.classList.add('hidden')
+      }
+    })
+  </script>
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "B2B IT Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Novaqy Cloud LLP",
+        "telephone": "+1-800-330-1234",
+        "url": "https://novaqy.com"
+      },
+      "description": "Managed IT, cloud migration, cybersecurity, and managed backups for enterprise and SMB customers."
+    }
+  </script>
+</Base meta={meta}>

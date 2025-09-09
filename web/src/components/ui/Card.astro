@@ -1,0 +1,11 @@
+---
+// Simple Card placeholder component
+export interface Props {
+  title?: string
+}
+const { title = '' } = Astro.props as Props
+---
+<article class="p-4 border rounded-md bg-white shadow-sm">
+  {title ? <h3 class="text-lg font-semibold mb-2">{title}</h3> : ''}
+  <div class="text-base"><slot /></div>
+</article>

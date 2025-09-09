@@ -1,0 +1,43 @@
+# Task ID: 11
+# Title: Legal pages (terms, privacy, refund)
+# Status: pending
+# Dependencies: None
+# Priority: low
+# Description: Add placeholder legal pages under /legal with clear placeholders to be filled by counsel.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Create /legal route and directory structure [pending]
+### Dependencies: None
+### Description: Set up the /legal route and corresponding directory in the project to house all legal placeholder pages.
+### Details:
+Ensure the /legal path is accessible and ready to serve multiple legal documents as separate pages.
+
+## 2. Add placeholder Terms of Service page [pending]
+### Dependencies: 11.1
+### Description: Implement a placeholder Terms of Service page under /legal/terms with clear markers for legal counsel input.
+### Details:
+Include headings and sections commonly required in terms documents, such as user obligations, disclaimers, and governing law, with prominent placeholder text.
+
+## 3. Add placeholder Privacy Policy page [pending]
+### Dependencies: 11.1
+### Description: Implement a placeholder Privacy Policy page under /legal/privacy with clear markers for legal counsel input.
+### Details:
+Structure the page to include sections for data collection, use, sharing, user rights, and compliance statements, all marked as placeholders.
+
+## 4. Add placeholder Refund Policy page [pending]
+### Dependencies: 11.1
+### Description: Implement a placeholder Refund Policy page under /legal/refund with clear markers for legal counsel input.
+### Details:
+Provide standard sections such as eligibility, process, and exceptions, with clear placeholder notes for legal content.
+
+## 5. Insert guidance and placeholder annotations for legal counsel [pending]
+### Dependencies: 11.2, 11.3, 11.4
+### Description: Add explicit instructions and annotations within each legal page to guide legal counsel on required content.
+### Details:
+Use comments or visible notes to indicate where legal text must be inserted and what topics must be covered, referencing compliance requirements where relevant.
+

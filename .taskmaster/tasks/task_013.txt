@@ -1,0 +1,56 @@
+# Task ID: 13
+# Title: CI/CD pipeline (Jenkins)
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Implement Jenkins pipeline stages: typecheck, lint, tests, build, Lighthouse CI, accessibility, deploy to Cloudflare Pages.
+# Details:
+Implemented Jenkins pipeline stages and helper scripts for Git-backed Cloudflare Pages deployment. Pipeline now includes:
+- Typecheck (npx tsc --noEmit)
+- Lint (npx eslint, skipped if not configured)
+- Tests (npm test; preserves junit results if produced)
+- Build (npm run build; installs Playwright browsers)
+- Accessibility (reuses .jenkins/accessibility-stage.groovy which runs axe-playwright + LHCI)
+- Deploy (helper script .jenkins/deploy-to-pages.sh pushes built artifacts to branch `cloudflare-pages`)
+
+Notes and manual steps remaining:
+- Add SSH deploy key credential to Jenkins and set its ID (recommended id: `github-ssh`) as Jenkins credential. See `.jenkins/README.md` for steps.
+- Configure Cloudflare Pages to use branch `cloudflare-pages` (Pages Git integration) or accept that pushes to that branch will trigger Pages builds.
+- The deploy stage requires the Jenkins credential to be available on the agent (sshagent uses credential id in Jenkinsfile: `GITHUB_SSH_CREDENTIAL`).
+- The deploy script force-pushes the built output to the target branch; this is intentional to ensure Pages serves the exact artifact produced by CI.
+
+# Test Strategy:
+- Unit tests run via Vitest (npm test). Configure vitest to emit junit xml to `web/test-results/**/*.xml` for Jenkins to pick up.
+- Accessibility: axe-playwright script plus LHCI autorun produce reports archived to `web/reports/**` and `a11y-axe-report.json`.
+- Performance/Lighthouse thresholds can be tuned via `web/lhci.config.js` (repo includes `web/lhci.config.js`).
+
+# Subtasks:
+## 1. Configure Jenkins Pipeline and Source Integration [done]
+### Dependencies: None
+### Description: Set up a Jenkins Pipeline job, connect it to the source code repository, and create an initial Jenkinsfile with stage definitions.
+### Details:
+Jenkinsfile created/updated with environment var `GITHUB_SSH_CREDENTIAL` and full stages. `.jenkins/README.md` added with credential setup instructions.
+
+## 2. Implement Typecheck, Lint, and Test Stages [done]
+### Dependencies: 13.1
+### Description: Add pipeline stages for type checking, linting, and running automated tests, ensuring code quality and correctness.
+### Details:
+Typecheck, lint and tests stages added to Jenkinsfile. Lint is skipped gracefully if ESLint is not configured.
+
+## 3. Implement Build Stage [done]
+### Dependencies: 13.2
+### Description: Add a build stage to compile or bundle the application, preparing artifacts for further analysis and deployment.
+### Details:
+Build stage runs Playwright install and `npm run build`. Build artifacts are archived (`web/dist/**`).
+
+## 4. Integrate Lighthouse CI and Accessibility Checks [done]
+### Dependencies: 13.3
+### Description: Add stages to run Lighthouse CI for performance and best practices, and automated accessibility checks (e.g., axe-core).
+### Details:
+Accessibility stage reuses `.jenkins/accessibility-stage.groovy` which runs preview, axe-playwright and `npx lhci autorun`. Reports are archived.
+
+## 5. Deploy to Cloudflare Pages [done (implementation complete; requires Jenkins credential & Pages branch)] 
+### Dependencies: 13.4
+### Description: Add a deployment stage to publish the built application to Cloudflare Pages, automating production delivery.
+### Details:
+Added `.jenkins/deploy-to-pages.sh` and deployment stage in Jenkinsfile which calls the script under `sshagent` using Jenkins SSH credential (default id `github-ssh`). The script force-pushes the contents of `web/dist` to branch `cloudflare-pages` on the repo `git@github.com:abhishekmendiratta/novaqy-site.git`. Manual credential creation and Cloudflare branch configuration are required for the deploy stage to succeed.

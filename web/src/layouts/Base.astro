@@ -1,0 +1,93 @@
+---
+import { getDefaultMeta, organizationSchema, serviceSchema, SITE } from '../lib/seo';
+const props = Astro.props ?? {};
+const meta = getDefaultMeta(props.meta);
+const structured = props.meta?.structuredData ?? null;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Critical CSS inlined to eliminate render-blocking stylesheet for above-the-fold -->
+    <style>
+      /* Critical: design tokens + minimal layout + accessibility focus */
+      :root{
+        --font-family-primary: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --font-size-base: 1.125rem; /* 18px */
+        --line-height-base: 1.6;
+        --color-text: #0f172a;
+        --color-background: #ffffff;
+        --focus-color: #2563eb;
+      }
+      html,body{
+        font-family: var(--font-family-primary);
+        font-size: var(--font-size-base);
+        line-height: var(--line-height-base);
+        color: var(--color-text);
+        background-color: var(--color-background);
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+      }
+      a,button{cursor:pointer;}
+      /* Large accessible touch targets for CTAs */
+      .btn,button,input,textarea{min-height:44px;line-height:1.2}
+      /* Ensure responsive images layout */
+      img{max-width:100%;height:auto;display:block}
+      /* Basic hero sizing (above-the-fold) */
+      .hero{min-height:40vh}
+      /* Visible focus for keyboard users */
+      :focus-visible{outline:3px solid var(--focus-color);outline-offset:2px}
+    </style>
+    <link rel="preload" href="/styles/tailwind.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles/tailwind.css"></noscript>
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.description} />
+    <link rel="canonical" href={meta.canonical} />
+    <meta name="robots" content={meta.robots} />
+
+    {process.env.GTM_CONTAINER_ID ? (
+      <>
+        <!-- Google Tag Manager -->
+        <script>
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=${process.env.GTM_CONTAINER_ID}';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${process.env.GTM_CONTAINER_ID}');`}
+        </script>
+      </>
+    ) : null}
+
+    {process.env.GA4_MEASUREMENT_ID ? (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA4_MEASUREMENT_ID}`}></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.GA4_MEASUREMENT_ID}', { send_page_view: true });`}
+        </script>
+      </>
+    ) : null}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:image" content={meta.image} />
+    <meta property="og:url" content={meta.canonical} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={SITE.twitter} />
+    <meta name="twitter:title" content={meta.title} />
+    <meta name="twitter:description" content={meta.description} />
+    <meta name="twitter:image" content={meta.image} />
+
+    <!-- JSON-LD structured data (Organization + Service) -->
+    <script type="application/ld+json">{JSON.stringify(organizationSchema())}</script>
+    <script type="application/ld+json">{JSON.stringify(serviceSchema())}</script>
+    {structured ? <script type="application/ld+json">{JSON.stringify(structured)}</script> : null}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

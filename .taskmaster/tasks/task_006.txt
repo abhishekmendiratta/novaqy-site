@@ -1,0 +1,43 @@
+# Task ID: 6
+# Title: Contact page and form (/contact)
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: Large accessible contact form (name, email, phone, preferred contact time, message) and click-to-call phone prominence.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Design accessible contact form UI [pending]
+### Dependencies: None
+### Description: Create a large, accessible contact form UI that includes fields for name, email, phone, preferred contact time, and message, ensuring compliance with accessibility standards (e.g., proper labels, keyboard navigation, ARIA attributes).
+### Details:
+The form should be visually prominent, use semantic HTML, and provide clear error messages for invalid input. Accessibility should be verified against WCAG guidelines.
+
+## 2. Implement form submission logic and Supabase integration [pending]
+### Dependencies: 6.1
+### Description: Develop the backend logic to handle form submissions, storing the data in the Supabase 'contact_submissions' table and handling errors gracefully.
+### Details:
+Use Supabase client libraries to insert form data into the database. Validate input on both client and server sides. Ensure sensitive data is handled securely.
+
+## 3. Add click-to-call phone number feature [pending]
+### Dependencies: 6.1
+### Description: Display a prominent, accessible phone number on the contact page with click-to-call functionality for supported devices.
+### Details:
+Use a tel: link for the phone number, ensure it is visually distinct, and test on both desktop and mobile devices for accessibility and usability.
+
+## 4. Configure email notifications for new submissions [pending]
+### Dependencies: 6.2
+### Description: Set up automated email notifications to alert relevant parties when a new contact form submission is received.
+### Details:
+Use Supabase triggers or edge functions to send emails upon new row insertion in the contact_submissions table. Ensure emails contain all relevant submission details.
+
+## 5. Validate accessibility and usability of the contact page [pending]
+### Dependencies: 6.1, 6.3
+### Description: Conduct comprehensive accessibility and usability testing of the contact page, including the form and click-to-call feature.
+### Details:
+Perform both automated and manual accessibility audits, gather user feedback, and address any identified issues before launch.
+

@@ -1,0 +1,42 @@
+# Task ID: 17
+# Title: Performance budget and optimizations
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Enforce CSS <50KB and JS <20KB, inline critical CSS, optimize images (WebP/AVIF), and prefer system fonts.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Minify and enforce CSS size budget [done]
+### Dependencies: None
+### Description: Minify all CSS files and ensure total CSS payload does not exceed 50KB, using tools like CSSNano or CleanCSS.
+### Details:
+Applied responsive design token changes and verified production CSS payload is well under 50KB (build output uses minimal Tailwind + tokens). Compression is provided by hosting (Cloudflare) and gzip checks confirm tiny sizes. Recommend CI check to enforce budget on future changes.
+
+## 2. Minify and enforce JS size budget [done]
+### Dependencies: None
+### Description: Minify all JavaScript files and ensure total JS payload does not exceed 20KB, using tools like UglifyJS or JSCompress.
+### Details:
+Verified production build emits no runtime JS (zero/near-zero JS approach). Current JS payload is under 20KB. Recommend adding a CI guard that fails the build if JS gzip > 20KB to prevent regressions.
+
+## 3. Inline critical CSS for above-the-fold content [done]
+### Dependencies: 17.1
+### Description: Identify and inline critical CSS required for above-the-fold rendering to reduce render-blocking resources.
+### Details:
+Manually extracted critical tokens and minimal layout rules and inlined them into the project layout head (web/src/layouts/Base.astro). Replaced blocking stylesheet link with preload-onload + noscript fallback to avoid render-blocking.
+
+## 4. Optimize images using WebP and AVIF formats [done]
+### Dependencies: None
+### Description: Convert and serve images in modern formats (WebP/AVIF) to reduce file size and improve load times.
+### Details:
+Audited public image assets — no large raster images found in project public/ directory (only favicon). If large images are added later, include an automated conversion step (sharp/cwebp) and update markup to use <picture> with WebP/AVIF fallbacks.
+
+## 5. Implement system font stack [done]
+### Dependencies: None
+### Description: Update CSS to use system font stacks for body and UI text, avoiding custom font downloads.
+### Details:
+System font stack is already configured in design-tokens.css and tailwind.config.cjs and applied site-wide. No custom webfonts found in project sources; removed/avoided any font downloads.

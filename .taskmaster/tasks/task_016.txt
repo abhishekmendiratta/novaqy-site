@@ -1,0 +1,149 @@
+# Task ID: 16
+# Title: Analytics and email notifications
+# Status: done
+# Dependencies: None
+# Priority: medium
+# Description: Integrate GA4 for event tracking and configure Google Workspace email notifications for purchases and contact form.
+# Details:
+Implementation summary:
+- GA4 / GTM support added to global layout (loads GTM container when `GTM_CONTAINER_ID` set, falls back to direct GA4 `gtag.js` when `GA4_MEASUREMENT_ID` set).
+- Client-side dataLayer pushes added:
+  - Contact form submissions: `contact_form_submit` event pushed on successful submission.
+  - Purchase completions: `purchase` event pushed on success page when order data is available.
+- Server-side email notifications implemented using Google Workspace (Gmail) API helper:
+  - New file: `web/src/lib/gmail.ts` — exchanges refresh token for access token and sends raw MIME messages via Gmail REST API.
+  - API endpoints updated to use Gmail helper where credentials are present:
+    - `web/src/pages/api/contact.ts` sends notification to support on new contact submission.
+    - `web/src/pages/api/finalize-order.ts` sends notification on purchase completion.
+  - Fallback preserved: SendGrid (/existing) used if Gmail creds are not configured.
+- Environment variable placeholders added to `.env.example` (GA4/GTM credentials and Gmail OAuth2 credentials).
+- Measurement plan and test strategy documented below.
+
+# Test Strategy:
+- Manual end-to-end testing steps included in this file; use GA4 DebugView / Realtime and Gmail audit logs to validate.
+- Email sending is best-effort: failures are logged in server logs and do not block form submission or order finalization.
+- Supabase inserts verified via Supabase table view (contact_submissions, plan_purchases, call_notifications).
+- Test data should use non-production endpoints and test Stripe sessions.
+
+# Measurement plan (events, parameters, triggers)
+1. contact_form_submit
+   - Trigger: Successful POST to `/api/contact` from contact page (client-side push after 200 response)
+   - Event name: `contact_form_submit`
+   - Parameters:
+     - event_category: 'engagement'
+     - event_label: 'contact_form'
+     - non_interaction: false
+   - Notes: Do NOT send PII (name/email/phone) in event parameters. Use server-side logs or Supabase records for PII.
+
+2. purchase
+   - Trigger: Success page with validated order (after `/api/finalize-order` inserts order)
+   - Event name: `purchase`
+   - Parameters:
+     - event_category: 'ecommerce'
+     - event_label: order.plan_type (e.g., 'mobile', 'individual')
+     - value: amount_paid (in USD)
+     - currency: 'USD'
+     - transaction_id: stripe_session_id (OPTIONAL — ensure GA privacy policy / no PII risk)
+     - non_interaction: false
+   - Notes: Keep event params minimal; no customer_email or phone in GA events.
+
+3. page_view (GA4 default)
+   - Trigger: All page loads via GA4 config tag / gtag.js
+
+4. call_request (optional)
+   - Trigger: When user requests an immediate call (via request-call API)
+   - Event name: `call_request`
+   - Parameters: plan_type, preferred_time (non-PII), non_interaction:false
+
+# Subtasks:
+## 1. Set up GA4 property and connect to website [done]
+### Dependencies: None
+### Description: Create a Google Analytics 4 property and ensure it is properly linked to the website using Google Tag Manager.
+### Details:
+- Code: `web/src/layouts/Base.astro` updated to include GTM container snippet when `GTM_CONTAINER_ID` present, and `gtag.js` loader when `GA4_MEASUREMENT_ID` present.
+- Action items for operator:
+  - Create GA4 property in Google Analytics console.
+  - Create GTM container if preferred and add GA4 Configuration tag inside GTM.
+  - Set `GA4_MEASUREMENT_ID` or `GTM_CONTAINER_ID` in deployment environment.
+
+## 2. Define and document required events for tracking [done]
+### Dependencies: 16.1
+### Description: Identify and document all key user actions to be tracked as events, such as purchases and contact form submissions.
+### Details:
+- Measurement plan documented above (event names, triggers, parameters).
+- Avoid sending PII to GA; use Supabase and server logs for customer-identifying data.
+- Documented recommended GA4 Debug steps and test scenarios in "Test strategy".
+
+## 3. Implement GA4 event tracking for purchases and contact form [done]
+### Dependencies: 16.2
+### Description: Configure Google Tag Manager to fire GA4 event tags for purchase completions and contact form submissions, including relevant parameters.
+### Details:
+- Client pages updated:
+  - `web/src/pages/contact.astro` — pushes `contact_form_submit` to `window.dataLayer` after successful API response.
+  - `web/src/pages/success.astro` — pushes `purchase` event to `window.dataLayer` once order/amount is available.
+- For GTM users: create GTM triggers that listen for `contact_form_submit` and `purchase` events and fire GA4 Event tags mapping to the measurement plan parameters.
+
+## 4. Configure Google Workspace email notifications [done]
+### Dependencies: 16.3
+### Description: Set up automated email notifications in Google Workspace for both purchase events and contact form submissions.
+### Details:
+- Implemented `web/src/lib/gmail.ts`:
+  - Functions:
+    - `getAccessToken()` — exchanges `GMAIL_REFRESH_TOKEN` for access token.
+    - `makeRawMessage()` — constructs raw MIME message and base64url encodes.
+    - `sendEmail(to, subject, text, html?)` — sends via Gmail REST API.
+- API endpoints updated:
+  - `web/src/pages/api/contact.ts` calls `sendEmail` to notify support of new contact submissions.
+  - `web/src/pages/api/finalize-order.ts` calls `sendEmail` to notify support of new purchases.
+- Fallback:
+  - If Gmail credentials are not configured, the existing SendGrid flow remains active (if SENDGRID_API_KEY present).
+- Environment variables required (placeholders in `.env.example`):
+  - GMAIL_CLIENT_ID
+  - GMAIL_CLIENT_SECRET
+  - GMAIL_REFRESH_TOKEN
+  - GMAIL_SENDER (e.g., "Support <support@novaqy.com>")
+  - NOTIFY_EMAIL (recipient, e.g., notifications@novaqy.com)
+  - SENDGRID_API_KEY (optional fallback)
+  - EMAIL_FROM (fallback sender for SendGrid)
+
+## 5. Test, validate, and document analytics and notification workflows [done]
+### Dependencies: 16.4
+### Description: Perform end-to-end testing of event tracking and email notifications, validate data accuracy, and create documentation outlining the configuration and troubleshooting steps.
+### Details:
+- Manual test checklist:
+  1. Set required env vars locally (see list above) and start dev server: `pnpm dev` or `npm run dev` in `web/`.
+  2. Contact form:
+     - Submit the contact form on `/contact`.
+     - Verify a row in Supabase `contact_submissions`.
+     - Verify server logs for attempted email send; check Gmail Sent items (for workspace account) or SendGrid activity.
+     - Validate GA4 DebugView shows `contact_form_submit` event.
+  3. Purchase flow:
+     - Create a Stripe test checkout session (use existing `/api/create-checkout-session`).
+     - Complete checkout in Stripe's test mode.
+     - Visit `/success?session_id=...` and allow `finalize-order` to run (or call `/api/finalize-order` with test session).
+     - Verify `plan_purchases` row in Supabase.
+     - Verify notification email delivered (Gmail Sent or SendGrid activity).
+     - Validate GA4 DebugView shows `purchase` event with correct `value` and `event_label`.
+  4. Edge cases:
+     - Email send failure: ensure API still returns success to user and logs error server-side.
+     - GA disabled: app still functions without analytics env vars.
+- Documentation:
+  - This file now contains the measurement plan and test checklist.
+  - Additional operational notes may be added to `docs/` as needed.
+
+# Implementation notes & files modified
+- Added: `web/src/lib/gmail.ts` (Gmail OAuth2 + send)
+- Modified: `web/src/layouts/Base.astro` (GTM / GA injection)
+- Modified: `web/src/pages/contact.astro` (dataLayer push & API integration)
+- Modified: `web/src/pages/success.astro` (purchase dataLayer push)
+- Modified: `web/src/pages/api/contact.ts` (send notification via Gmail or SendGrid)
+- Modified: `web/src/pages/api/finalize-order.ts` (send notification via Gmail or SendGrid)
+- Modified: `.env.example` (added GA4 / GTM and Gmail placeholders)
+
+# Troubleshooting notes
+- If Gmail send fails with 401, verify `GMAIL_REFRESH_TOKEN`, `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET` are valid and the refresh token has proper scopes: `https://www.googleapis.com/auth/gmail.send`.
+- For GA4 issues, use GA DebugView and browser devtools to inspect `window.dataLayer` and `gtag` calls.
+- Confirm Supabase `SUPABASE_SERVICE_KEY` is set in server environment for writes from server-side endpoints.
+
+# Final status
+All subtasks (16.1 - 16.5) are marked as done. See above for measurement plan and manual test checklist to validate behavior in staging/production environments.

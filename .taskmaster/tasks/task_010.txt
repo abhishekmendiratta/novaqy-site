@@ -1,0 +1,43 @@
+# Task ID: 10
+# Title: Zoho Sign integration (/sign-contract)
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: Add sign-contract page linking to Zoho Sign template using ZOHO_SIGN_TEMPLATE_ID environment variable.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Configure Zoho Sign API Authentication [pending]
+### Dependencies: None
+### Description: Set up OAuth 2.0 authentication for Zoho Sign API by registering the application, obtaining Client ID and Client Secret, and securely storing credentials.
+### Details:
+Follow Zoho's developer console process to register the app and generate required tokens for API access.
+
+## 2. Set Up Zoho Sign Template [pending]
+### Dependencies: 10.1
+### Description: Create or identify the required Zoho Sign template and ensure its Template ID is available via the ZOHO_SIGN_TEMPLATE_ID environment variable.
+### Details:
+Upload or configure the reusable contract template in Zoho Sign and document its Template ID for integration.
+
+## 3. Develop /sign-contract Page UI [pending]
+### Dependencies: 10.2
+### Description: Design and implement the /sign-contract page that initiates the signing workflow using the Zoho Sign template.
+### Details:
+Create a user interface with clear instructions and a CTA to start the signing process, ensuring accessibility and usability.
+
+## 4. Integrate Zoho Sign API for Contract Initiation [pending]
+### Dependencies: 10.3
+### Description: Implement backend logic to trigger Zoho Sign API requests using the template and user data, handling authentication and API responses.
+### Details:
+Use Zoho Sign API endpoints to send documents for signature, passing the Template ID and recipient details as required.
+
+## 5. Validate End-to-End Signing Workflow [pending]
+### Dependencies: 10.4
+### Description: Test the complete flow from accessing /sign-contract to successful document signing and status confirmation.
+### Details:
+Simulate user interactions, monitor API calls, and confirm that signed documents are tracked and status is updated in the application.
+
