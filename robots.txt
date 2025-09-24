@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://novaqy.com/sitemap.xml
