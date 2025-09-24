@@ -1,0 +1,419 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#navigation"
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - link "Novaqy home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "Novaqy logo" [ref=e11] [cursor=pointer]
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]: Novaqy
+            - generic [ref=e14] [cursor=pointer]: Cloud LLP
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - button "Personal" [ref=e17] [cursor=pointer]
+            - button "Business" [ref=e18] [cursor=pointer]
+          - button "Open main menu" [ref=e19] [cursor=pointer]:
+            - img
+    - generic [ref=e21]:
+      - heading "Managed Services Plans" [level=1] [ref=e22]
+      - paragraph [ref=e23]: Affordable, reliable, and designed for seniors & non-tech users across USA & Canada. Choose the plan that fits your needs.
+      - generic [ref=e24]:
+        - 'link "📞 Call Now: (800) 123-4567" [ref=e25] [cursor=pointer]':
+          - /url: tel:+1-800-123-4567
+        - generic [ref=e26]: Available 8:30AM - 8:30PM EST
+      - generic [ref=e27]:
+        - button "🏠 Personal Plans" [ref=e28] [cursor=pointer]
+        - button "🏢 Business Plans" [ref=e29] [cursor=pointer]
+      - generic [ref=e30]:
+        - generic [ref=e31]: "Currency:"
+        - button "USD" [ref=e32] [cursor=pointer]
+        - button "CAD" [ref=e33] [cursor=pointer]
+        - button "INR" [ref=e34] [cursor=pointer]
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - heading "🛡️ Personal Managed Services Plans" [level=2] [ref=e38]
+        - paragraph [ref=e39]: Choose the plan that fits your needs and enjoy peace of mind all year round.
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - heading "Essential Care" [level=3] [ref=e43]
+            - generic [ref=e44]:
+              - generic [ref=e45]: $99.00
+              - generic [ref=e46]: /year
+            - paragraph [ref=e47]: Best for individuals who need occasional help.
+          - list [ref=e49]:
+            - listitem [ref=e50]:
+              - img [ref=e51]
+              - generic [ref=e53]: 3 on-demand support sessions per year (remote)
+            - listitem [ref=e54]:
+              - img [ref=e55]
+              - generic [ref=e57]: PC health check & optimization (1× per year)
+            - listitem [ref=e58]:
+              - img [ref=e59]
+              - generic [ref=e61]: Basic antivirus setup (BYOL – bring your own license or trial)
+            - listitem [ref=e62]:
+              - img [ref=e63]
+              - generic [ref=e65]: Email support during business hours
+          - button "Buy Now" [ref=e67] [cursor=pointer]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - heading "Advanced Care" [level=3] [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]: $149.00
+              - generic [ref=e73]: /year
+            - paragraph [ref=e74]: Covers everyday issues and adds security.
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - img [ref=e78]
+              - generic [ref=e80]: Unlimited remote support sessions (1 device)
+            - listitem [ref=e81]:
+              - img [ref=e82]
+              - generic [ref=e84]: Antivirus license included (1 device, 1 year)
+            - listitem [ref=e85]:
+              - img [ref=e86]
+              - generic [ref=e88]: Monthly PC tune-up & malware scans
+            - listitem [ref=e89]:
+              - img [ref=e90]
+              - generic [ref=e92]: Printer, email, and software troubleshooting
+            - listitem [ref=e93]:
+              - img [ref=e94]
+              - generic [ref=e96]: Priority support (faster response)
+          - button "Buy Now" [ref=e98] [cursor=pointer]
+        - generic [ref=e99]:
+          - generic [ref=e100]: Most Popular
+          - generic [ref=e101]:
+            - heading "Premium Care" [level=3] [ref=e102]
+            - generic [ref=e103]:
+              - generic [ref=e104]: $249.00
+              - generic [ref=e105]: /year
+            - paragraph [ref=e106]: Complete protection for households with multiple devices.
+          - list [ref=e108]:
+            - listitem [ref=e109]:
+              - img [ref=e110]
+              - generic [ref=e112]: Unlimited remote support for up to 3 devices (PC, tablet, phone)
+            - listitem [ref=e113]:
+              - img [ref=e114]
+              - generic [ref=e116]: Quarterly PC optimization + patching
+            - listitem [ref=e117]:
+              - img [ref=e118]
+              - generic [ref=e120]: Assistance with secure apps, online accounts, and cloud storage
+            - listitem [ref=e121]:
+              - img [ref=e122]
+              - generic [ref=e124]: Priority support (8:30AM - 8:30PM EST)
+          - button "Buy Now" [ref=e126] [cursor=pointer]
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - heading "Family / Elite Care" [level=3] [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e131]: $449.00
+              - generic [ref=e132]: /year
+            - paragraph [ref=e133]: Peace of mind for families or power users.
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - img [ref=e137]
+              - generic [ref=e139]: Unlimited support for up to 5 devices
+            - listitem [ref=e140]:
+              - img [ref=e141]
+              - generic [ref=e143]: Full software setup (Zoom, email, cloud, productivity & security apps)
+            - listitem [ref=e144]:
+              - img [ref=e145]
+              - generic [ref=e147]: Smart home/IoT troubleshooting (Wi-Fi, Alexa, TVs, routers)
+            - listitem [ref=e148]:
+              - img [ref=e149]
+              - generic [ref=e151]: Priority support with toll-free number (8:30AM - 8:30PM EST)
+          - button "Buy Now" [ref=e153] [cursor=pointer]
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - heading "Cloud Backup Service" [level=2] [ref=e157]
+        - paragraph [ref=e158]: Secure cloud backup solutions for your personal data are coming soon!
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - generic [ref=e164]: 🚀
+          - heading "Coming Soon" [level=3] [ref=e165]
+          - paragraph [ref=e166]: We're working hard to bring you comprehensive cloud backup solutions for your personal plans. Stay tuned for automatic backups, secure storage, and peace of mind for all your important data.
+        - generic [ref=e167]:
+          - generic [ref=e170]: Secure cloud storage
+          - generic [ref=e173]: Automatic daily backups
+          - generic [ref=e176]: Multi-device sync
+          - generic [ref=e179]: Version history & recovery
+        - button "Notify Me When Available" [disabled] [ref=e180]
+      - paragraph [ref=e182]: � In the meantime, explore our business backup solutions or contact us for custom requirements.
+    - generic [ref=e184]:
+      - generic [ref=e185]:
+        - heading "Compare Personal Plans" [level=2] [ref=e186]
+        - paragraph [ref=e187]: Detailed breakdown of features across all personal plans
+      - table [ref=e191]:
+        - rowgroup [ref=e192]:
+          - row "Features $99.00 Essential Care $149.00 Advanced Care $249.00 Premium Care Most Popular $449.00 Family Care" [ref=e193]:
+            - cell "Features" [ref=e194]
+            - cell "$99.00 Essential Care" [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]: $99.00
+                - generic [ref=e198]: Essential Care
+            - cell "$149.00 Advanced Care" [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: $149.00
+                - generic [ref=e202]: Advanced Care
+            - cell "$249.00 Premium Care Most Popular" [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: $249.00
+                - generic [ref=e206]: Premium Care
+                - generic [ref=e207]: Most Popular
+            - cell "$449.00 Family Care" [ref=e208]:
+              - generic [ref=e209]:
+                - generic [ref=e210]: $449.00
+                - generic [ref=e211]: Family Care
+        - rowgroup [ref=e212]:
+          - row "Support Features" [ref=e213]:
+            - cell "Support Features" [ref=e214]
+          - row "Remote support sessions 3 per year Unlimited (1 device) Unlimited (up to 3 devices) Unlimited (up to 5 devices)" [ref=e215]:
+            - cell "Remote support sessions" [ref=e216]
+            - cell "3 per year" [ref=e217]:
+              - generic [ref=e218]: 3 per year
+            - cell "Unlimited (1 device)" [ref=e219]:
+              - generic [ref=e220]: Unlimited (1 device)
+            - cell "Unlimited (up to 3 devices)" [ref=e221]:
+              - generic [ref=e222]: Unlimited (up to 3 devices)
+            - cell "Unlimited (up to 5 devices)" [ref=e223]:
+              - generic [ref=e224]: Unlimited (up to 5 devices)
+          - row "Support hours Business hours Business hours + Priority 8:30AM - 8:30PM EST 8:30AM - 8:30PM EST" [ref=e225]:
+            - cell "Support hours" [ref=e226]
+            - cell "Business hours" [ref=e227]:
+              - generic [ref=e228]: Business hours
+            - cell "Business hours + Priority" [ref=e229]:
+              - generic [ref=e230]: Business hours + Priority
+            - cell "8:30AM - 8:30PM EST" [ref=e231]:
+              - generic [ref=e232]: 8:30AM - 8:30PM EST
+            - cell "8:30AM - 8:30PM EST" [ref=e233]:
+              - generic [ref=e234]: 8:30AM - 8:30PM EST
+          - row "Antivirus protection BYOL (bring your own license) Included (1 device, 1 year) Included (up to 3 devices) Included (up to 5 devices)" [ref=e235]:
+            - cell "Antivirus protection" [ref=e236]
+            - cell "BYOL (bring your own license)" [ref=e237]:
+              - generic [ref=e238]: BYOL (bring your own license)
+            - cell "Included (1 device, 1 year)" [ref=e239]:
+              - generic [ref=e240]: Included (1 device, 1 year)
+            - cell "Included (up to 3 devices)" [ref=e241]:
+              - generic [ref=e242]: Included (up to 3 devices)
+            - cell "Included (up to 5 devices)" [ref=e243]:
+              - generic [ref=e244]: Included (up to 5 devices)
+          - row "Maintenance & Optimization" [ref=e245]:
+            - cell "Maintenance & Optimization" [ref=e246]
+          - row "PC health checks 1× per year Monthly tune-ups Quarterly optimization Quarterly optimization" [ref=e247]:
+            - cell "PC health checks" [ref=e248]
+            - cell "1× per year" [ref=e249]:
+              - generic [ref=e250]: 1× per year
+            - cell "Monthly tune-ups" [ref=e251]:
+              - generic [ref=e252]: Monthly tune-ups
+            - cell "Quarterly optimization" [ref=e253]:
+              - generic [ref=e254]: Quarterly optimization
+            - cell "Quarterly optimization" [ref=e255]:
+              - generic [ref=e256]: Quarterly optimization
+          - row "Software setup assistance Basic setup Printer, email, software Apps, payments, cloud storage Full setup (Zoom, email, cloud, banking)" [ref=e257]:
+            - cell "Software setup assistance" [ref=e258]
+            - cell "Basic setup" [ref=e259]:
+              - generic [ref=e260]: Basic setup
+            - cell "Printer, email, software" [ref=e261]:
+              - generic [ref=e262]: Printer, email, software
+            - cell "Apps, payments, cloud storage" [ref=e263]:
+              - generic [ref=e264]: Apps, payments, cloud storage
+            - cell "Full setup (Zoom, email, cloud, banking)" [ref=e265]:
+              - generic [ref=e266]: Full setup (Zoom, email, cloud, banking)
+          - row "Smart home/IoT support Wi-Fi, Alexa, TVs, routers" [ref=e267]:
+            - cell "Smart home/IoT support" [ref=e268]
+            - cell [ref=e269]:
+              - img [ref=e271]
+            - cell [ref=e274]:
+              - img [ref=e276]
+            - cell [ref=e279]:
+              - img [ref=e281]
+            - cell "Wi-Fi, Alexa, TVs, routers" [ref=e284]:
+              - generic [ref=e285]: Wi-Fi, Alexa, TVs, routers
+      - generic [ref=e286]:
+        - heading "Ready to Get Started?" [level=3] [ref=e287]
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e290]: $99.00/year
+            - generic [ref=e291]: Essential Care
+            - button "Buy Now" [ref=e292] [cursor=pointer]
+          - generic [ref=e293]:
+            - generic [ref=e294]: $149.00/year
+            - generic [ref=e295]: Advanced Care
+            - button "Buy Now" [ref=e296] [cursor=pointer]
+          - generic [ref=e297]:
+            - generic [ref=e298]: $249.00/year
+            - generic [ref=e299]: Premium Care
+            - generic [ref=e300]: Most Popular
+            - button "Buy Now" [ref=e301] [cursor=pointer]
+          - generic [ref=e302]:
+            - generic [ref=e303]: $449.00/year
+            - generic [ref=e304]: Family Care
+            - button "Buy Now" [ref=e305] [cursor=pointer]
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e309]
+        - paragraph [ref=e310]: Everything you need to know about our Support Services
+      - generic [ref=e311]:
+        - generic [ref=e313]:
+          - heading "What devices do you support?" [level=3] [ref=e314]
+          - paragraph [ref=e315]: We support Windows PCs, Macs, tablets (iPad, Android), smartphones (iPhone, Android), and smart home devices including routers, printers, and IoT devices. Our technicians are trained on all major operating systems and can help with setup, troubleshooting, and optimization.
+        - generic [ref=e317]:
+          - heading "How quickly can I get help?" [level=3] [ref=e318]
+          - paragraph [ref=e319]: "Response times vary by plan: Essential Care offers business hours support, Advanced Care provides priority response, while Premium and Family Care plans get the fastest response times. Most issues are resolved within the same session, and we offer unlimited support sessions for higher-tier plans."
+        - generic [ref=e321]:
+          - heading "What if I'm not tech-savvy?" [level=3] [ref=e322]
+          - paragraph [ref=e323]: Our team specializes in helping seniors and non-technical users. We use simple language, provide step-by-step guidance, and can take control of your device remotely to fix issues. We also offer personalized training sessions to help you feel confident using your technology.
+        - generic [ref=e325]:
+          - heading "Is my data secure during remote support?" [level=3] [ref=e326]
+          - paragraph [ref=e327]: Absolutely. We use industry-standard encryption and secure remote access tools. Our technicians only access what they need to fix your issue, and all sessions are monitored and logged. We never store your personal data or access private files without your explicit permission.
+        - generic [ref=e329]:
+          - heading "What common issues do you fix?" [level=3] [ref=e330]
+          - paragraph [ref=e331]: We handle everything from basic setup and software installation to complex issues like virus removal, system optimization, email problems, Wi-Fi connectivity, printer setup, and smart home device configuration. We also provide preventive maintenance and security updates.
+        - generic [ref=e333]:
+          - heading "Can I get help with online banking and shopping?" [level=3] [ref=e334]
+          - paragraph [ref=e335]: Yes! Higher-tier plans include assistance with online banking setup, secure payment methods, and safe online shopping practices. We help you set up payment apps, configure security settings, and teach you how to recognize and avoid online scams.
+        - generic [ref=e337]:
+          - heading "What antivirus protection do you provide?" [level=3] [ref=e338]
+          - paragraph [ref=e339]: Advanced Care and higher plans include a full year of premium antivirus protection. Essential Care users can bring their own license or we can help set up free antivirus options. We also provide ongoing malware scanning, removal services, and security best practices training.
+        - generic [ref=e341]:
+          - heading "Do you offer phone support?" [level=3] [ref=e342]
+          - paragraph [ref=e343]: For B2C customers, we provide email support during business hours (8:30AM - 8:30PM EST). B2B customers can request phone consultations through our contact form. All support is handled by certified technicians with expertise in senior-friendly technology solutions.
+        - generic [ref=e345]:
+          - heading "Can I change or cancel my plan?" [level=3] [ref=e346]
+          - paragraph [ref=e347]: You can upgrade your plan at any time with prorated billing. Downgrades take effect at the next billing cycle. Cancellations can be made anytime with no cancellation fees. We offer a 30-day money-back guarantee on all plans.
+    - contentinfo [ref=e348]:
+      - generic [ref=e349]:
+        - generic [ref=e350]:
+          - heading "Stay Connected with Novaqy" [level=3] [ref=e351]
+          - paragraph [ref=e352]: Get helpful technology tips, security updates, and exclusive offers designed for seniors and businesses. Join thousands of satisfied customers who trust Novaqy.
+          - generic [ref=e353]:
+            - textbox "Enter your email address" [ref=e354]
+            - button "Subscribe Now" [ref=e355] [cursor=pointer]
+          - paragraph [ref=e356]: 🔒 We respect your privacy. Unsubscribe anytime. No spam, ever.
+        - generic [ref=e357]:
+          - generic [ref=e358]:
+            - heading "Our Services" [level=4] [ref=e359]
+            - list [ref=e360]:
+              - listitem [ref=e361]:
+                - link "Personal Tech Support" [ref=e362] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e363]:
+                - link "Cloud Backup Services" [ref=e364] [cursor=pointer]:
+                  - /url: /pricing#backup
+              - listitem [ref=e365]:
+                - link "Business Managed Services" [ref=e366] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e367]:
+                - link "Digital Marketing" [ref=e368] [cursor=pointer]:
+                  - /url: /business-services#digital-marketing
+              - listitem [ref=e369]:
+                - link "Backup as a Service" [ref=e370] [cursor=pointer]:
+                  - /url: /business-pricing#backup
+              - listitem [ref=e371]:
+                - link "Cloud Solutions" [ref=e372] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e373]:
+                - link "Security & Protection" [ref=e374] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e375]:
+                - link "Senior-Friendly Support" [ref=e376] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=e377]:
+            - heading "Support & Resources" [level=4] [ref=e378]
+            - list [ref=e379]:
+              - listitem [ref=e380]:
+                - link "24/7 Help Center" [ref=e381] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e382]:
+                - link "Getting Started Guide" [ref=e383] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e384]:
+                - link "Video Tutorials" [ref=e385] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e386]:
+                - link "Customer Success Stories" [ref=e387] [cursor=pointer]:
+                  - /url: /customer-stories
+              - listitem [ref=e388]:
+                - link "Live Chat Support" [ref=e389] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e390]:
+                - link "Phone Support" [ref=e391] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e392]:
+            - heading "About Novaqy" [level=4] [ref=e393]
+            - list [ref=e394]:
+              - listitem [ref=e395]:
+                - link "Our Mission" [ref=e396] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e397]:
+                - link "Why Choose Us" [ref=e398] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e399]:
+                - link "Meet Our Team" [ref=e400] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e401]:
+                - link "Service Locations" [ref=e402] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e403]:
+                - link "Careers" [ref=e404] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e405]:
+                - link "Press & Media" [ref=e406] [cursor=pointer]:
+                  - /url: /about
+          - generic [ref=e407]:
+            - heading "Legal & Policies" [level=4] [ref=e408]
+            - list [ref=e409]:
+              - listitem [ref=e410]:
+                - link "Terms of Service" [ref=e411] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=e412]:
+                - link "Privacy Policy" [ref=e413] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e414]:
+                - link "Service Agreement" [ref=e415] [cursor=pointer]:
+                  - /url: /end-user-agreement
+              - listitem [ref=e416]:
+                - link "Return & Refund Policy" [ref=e417] [cursor=pointer]:
+                  - /url: /return-refund
+              - listitem [ref=e418]:
+                - link "Remote Support Terms" [ref=e419] [cursor=pointer]:
+                  - /url: /remote-disclaimer
+              - listitem [ref=e420]:
+                - link "Data Protection" [ref=e421] [cursor=pointer]:
+                  - /url: /gdpr-compliance
+        - generic [ref=e422]:
+          - generic [ref=e423]:
+            - img "Novaqy logo" [ref=e424]
+            - generic [ref=e425]:
+              - generic [ref=e426]: Novaqy Cloud LLP
+              - paragraph [ref=e427]: Trusted Technology Solutions
+          - generic [ref=e428]:
+            - generic [ref=e429]: © 2025 Novaqy Cloud LLP. All rights reserved.
+            - generic [ref=e430]:
+              - link "Privacy Settings" [ref=e431] [cursor=pointer]:
+                - /url: /privacy-settings
+              - link "Accessibility" [ref=e432] [cursor=pointer]:
+                - /url: /accessibility
+        - generic [ref=e433]:
+          - paragraph [ref=e434]: 🛡️ Your data and privacy are our top priority. We use enterprise-grade security measures to protect your information.
+          - generic [ref=e435]:
+            - generic [ref=e436]:
+              - generic [ref=e437]: SOC 2 Type II Compliant
+              - generic [ref=e438]: Industry-standard security auditing
+            - generic [ref=e439]:
+              - generic [ref=e440]: 256-bit SSL Encryption
+              - generic [ref=e441]: Bank-level data protection
+            - generic [ref=e442]:
+              - generic [ref=e443]: GDPR & PIPEDA Compliant
+              - generic [ref=e444]: International privacy standards
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```

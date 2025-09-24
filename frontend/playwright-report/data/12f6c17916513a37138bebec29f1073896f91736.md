@@ -1,0 +1,336 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#navigation"
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - link "Novaqy home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "Novaqy logo" [ref=e11] [cursor=pointer]
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]: Novaqy
+            - generic [ref=e14] [cursor=pointer]: Cloud LLP
+        - navigation "Main navigation" [ref=e15]:
+          - link "Features" [ref=e17] [cursor=pointer]:
+            - /url: /features
+          - button "Services" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20] [cursor=pointer]: Services
+            - img [ref=e21] [cursor=pointer]
+          - link "Pricing" [ref=e24] [cursor=pointer]:
+            - /url: /pricing
+          - button "Resources" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Resources
+            - img [ref=e28] [cursor=pointer]
+          - link "About" [ref=e31] [cursor=pointer]:
+            - /url: /about
+          - link "Contact" [ref=e33] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Personal" [ref=e36] [cursor=pointer]
+            - button "Business" [active] [ref=e37] [cursor=pointer]
+          - link "Sign In" [ref=e38] [cursor=pointer]:
+            - /url: /login
+          - link "Get Started" [ref=e39] [cursor=pointer]:
+            - /url: /pricing
+    - generic [ref=e41]:
+      - heading "Managed Services Plans" [level=1] [ref=e42]
+      - paragraph [ref=e43]: Affordable, reliable, and designed for seniors & non-tech users across USA & Canada. Choose the plan that fits your needs.
+      - generic [ref=e44]:
+        - 'link "📞 Call Now: (800) 123-4567" [ref=e45] [cursor=pointer]':
+          - /url: tel:+1-800-123-4567
+        - generic [ref=e46]: Available 8:30AM - 8:30PM EST
+      - generic [ref=e47]:
+        - button "🏠 Personal Plans" [ref=e48] [cursor=pointer]
+        - button "🏢 Business Plans" [ref=e49] [cursor=pointer]
+      - generic [ref=e50]:
+        - generic [ref=e51]: "Currency:"
+        - button "USD" [ref=e52] [cursor=pointer]
+        - button "CAD" [ref=e53] [cursor=pointer]
+        - button "INR" [ref=e54] [cursor=pointer]
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "🏢 Business Managed Services Plans" [level=2] [ref=e58]
+        - paragraph [ref=e59]: Pricing is hidden. Submit a query to receive a personalized quote.
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - heading "Managed Hosting" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Fully managed servers & cloud hosting.
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - img [ref=e68]
+              - generic [ref=e70]: Fully managed servers & cloud hosting
+            - listitem [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e74]: Domain & email management
+            - listitem [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e78]: Security & patch updates
+            - listitem [ref=e79]:
+              - img [ref=e80]
+              - generic [ref=e82]: Uptime monitoring & SLA
+          - button "Query Now" [ref=e84] [cursor=pointer]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - heading "MSP Services" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Endpoint management & monitoring.
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - img [ref=e92]
+              - generic [ref=e94]: Endpoint management & monitoring
+            - listitem [ref=e95]:
+              - img [ref=e96]
+              - generic [ref=e98]: Patch management & software updates
+            - listitem [ref=e99]:
+              - img [ref=e100]
+              - generic [ref=e102]: Remote troubleshooting & support
+            - listitem [ref=e103]:
+              - img [ref=e104]
+              - generic [ref=e106]: Security & antivirus management
+          - button "Query Now" [ref=e108] [cursor=pointer]
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - heading "MSSP Services" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Managed cybersecurity monitoring.
+          - list [ref=e114]:
+            - listitem [ref=e115]:
+              - img [ref=e116]
+              - generic [ref=e118]: Managed cybersecurity monitoring
+            - listitem [ref=e119]:
+              - img [ref=e120]
+              - generic [ref=e122]: Threat detection & incident response
+            - listitem [ref=e123]:
+              - img [ref=e124]
+              - generic [ref=e126]: Compliance & auditing support
+            - listitem [ref=e127]:
+              - img [ref=e128]
+              - generic [ref=e130]: Backup & disaster recovery planning
+          - button "Query Now" [ref=e132] [cursor=pointer]
+        - generic [ref=e133]:
+          - generic [ref=e134]: Most Popular
+          - generic [ref=e135]:
+            - heading "Digital Marketing Services" [level=3] [ref=e136]
+            - paragraph [ref=e137]: Complete digital marketing & lead generation.
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - img [ref=e141]
+              - generic [ref=e143]: SEO optimization & content marketing
+            - listitem [ref=e144]:
+              - img [ref=e145]
+              - generic [ref=e147]: Social media management & advertising
+            - listitem [ref=e148]:
+              - img [ref=e149]
+              - generic [ref=e151]: Google Ads & PPC campaign management
+            - listitem [ref=e152]:
+              - img [ref=e153]
+              - generic [ref=e155]: Email marketing & lead nurturing
+            - listitem [ref=e156]:
+              - img [ref=e157]
+              - generic [ref=e159]: Website analytics & conversion tracking
+            - listitem [ref=e160]:
+              - img [ref=e161]
+              - generic [ref=e163]: Brand management & online reputation
+          - button "Query Now" [ref=e165] [cursor=pointer]
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - heading "Backup as a Service" [level=3] [ref=e168]
+            - paragraph [ref=e169]: Cloud backup with encryption.
+          - list [ref=e171]:
+            - listitem [ref=e172]:
+              - img [ref=e173]
+              - generic [ref=e175]: Cloud backup with encryption
+            - listitem [ref=e176]:
+              - img [ref=e177]
+              - generic [ref=e179]: Scheduled backups & restore verification
+            - listitem [ref=e180]:
+              - img [ref=e181]
+              - generic [ref=e183]: Versioning & retention policies
+            - listitem [ref=e184]:
+              - img [ref=e185]
+              - generic [ref=e187]: Optional white-label solutions
+          - button "Query Now" [ref=e189] [cursor=pointer]
+    - generic [ref=e191]:
+      - generic [ref=e192]:
+        - heading "Why Choose Our Business Services?" [level=2] [ref=e193]
+        - paragraph [ref=e194]: Comprehensive IT solutions designed for growing businesses
+      - generic [ref=e195]:
+        - generic [ref=e196]:
+          - generic [ref=e198]: 🛡️
+          - heading "24/7 Security Monitoring" [level=3] [ref=e199]
+          - paragraph [ref=e200]: Continuous threat detection and incident response to protect your business data.
+        - generic [ref=e201]:
+          - generic [ref=e203]: ⚡
+          - heading "Rapid Response" [level=3] [ref=e204]
+          - paragraph [ref=e205]: Quick problem resolution with dedicated support during business hours (8:30AM - 8:30PM EST).
+        - generic [ref=e206]:
+          - generic [ref=e208]: 📊
+          - heading "Compliance & Reporting" [level=3] [ref=e209]
+          - paragraph [ref=e210]: Regular compliance audits and detailed reporting for peace of mind.
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e214]
+        - paragraph [ref=e215]: Everything you need to know about our Support Services
+      - generic [ref=e216]:
+        - generic [ref=e218]:
+          - heading "What devices do you support?" [level=3] [ref=e219]
+          - paragraph [ref=e220]: We support Windows PCs, Macs, tablets (iPad, Android), smartphones (iPhone, Android), and smart home devices including routers, printers, and IoT devices. Our technicians are trained on all major operating systems and can help with setup, troubleshooting, and optimization.
+        - generic [ref=e222]:
+          - heading "How quickly can I get help?" [level=3] [ref=e223]
+          - paragraph [ref=e224]: "Response times vary by plan: Essential Care offers business hours support, Advanced Care provides priority response, while Premium and Family Care plans get the fastest response times. Most issues are resolved within the same session, and we offer unlimited support sessions for higher-tier plans."
+        - generic [ref=e226]:
+          - heading "What if I'm not tech-savvy?" [level=3] [ref=e227]
+          - paragraph [ref=e228]: Our team specializes in helping seniors and non-technical users. We use simple language, provide step-by-step guidance, and can take control of your device remotely to fix issues. We also offer personalized training sessions to help you feel confident using your technology.
+        - generic [ref=e230]:
+          - heading "Is my data secure during remote support?" [level=3] [ref=e231]
+          - paragraph [ref=e232]: Absolutely. We use industry-standard encryption and secure remote access tools. Our technicians only access what they need to fix your issue, and all sessions are monitored and logged. We never store your personal data or access private files without your explicit permission.
+        - generic [ref=e234]:
+          - heading "What common issues do you fix?" [level=3] [ref=e235]
+          - paragraph [ref=e236]: We handle everything from basic setup and software installation to complex issues like virus removal, system optimization, email problems, Wi-Fi connectivity, printer setup, and smart home device configuration. We also provide preventive maintenance and security updates.
+        - generic [ref=e238]:
+          - heading "Can I get help with online banking and shopping?" [level=3] [ref=e239]
+          - paragraph [ref=e240]: Yes! Higher-tier plans include assistance with online banking setup, secure payment methods, and safe online shopping practices. We help you set up payment apps, configure security settings, and teach you how to recognize and avoid online scams.
+        - generic [ref=e242]:
+          - heading "What antivirus protection do you provide?" [level=3] [ref=e243]
+          - paragraph [ref=e244]: Advanced Care and higher plans include a full year of premium antivirus protection. Essential Care users can bring their own license or we can help set up free antivirus options. We also provide ongoing malware scanning, removal services, and security best practices training.
+        - generic [ref=e246]:
+          - heading "Do you offer phone support?" [level=3] [ref=e247]
+          - paragraph [ref=e248]: For B2C customers, we provide email support during business hours (8:30AM - 8:30PM EST). B2B customers can request phone consultations through our contact form. All support is handled by certified technicians with expertise in senior-friendly technology solutions.
+        - generic [ref=e250]:
+          - heading "Can I change or cancel my plan?" [level=3] [ref=e251]
+          - paragraph [ref=e252]: You can upgrade your plan at any time with prorated billing. Downgrades take effect at the next billing cycle. Cancellations can be made anytime with no cancellation fees. We offer a 30-day money-back guarantee on all plans.
+    - contentinfo [ref=e253]:
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - heading "Stay Connected with Novaqy" [level=3] [ref=e256]
+          - paragraph [ref=e257]: Get helpful technology tips, security updates, and exclusive offers designed for seniors and businesses. Join thousands of satisfied customers who trust Novaqy.
+          - generic [ref=e258]:
+            - textbox "Enter your email address" [ref=e259]
+            - button "Subscribe Now" [ref=e260] [cursor=pointer]
+          - paragraph [ref=e261]: 🔒 We respect your privacy. Unsubscribe anytime. No spam, ever.
+        - generic [ref=e262]:
+          - generic [ref=e263]:
+            - heading "Our Services" [level=4] [ref=e264]
+            - list [ref=e265]:
+              - listitem [ref=e266]:
+                - link "Personal Tech Support" [ref=e267] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e268]:
+                - link "Cloud Backup Services" [ref=e269] [cursor=pointer]:
+                  - /url: /pricing#backup
+              - listitem [ref=e270]:
+                - link "Business Managed Services" [ref=e271] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e272]:
+                - link "Digital Marketing" [ref=e273] [cursor=pointer]:
+                  - /url: /business-services#digital-marketing
+              - listitem [ref=e274]:
+                - link "Backup as a Service" [ref=e275] [cursor=pointer]:
+                  - /url: /business-pricing#backup
+              - listitem [ref=e276]:
+                - link "Cloud Solutions" [ref=e277] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e278]:
+                - link "Security & Protection" [ref=e279] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e280]:
+                - link "Senior-Friendly Support" [ref=e281] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=e282]:
+            - heading "Support & Resources" [level=4] [ref=e283]
+            - list [ref=e284]:
+              - listitem [ref=e285]:
+                - link "24/7 Help Center" [ref=e286] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e287]:
+                - link "Getting Started Guide" [ref=e288] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e289]:
+                - link "Video Tutorials" [ref=e290] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e291]:
+                - link "Customer Success Stories" [ref=e292] [cursor=pointer]:
+                  - /url: /customer-stories
+              - listitem [ref=e293]:
+                - link "Live Chat Support" [ref=e294] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e295]:
+                - link "Phone Support" [ref=e296] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e297]:
+            - heading "About Novaqy" [level=4] [ref=e298]
+            - list [ref=e299]:
+              - listitem [ref=e300]:
+                - link "Our Mission" [ref=e301] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e302]:
+                - link "Why Choose Us" [ref=e303] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e304]:
+                - link "Meet Our Team" [ref=e305] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e306]:
+                - link "Service Locations" [ref=e307] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e308]:
+                - link "Careers" [ref=e309] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e310]:
+                - link "Press & Media" [ref=e311] [cursor=pointer]:
+                  - /url: /about
+          - generic [ref=e312]:
+            - heading "Legal & Policies" [level=4] [ref=e313]
+            - list [ref=e314]:
+              - listitem [ref=e315]:
+                - link "Terms of Service" [ref=e316] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=e317]:
+                - link "Privacy Policy" [ref=e318] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e319]:
+                - link "Service Agreement" [ref=e320] [cursor=pointer]:
+                  - /url: /end-user-agreement
+              - listitem [ref=e321]:
+                - link "Return & Refund Policy" [ref=e322] [cursor=pointer]:
+                  - /url: /return-refund
+              - listitem [ref=e323]:
+                - link "Remote Support Terms" [ref=e324] [cursor=pointer]:
+                  - /url: /remote-disclaimer
+              - listitem [ref=e325]:
+                - link "Data Protection" [ref=e326] [cursor=pointer]:
+                  - /url: /gdpr-compliance
+        - generic [ref=e327]:
+          - generic [ref=e328]:
+            - img "Novaqy logo" [ref=e329]
+            - generic [ref=e330]:
+              - generic [ref=e331]: Novaqy Cloud LLP
+              - paragraph [ref=e332]: Trusted Technology Solutions
+          - generic [ref=e333]:
+            - generic [ref=e334]: © 2025 Novaqy Cloud LLP. All rights reserved.
+            - generic [ref=e335]:
+              - link "Privacy Settings" [ref=e336] [cursor=pointer]:
+                - /url: /privacy-settings
+              - link "Accessibility" [ref=e337] [cursor=pointer]:
+                - /url: /accessibility
+        - generic [ref=e338]:
+          - paragraph [ref=e339]: 🛡️ Your data and privacy are our top priority. We use enterprise-grade security measures to protect your information.
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - generic [ref=e342]: SOC 2 Type II Compliant
+              - generic [ref=e343]: Industry-standard security auditing
+            - generic [ref=e344]:
+              - generic [ref=e345]: 256-bit SSL Encryption
+              - generic [ref=e346]: Bank-level data protection
+            - generic [ref=e347]:
+              - generic [ref=e348]: GDPR & PIPEDA Compliant
+              - generic [ref=e349]: International privacy standards
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```

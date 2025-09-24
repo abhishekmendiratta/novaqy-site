@@ -1,0 +1,236 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#navigation"
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - link "Novaqy home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "Novaqy logo" [ref=e11] [cursor=pointer]
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]: Novaqy
+            - generic [ref=e14] [cursor=pointer]: Cloud LLP
+        - navigation "Main navigation" [ref=e15]:
+          - link "Features" [ref=e17] [cursor=pointer]:
+            - /url: /features
+          - button "Services" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20] [cursor=pointer]: Services
+            - img [ref=e21] [cursor=pointer]
+          - link "Pricing" [ref=e24] [cursor=pointer]:
+            - /url: /pricing
+          - button "Resources" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Resources
+            - img [ref=e28] [cursor=pointer]
+          - link "About" [ref=e31] [cursor=pointer]:
+            - /url: /about
+          - link "Contact" [ref=e33] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Personal" [ref=e36] [cursor=pointer]
+            - button "Business" [ref=e37] [cursor=pointer]
+          - link "Sign In" [ref=e38] [cursor=pointer]:
+            - /url: /login
+          - link "Get Started" [ref=e39] [cursor=pointer]:
+            - /url: /pricing
+    - generic [ref=e41]:
+      - generic [ref=e42]: Contact Us
+      - heading "Get in touch" [level=1] [ref=e43]
+      - paragraph [ref=e44]: Have questions about our platform? Want to schedule a demo? Our team is here to help you succeed.
+    - generic [ref=e47]:
+      - generic [ref=e49]:
+        - img [ref=e51]
+        - heading "Email" [level=3] [ref=e54]
+        - paragraph [ref=e55]: hello@novaqy.com
+        - paragraph [ref=e56]: We'll respond within 24 hours
+      - generic [ref=e58]:
+        - img [ref=e60]
+        - heading "Phone" [level=3] [ref=e62]
+        - paragraph [ref=e63]: +1 (800) NOVAQY-1
+        - paragraph [ref=e64]: Mon-Fri, 8:30AM-8:30PM EST
+      - generic [ref=e66]:
+        - img [ref=e68]
+        - heading "Office" [level=3] [ref=e71]
+        - paragraph [ref=e72]: TBD - Address
+        - paragraph [ref=e73]: Visit us by appointment
+      - generic [ref=e75]:
+        - img [ref=e77]
+        - heading "Support Hours" [level=3] [ref=e80]
+        - paragraph [ref=e81]: Mon-Fri, 8:30AM-8:30PM EST
+        - paragraph [ref=e82]: 24/7 emergency monitoring available
+    - generic [ref=e86]:
+      - heading "Send us a message" [level=3] [ref=e88]
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Full Name *
+            - textbox "Full Name *" [ref=e94]
+          - generic [ref=e95]:
+            - generic [ref=e96]: Email *
+            - textbox "Email *" [ref=e97]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]: Company
+            - textbox "Company" [ref=e101]
+          - generic [ref=e102]:
+            - generic [ref=e103]: Phone
+            - textbox "Phone" [ref=e104]
+        - generic [ref=e105]:
+          - generic [ref=e106]: Subject *
+          - combobox [ref=e107] [cursor=pointer]:
+            - generic: Select a topic
+            - img [ref=e108] [cursor=pointer]
+          - combobox [ref=e110]
+        - generic [ref=e111]:
+          - generic [ref=e112]: Message *
+          - textbox "Message *" [ref=e113]
+        - button "Send Message" [ref=e114] [cursor=pointer]
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e118]
+        - paragraph [ref=e119]: Common questions we receive from customers
+      - generic [ref=e120]:
+        - generic [ref=e122]:
+          - heading "How quickly will I get a response?" [level=3] [ref=e123]
+          - paragraph [ref=e124]: We aim to respond to all inquiries within 24 hours during business days (Mon-Fri, 8:30AM-8:30PM EST). For urgent matters, please call our support line during business hours.
+        - generic [ref=e126]:
+          - heading "Can I schedule a demo?" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Yes! Select "Sales Question" in the form above and mention you'd like to schedule a demo. Our sales team will coordinate a time that works for you.
+        - generic [ref=e130]:
+          - heading "Do you offer technical support?" [level=3] [ref=e131]
+          - paragraph [ref=e132]: Absolutely. Our technical support team is available 24/7 to help with any platform-related questions or issues.
+    - contentinfo [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - heading "Stay Connected with Novaqy" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Get helpful technology tips, security updates, and exclusive offers designed for seniors and businesses. Join thousands of satisfied customers who trust Novaqy.
+          - generic [ref=e138]:
+            - textbox "Enter your email address" [ref=e139]
+            - button "Subscribe Now" [ref=e140] [cursor=pointer]
+          - paragraph [ref=e141]: 🔒 We respect your privacy. Unsubscribe anytime. No spam, ever.
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - heading "Our Services" [level=4] [ref=e144]
+            - list [ref=e145]:
+              - listitem [ref=e146]:
+                - link "Personal Tech Support" [ref=e147] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e148]:
+                - link "Cloud Backup Services" [ref=e149] [cursor=pointer]:
+                  - /url: /pricing#backup
+              - listitem [ref=e150]:
+                - link "Business Managed Services" [ref=e151] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e152]:
+                - link "Digital Marketing" [ref=e153] [cursor=pointer]:
+                  - /url: /business-services#digital-marketing
+              - listitem [ref=e154]:
+                - link "Backup as a Service" [ref=e155] [cursor=pointer]:
+                  - /url: /business-pricing#backup
+              - listitem [ref=e156]:
+                - link "Cloud Solutions" [ref=e157] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e158]:
+                - link "Security & Protection" [ref=e159] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e160]:
+                - link "Senior-Friendly Support" [ref=e161] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=e162]:
+            - heading "Support & Resources" [level=4] [ref=e163]
+            - list [ref=e164]:
+              - listitem [ref=e165]:
+                - link "24/7 Help Center" [ref=e166] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e167]:
+                - link "Getting Started Guide" [ref=e168] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e169]:
+                - link "Video Tutorials" [ref=e170] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e171]:
+                - link "Customer Success Stories" [ref=e172] [cursor=pointer]:
+                  - /url: /customer-stories
+              - listitem [ref=e173]:
+                - link "Live Chat Support" [ref=e174] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e175]:
+                - link "Phone Support" [ref=e176] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e177]:
+            - heading "About Novaqy" [level=4] [ref=e178]
+            - list [ref=e179]:
+              - listitem [ref=e180]:
+                - link "Our Mission" [ref=e181] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e182]:
+                - link "Why Choose Us" [ref=e183] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e184]:
+                - link "Meet Our Team" [ref=e185] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e186]:
+                - link "Service Locations" [ref=e187] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e188]:
+                - link "Careers" [ref=e189] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e190]:
+                - link "Press & Media" [ref=e191] [cursor=pointer]:
+                  - /url: /about
+          - generic [ref=e192]:
+            - heading "Legal & Policies" [level=4] [ref=e193]
+            - list [ref=e194]:
+              - listitem [ref=e195]:
+                - link "Terms of Service" [ref=e196] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=e197]:
+                - link "Privacy Policy" [ref=e198] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e199]:
+                - link "Service Agreement" [ref=e200] [cursor=pointer]:
+                  - /url: /end-user-agreement
+              - listitem [ref=e201]:
+                - link "Return & Refund Policy" [ref=e202] [cursor=pointer]:
+                  - /url: /return-refund
+              - listitem [ref=e203]:
+                - link "Remote Support Terms" [ref=e204] [cursor=pointer]:
+                  - /url: /remote-disclaimer
+              - listitem [ref=e205]:
+                - link "Data Protection" [ref=e206] [cursor=pointer]:
+                  - /url: /gdpr-compliance
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - img "Novaqy logo" [ref=e209]
+            - generic [ref=e210]:
+              - generic [ref=e211]: Novaqy Cloud LLP
+              - paragraph [ref=e212]: Trusted Technology Solutions
+          - generic [ref=e213]:
+            - generic [ref=e214]: © 2025 Novaqy Cloud LLP. All rights reserved.
+            - generic [ref=e215]:
+              - link "Privacy Settings" [ref=e216] [cursor=pointer]:
+                - /url: /privacy-settings
+              - link "Accessibility" [ref=e217] [cursor=pointer]:
+                - /url: /accessibility
+        - generic [ref=e218]:
+          - paragraph [ref=e219]: 🛡️ Your data and privacy are our top priority. We use enterprise-grade security measures to protect your information.
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - generic [ref=e222]: SOC 2 Type II Compliant
+              - generic [ref=e223]: Industry-standard security auditing
+            - generic [ref=e224]:
+              - generic [ref=e225]: 256-bit SSL Encryption
+              - generic [ref=e226]: Bank-level data protection
+            - generic [ref=e227]:
+              - generic [ref=e228]: GDPR & PIPEDA Compliant
+              - generic [ref=e229]: International privacy standards
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```

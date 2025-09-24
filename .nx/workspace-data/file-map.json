@@ -1,0 +1,2210 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.5.3",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "vite:build",
+        "testTargetName": "vite:test",
+        "serveTargetName": "serve",
+        "devTargetName": "vite:dev",
+        "previewTargetName": "vite:preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ],
+  "fileMap": {
+    "projectFileMap": {
+      "vite_react_shadcn_ts": [
+        {
+          "file": "frontend/.env.example",
+          "hash": "3383071017798998238"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-1/task-1.md",
+          "hash": "12724836385602680334"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-10/task-10.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-2/task-2.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-3/task-3.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-4/task-4.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-5/task-5.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-6/task-6.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-7/task-7.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-8/task-8.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/.taskmaster/tasks/task-9/task-9.md",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "frontend/Logo/Logo.png",
+          "hash": "18046062616802876980"
+        },
+        {
+          "file": "frontend/Logo/Modern Tech Cloud Services Logo - Novaqy.png",
+          "hash": "18396413097041647763"
+        },
+        {
+          "file": "frontend/README.md",
+          "hash": "10733408833984898043"
+        },
+        {
+          "file": "frontend/bun.lockb",
+          "hash": "14857446576590286672"
+        },
+        {
+          "file": "frontend/components.json",
+          "hash": "7593541612323492591"
+        },
+        {
+          "file": "frontend/data/blog-posts.json",
+          "hash": "6675321799024299058"
+        },
+        {
+          "file": "frontend/data/case-studies.json",
+          "hash": "4877598500531821344"
+        },
+        {
+          "file": "frontend/data/customer-stories.json",
+          "hash": "17152865106264631148"
+        },
+        {
+          "file": "frontend/eslint.config.js",
+          "hash": "271693509104348369",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:globals@15.15.0",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "frontend/index.html",
+          "hash": "15126319899764903852"
+        },
+        {
+          "file": "frontend/package-lock.json",
+          "hash": "14893828941812542151"
+        },
+        {
+          "file": "frontend/package.json",
+          "hash": "3765236724740008176",
+          "deps": [
+            "npm:@axe-core/playwright",
+            "npm:@axe-core/react",
+            "npm:@eslint/js",
+            "npm:@playwright/test",
+            "npm:@tailwindcss/typography",
+            "npm:@testing-library/dom",
+            "npm:@testing-library/jest-dom",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "npm:@types/crypto-js",
+            "npm:@types/node@24.5.2",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:@vitest/coverage-v8",
+            "npm:autoprefixer",
+            "npm:axe-core",
+            "npm:eslint@9.36.0",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:globals@15.15.0",
+            "npm:jsdom",
+            "npm:lovable-tagger",
+            "npm:postcss",
+            "npm:rollup-plugin-visualizer",
+            "npm:@rollup/rollup-linux-x64-gnu",
+            "npm:@rollup/rollup-win32-x64-msvc",
+            "npm:tailwindcss",
+            "npm:terser",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:vitest",
+            "npm:@hookform/resolvers",
+            "npm:@radix-ui/react-accordion",
+            "npm:@radix-ui/react-alert-dialog",
+            "npm:@radix-ui/react-aspect-ratio",
+            "npm:@radix-ui/react-avatar",
+            "npm:@radix-ui/react-checkbox",
+            "npm:@radix-ui/react-collapsible",
+            "npm:@radix-ui/react-context-menu",
+            "npm:@radix-ui/react-dialog",
+            "npm:@radix-ui/react-dropdown-menu",
+            "npm:@radix-ui/react-hover-card",
+            "npm:@radix-ui/react-label",
+            "npm:@radix-ui/react-menubar",
+            "npm:@radix-ui/react-navigation-menu",
+            "npm:@radix-ui/react-popover",
+            "npm:@radix-ui/react-progress",
+            "npm:@radix-ui/react-radio-group",
+            "npm:@radix-ui/react-scroll-area",
+            "npm:@radix-ui/react-select",
+            "npm:@radix-ui/react-separator",
+            "npm:@radix-ui/react-slider",
+            "npm:@radix-ui/react-slot",
+            "npm:@radix-ui/react-switch",
+            "npm:@radix-ui/react-tabs",
+            "npm:@radix-ui/react-toast",
+            "npm:@radix-ui/react-toggle",
+            "npm:@radix-ui/react-toggle-group",
+            "npm:@radix-ui/react-tooltip",
+            "npm:@sentry/react",
+            "npm:@sentry/vite-plugin",
+            "npm:@supabase/supabase-js",
+            "npm:@tanstack/react-query",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:cmdk",
+            "npm:core-js",
+            "npm:crypto-js",
+            "npm:date-fns",
+            "npm:embla-carousel-react",
+            "npm:esbuild@0.25.10",
+            "npm:input-otp",
+            "npm:lucide-react",
+            "npm:next",
+            "npm:next-themes",
+            "npm:react",
+            "npm:react-day-picker",
+            "npm:react-dom",
+            "npm:react-hook-form",
+            "npm:react-resizable-panels",
+            "npm:react-router-dom",
+            "npm:recharts",
+            "npm:regenerator-runtime",
+            "npm:sonner",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate",
+            "npm:vaul",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "frontend/playwright.config.ts",
+          "hash": "16223623914320379039",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend/postcss.config.js",
+          "hash": "11985548894898047783"
+        },
+        {
+          "file": "frontend/project.json",
+          "hash": "4504439466566932476"
+        },
+        {
+          "file": "frontend/public/data/blog-posts.json",
+          "hash": "4585287672193091212"
+        },
+        {
+          "file": "frontend/public/data/case-studies.json",
+          "hash": "17632046113059293069"
+        },
+        {
+          "file": "frontend/public/favicon.ico",
+          "hash": "10347759810120167543"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-1.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-10.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-11.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-12.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-13.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-14.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-2.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-3.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-4.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-5.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-6.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-7.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-8.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/images/avatars/placeholder-avatar-9.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/logo.png",
+          "hash": "9254149193586055956"
+        },
+        {
+          "file": "frontend/public/placeholder.svg",
+          "hash": "8334994000532407949"
+        },
+        {
+          "file": "frontend/public/robots.txt",
+          "hash": "10999823365561081847"
+        },
+        {
+          "file": "frontend/src/App-simple.tsx",
+          "hash": "11009081264993947955",
+          "deps": [
+            "npm:react",
+            "npm:@tanstack/react-query",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/App.css",
+          "hash": "2229811984542628135"
+        },
+        {
+          "file": "frontend/src/App.tsx",
+          "hash": "8939659796692905432",
+          "deps": [
+            "npm:react",
+            "npm:@tanstack/react-query",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/components/AccessibilityAuditor.tsx",
+          "hash": "956797401670543335",
+          "deps": [
+            "npm:react",
+            "npm:axe-core"
+          ]
+        },
+        {
+          "file": "frontend/src/components/AuditDashboard.tsx",
+          "hash": "6544710480530634530",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/CookieConsentBanner.tsx",
+          "hash": "2950628068805865869",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/components/EnterpriseCarousel.tsx",
+          "hash": "13208369173406998673",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/FloatingActions.tsx",
+          "hash": "13222170073650361990",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/IntrusionDetectionDashboard.tsx",
+          "hash": "12577119497638003243",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/PrivacyDashboard.tsx",
+          "hash": "4812475101595796766",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/SecurityAuditDashboard.tsx",
+          "hash": "1586345902494029403",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/WAFDashboard.tsx",
+          "hash": "14732241825365103652",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/auth/ProtectedRoute.tsx",
+          "hash": "11160395911880446460",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/components/communication/CommunicationPreferences.tsx",
+          "hash": "1286870249639495039",
+          "deps": [
+            "npm:react",
+            "npm:sonner"
+          ]
+        },
+        {
+          "file": "frontend/src/components/layout/CookieBanner.tsx",
+          "hash": "9984713846123113928",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/layout/Footer.tsx",
+          "hash": "3903985540497455653",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/components/layout/Header.tsx",
+          "hash": "9401416718522343634",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/reusable/FeatureCard.tsx",
+          "hash": "6809882904325401799",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/reusable/FileUpload.tsx",
+          "hash": "17905061946606160577",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/reusable/PricingCard.tsx",
+          "hash": "4276739218400880998",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/reusable/TestimonialCard.tsx",
+          "hash": "14809115251232038384",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/accordion.tsx",
+          "hash": "8080493508577319153",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-accordion",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/alert-dialog.tsx",
+          "hash": "3955893153632335517",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-alert-dialog"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/alert.tsx",
+          "hash": "16175817011358112387",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/aspect-ratio.tsx",
+          "hash": "13130340032319700346",
+          "deps": [
+            "npm:@radix-ui/react-aspect-ratio"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/avatar.tsx",
+          "hash": "8637174706399229947",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-avatar"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/badge.tsx",
+          "hash": "12680341117082479909",
+          "deps": [
+            "npm:react",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/breadcrumb.tsx",
+          "hash": "178390405866883302",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slot",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/button.test.tsx",
+          "hash": "7066622985166599890",
+          "deps": [
+            "npm:vitest",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/button.tsx",
+          "hash": "12425894571517868714",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/calendar.tsx",
+          "hash": "16523164495877508386",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react",
+            "npm:react-day-picker"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/card.tsx",
+          "hash": "4493363319952200778",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/carousel.tsx",
+          "hash": "11932635737561799078",
+          "deps": [
+            "npm:react",
+            "npm:embla-carousel-react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/chart.tsx",
+          "hash": "14145075087997523641",
+          "deps": [
+            "npm:react",
+            "npm:recharts"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/checkbox.tsx",
+          "hash": "11515629689099696695",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-checkbox",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/collapsible.tsx",
+          "hash": "6317567330255530303",
+          "deps": [
+            "npm:@radix-ui/react-collapsible"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/command.tsx",
+          "hash": "8453161156078873824",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-dialog",
+            "npm:cmdk",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/context-menu.tsx",
+          "hash": "10780275772239020386",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-context-menu",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/currency-converter.tsx",
+          "hash": "17113934685378253376",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/dialog.tsx",
+          "hash": "9473824479294726234",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-dialog",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/drawer.tsx",
+          "hash": "11644224794605173384",
+          "deps": [
+            "npm:react",
+            "npm:vaul"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/dropdown-menu.tsx",
+          "hash": "2210308940969021404",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-dropdown-menu",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/enhanced-button.tsx",
+          "hash": "103170651324450698",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/form.tsx",
+          "hash": "12026221634622995050",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-label",
+            "npm:@radix-ui/react-slot",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/hover-card.tsx",
+          "hash": "15020297487842509584",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-hover-card"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/input-otp.tsx",
+          "hash": "6299301748368327461",
+          "deps": [
+            "npm:react",
+            "npm:input-otp",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/input.tsx",
+          "hash": "14575645617323676402",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/label.tsx",
+          "hash": "17366989262446570041",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-label",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/menubar.tsx",
+          "hash": "1710127051839750064",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-menubar",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/navigation-menu.tsx",
+          "hash": "6600352308543806849",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-navigation-menu",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/pagination.tsx",
+          "hash": "12605630360213105706",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/popover.tsx",
+          "hash": "8912740324785050755",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-popover"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/progress.tsx",
+          "hash": "3247387024528236493",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-progress"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/radio-group.tsx",
+          "hash": "6611156381392501490",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-radio-group",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/resizable.tsx",
+          "hash": "8905082509179195513",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react-resizable-panels"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/scroll-area.tsx",
+          "hash": "8785332215359386028",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-scroll-area"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/select.tsx",
+          "hash": "3551225267506595177",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-select",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/separator.tsx",
+          "hash": "9163254610964435695",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-separator"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/sheet.tsx",
+          "hash": "1081324014792782844",
+          "deps": [
+            "npm:@radix-ui/react-dialog",
+            "npm:class-variance-authority",
+            "npm:lucide-react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/sidebar.tsx",
+          "hash": "7461423029770617510",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/skeleton.tsx",
+          "hash": "16330048352306854817"
+        },
+        {
+          "file": "frontend/src/components/ui/slider.tsx",
+          "hash": "12497776430653569579",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slider"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/sonner.tsx",
+          "hash": "9808162107207442152",
+          "deps": [
+            "npm:next-themes",
+            "npm:sonner"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/switch.tsx",
+          "hash": "4215075316268545058",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-switch"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/table.tsx",
+          "hash": "11492617594601713078",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/tabs.tsx",
+          "hash": "11490712983208257655",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-tabs"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/textarea.tsx",
+          "hash": "8053253267323470399",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/toast.tsx",
+          "hash": "14513619602226765280",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-toast",
+            "npm:class-variance-authority",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/toaster.tsx",
+          "hash": "2620272041364338737"
+        },
+        {
+          "file": "frontend/src/components/ui/toggle-group.tsx",
+          "hash": "15681805020902432135",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-toggle-group",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/toggle.tsx",
+          "hash": "16685970563529051174",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-toggle",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/tooltip.tsx",
+          "hash": "10714297464873735873",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-tooltip"
+          ]
+        },
+        {
+          "file": "frontend/src/components/ui/use-toast.ts",
+          "hash": "273436591480564430"
+        },
+        {
+          "file": "frontend/src/context/CurrencyContext.tsx",
+          "hash": "2083281381897730782",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/context/VariantContext.tsx",
+          "hash": "11503466668985562334",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/context/useVariant.ts",
+          "hash": "4941551899633500320",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/context/variantContextInternal.ts",
+          "hash": "4299805087798266965",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/hooks/use-mobile.tsx",
+          "hash": "12775553857374972840",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/hooks/use-toast.ts",
+          "hash": "3107458386101080192",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/hooks/useRBAC.ts",
+          "hash": "7882357955961161641",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/index.css",
+          "hash": "15766155988914142934"
+        },
+        {
+          "file": "frontend/src/lib/activityTracking.ts",
+          "hash": "6323133485356799982"
+        },
+        {
+          "file": "frontend/src/lib/analytics-reporting.ts",
+          "hash": "3262391950644576530"
+        },
+        {
+          "file": "frontend/src/lib/auditService.ts",
+          "hash": "14528023229431784117",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/browser-compat.ts",
+          "hash": "14213438969701234022"
+        },
+        {
+          "file": "frontend/src/lib/communicationLogger.ts",
+          "hash": "17834988513762109059"
+        },
+        {
+          "file": "frontend/src/lib/complianceService.ts",
+          "hash": "17221573564336223396"
+        },
+        {
+          "file": "frontend/src/lib/currencyService.ts",
+          "hash": "17091873097272658061"
+        },
+        {
+          "file": "frontend/src/lib/dataService.ts",
+          "hash": "13973706148249708956"
+        },
+        {
+          "file": "frontend/src/lib/database-optimization.ts",
+          "hash": "2375627088398390004",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/deviceService.ts",
+          "hash": "1576777315280136533",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/emailService.ts",
+          "hash": "8774960071475798509"
+        },
+        {
+          "file": "frontend/src/lib/encryptionService.ts",
+          "hash": "8484775858369866350",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/error-boundaries.tsx",
+          "hash": "13096617972206293139",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/imageService.ts",
+          "hash": "13642088663419191544"
+        },
+        {
+          "file": "frontend/src/lib/multiGatewayHandler.ts",
+          "hash": "13775638795445768087"
+        },
+        {
+          "file": "frontend/src/lib/payUHandler.test.ts",
+          "hash": "15257448405790435693",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/payUHandler.ts",
+          "hash": "6347814246810279155",
+          "deps": [
+            "npm:crypto-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/pciComplianceService.ts",
+          "hash": "9483865317720608637"
+        },
+        {
+          "file": "frontend/src/lib/phoneService.ts",
+          "hash": "16868007769194097129"
+        },
+        {
+          "file": "frontend/src/lib/rbacService.ts",
+          "hash": "18132183899484537482",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/remote-support.ts",
+          "hash": "13012009355271113914",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/security-middleware.ts",
+          "hash": "2740977046675758807"
+        },
+        {
+          "file": "frontend/src/lib/securityAuditService.ts",
+          "hash": "1296482973702441861"
+        },
+        {
+          "file": "frontend/src/lib/sentry.ts",
+          "hash": "2045122068296942697",
+          "deps": [
+            "npm:@sentry/react"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/smsService.ts",
+          "hash": "18377466407339513231"
+        },
+        {
+          "file": "frontend/src/lib/supabase.ts",
+          "hash": "3163509069081636236",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/supabaseService.ts",
+          "hash": "13406661329484092836",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/supportService.ts",
+          "hash": "1419328122511120431",
+          "deps": [
+            "npm:@supabase/supabase-js"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/utils.test.ts",
+          "hash": "9829417974497132796",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "frontend/src/lib/utils.ts",
+          "hash": "11932429050483444162",
+          "deps": [
+            "npm:clsx",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "frontend/src/main.tsx",
+          "hash": "4190445897981800991",
+          "deps": [
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/About.tsx",
+          "hash": "6053147263418209528",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react-router-dom",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/AcceptableUse.tsx",
+          "hash": "15077476695324059"
+        },
+        {
+          "file": "frontend/src/pages/Admin.tsx",
+          "hash": "3161597506121335385",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react",
+            "npm:recharts"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Blog.tsx",
+          "hash": "13801395144722371823",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/BlogPost.tsx",
+          "hash": "8406486273363026503",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/BusinessPricing.tsx",
+          "hash": "10427850917886795756",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/BusinessServices.tsx",
+          "hash": "17638714905382991902",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Careers.tsx",
+          "hash": "1667027562603400180"
+        },
+        {
+          "file": "frontend/src/pages/CaseStudies.tsx",
+          "hash": "11053340606414232730",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/CaseStudy.tsx",
+          "hash": "4643416334335609764"
+        },
+        {
+          "file": "frontend/src/pages/Contact.tsx",
+          "hash": "3163008223186766497",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/CookieScanner.tsx",
+          "hash": "3318111050006025292",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Cookies.tsx",
+          "hash": "14952540894779532832"
+        },
+        {
+          "file": "frontend/src/pages/CustomerStories.tsx",
+          "hash": "1088796383653664829",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Dashboard.tsx",
+          "hash": "6634601992382866034",
+          "deps": [
+            "npm:react",
+            "npm:@supabase/supabase-js",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/DataProcessing.tsx",
+          "hash": "7913426150724123403"
+        },
+        {
+          "file": "frontend/src/pages/EndUserAgreement.tsx",
+          "hash": "200236125106831761"
+        },
+        {
+          "file": "frontend/src/pages/FAQ.tsx",
+          "hash": "14027378579597173392",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Features.tsx",
+          "hash": "5720818138771722592",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/GDPRCompliance.tsx",
+          "hash": "9354798511068659957",
+          "deps": [
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Index.tsx",
+          "hash": "14941051975831056112",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react-router-dom",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Login.tsx",
+          "hash": "11064314383632693432",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/NotFound.tsx",
+          "hash": "8635562585646480103",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Payment.tsx",
+          "hash": "17693371128525161465",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react",
+            "npm:crypto-js"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/PaymentFailed.tsx",
+          "hash": "9322954521055375747",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/PaymentSuccess.tsx",
+          "hash": "16914825506877001738",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/PersonalPricing.tsx",
+          "hash": "7931334908758648618",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react-router-dom",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Pricing.tsx",
+          "hash": "4018727896531217520",
+          "deps": [
+            "npm:lucide-react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Privacy.tsx",
+          "hash": "17402985318581019163"
+        },
+        {
+          "file": "frontend/src/pages/PrivacySettings.tsx",
+          "hash": "13361959264910148121",
+          "deps": [
+            "npm:react",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/RemoteDisclaimer.tsx",
+          "hash": "14481396658016538812"
+        },
+        {
+          "file": "frontend/src/pages/ResetPassword.tsx",
+          "hash": "2168224117511146309",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/ReturnRefund.tsx",
+          "hash": "6535441435161638523"
+        },
+        {
+          "file": "frontend/src/pages/Shipping.tsx",
+          "hash": "2743526492908493140"
+        },
+        {
+          "file": "frontend/src/pages/Signup.tsx",
+          "hash": "12523190641407985131",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/SimpleIndex.tsx",
+          "hash": "15196681330859463149",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "frontend/src/pages/Terms.tsx",
+          "hash": "14206374884498087061"
+        },
+        {
+          "file": "frontend/src/safari-compat.css",
+          "hash": "12608669740931092417"
+        },
+        {
+          "file": "frontend/src/senior-friendly-colors.css",
+          "hash": "2917748777702565743"
+        },
+        {
+          "file": "frontend/src/test/setup.ts",
+          "hash": "15680847816846926236",
+          "deps": [
+            "npm:@testing-library/jest-dom",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "frontend/src/vite-env.d.ts",
+          "hash": "7856441258253745083"
+        },
+        {
+          "file": "frontend/tailwind.config.ts",
+          "hash": "2030189553842071099",
+          "deps": [
+            "npm:tailwindcss",
+            "npm:tailwindcss-animate"
+          ]
+        },
+        {
+          "file": "frontend/tests/e2e/accessibility.spec.ts",
+          "hash": "16155402794467741706",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@axe-core/playwright"
+          ]
+        },
+        {
+          "file": "frontend/tests/e2e/cross-browser.spec.ts",
+          "hash": "4378977898739379144",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend/tests/e2e/homepage.spec.ts",
+          "hash": "3705324608163274928",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend/tests/e2e/payment.spec.ts",
+          "hash": "3020236439828579118",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend/tests/e2e/safari-basic.spec.ts",
+          "hash": "4168597688811110527",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend/tests/e2e/safari-compatibility.spec.ts",
+          "hash": "798257591230777581",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend/tsconfig.app.json",
+          "hash": "16444360228883363763"
+        },
+        {
+          "file": "frontend/tsconfig.json",
+          "hash": "7209342749906228947"
+        },
+        {
+          "file": "frontend/tsconfig.node.json",
+          "hash": "8688120545729863785"
+        },
+        {
+          "file": "frontend/vite.config.ts",
+          "hash": "8482551137376707790",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:lovable-tagger",
+            "npm:rollup-plugin-visualizer",
+            "npm:@sentry/vite-plugin"
+          ]
+        },
+        {
+          "file": "frontend/vitest.config.ts",
+          "hash": "3652454276085698791",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react-swc"
+          ]
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".clinerules/cline_rules.md",
+        "hash": "1111139112782246212"
+      },
+      {
+        "file": ".clinerules/dev_workflow.md",
+        "hash": "15645174065272516797"
+      },
+      {
+        "file": ".clinerules/self_improve.md",
+        "hash": "6525131395656970010"
+      },
+      {
+        "file": ".clinerules/taskmaster.md",
+        "hash": "5461346668476973761"
+      },
+      {
+        "file": ".codacy/codacy.yaml",
+        "hash": "779197121161300404"
+      },
+      {
+        "file": ".cursor/mcp.json",
+        "hash": "8176251004098904338"
+      },
+      {
+        "file": ".cursor/rules/cursor_rules.mdc",
+        "hash": "13635137457673500577"
+      },
+      {
+        "file": ".cursor/rules/self_improve.mdc",
+        "hash": "930226137200821915"
+      },
+      {
+        "file": ".cursor/rules/taskmaster/dev_workflow.mdc",
+        "hash": "6654806042644295408"
+      },
+      {
+        "file": ".cursor/rules/taskmaster/taskmaster.mdc",
+        "hash": "15081069770457708322"
+      },
+      {
+        "file": ".env.example",
+        "hash": "14210776642510752747"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "12867101511339383067"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "1781853161061703672"
+      },
+      {
+        "file": ".github/instructions/dev_workflow.instructions.md",
+        "hash": "17858495998005289304"
+      },
+      {
+        "file": ".github/instructions/self_improve.instructions.md",
+        "hash": "17820147801546324233"
+      },
+      {
+        "file": ".github/instructions/taskmaster.instructions.md",
+        "hash": "14288618074489514347"
+      },
+      {
+        "file": ".github/instructions/vscode_rules.instructions.md",
+        "hash": "5112975698780353388"
+      },
+      {
+        "file": ".github/workflows/README.md",
+        "hash": "4341213459302137071"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "8800929183389153415"
+      },
+      {
+        "file": ".github/workflows/codeql.yml",
+        "hash": "3121120973891136926"
+      },
+      {
+        "file": ".github/workflows/deploy.yml",
+        "hash": "2984617060152724313"
+      },
+      {
+        "file": ".github/workflows/terraform-deploy.yml",
+        "hash": "3404509267105017195"
+      },
+      {
+        "file": ".github/workflows/vulnerability-scan.yml",
+        "hash": "12675004521496911862"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "7910090708745237013"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "3669120274392502564"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "4952835045843107349"
+      },
+      {
+        "file": ".taskmaster/config.json",
+        "hash": "3045042525536870870"
+      },
+      {
+        "file": ".taskmaster/reports/task-complexity-report.json",
+        "hash": "3552419438499132499"
+      },
+      {
+        "file": ".taskmaster/state.json",
+        "hash": "11023410855104670462"
+      },
+      {
+        "file": ".taskmaster/tasks/task-1/task-1.md",
+        "hash": "16160751773126338473"
+      },
+      {
+        "file": ".taskmaster/tasks/task-10/task-10.md",
+        "hash": "3484588909549517458"
+      },
+      {
+        "file": ".taskmaster/tasks/task-11/task-11.md",
+        "hash": "7326179407103901943"
+      },
+      {
+        "file": ".taskmaster/tasks/task-2/task-2.md",
+        "hash": "2503605861213832073"
+      },
+      {
+        "file": ".taskmaster/tasks/task-3/task-3.md",
+        "hash": "8438817678302174756"
+      },
+      {
+        "file": ".taskmaster/tasks/task-4/task-4.md",
+        "hash": "7625031264957957280"
+      },
+      {
+        "file": ".taskmaster/tasks/task-5/task-5.md",
+        "hash": "3578967357080192667"
+      },
+      {
+        "file": ".taskmaster/tasks/task-6/task-6.md",
+        "hash": "9834971801237712722"
+      },
+      {
+        "file": ".taskmaster/tasks/task-7/task-7.md",
+        "hash": "13455628141385381391"
+      },
+      {
+        "file": ".taskmaster/tasks/task-8/task-8.md",
+        "hash": "3383704317333459172"
+      },
+      {
+        "file": ".taskmaster/tasks/task-9/task-9.md",
+        "hash": "276065336765591689"
+      },
+      {
+        "file": ".taskmaster/tasks/task_012.txt",
+        "hash": "9530900530393853377"
+      },
+      {
+        "file": ".taskmaster/tasks/task_013.txt",
+        "hash": "6296636145705732538"
+      },
+      {
+        "file": ".taskmaster/tasks/task_014.txt",
+        "hash": "16345138885996976286"
+      },
+      {
+        "file": ".taskmaster/tasks/task_015.txt",
+        "hash": "11061078895830375005"
+      },
+      {
+        "file": ".taskmaster/tasks/task_016.txt",
+        "hash": "6782312817973564938"
+      },
+      {
+        "file": ".taskmaster/tasks/task_017.txt",
+        "hash": "15628956584250792828"
+      },
+      {
+        "file": ".taskmaster/tasks/task_018.txt",
+        "hash": "5342246108706953054"
+      },
+      {
+        "file": ".taskmaster/tasks/task_019.txt",
+        "hash": "17595097523861799008"
+      },
+      {
+        "file": ".taskmaster/tasks/task_020.txt",
+        "hash": "6202750088954417074"
+      },
+      {
+        "file": ".taskmaster/tasks/task_021.txt",
+        "hash": "10529009686878086677"
+      },
+      {
+        "file": ".taskmaster/tasks/task_022.txt",
+        "hash": "3205243430536465990"
+      },
+      {
+        "file": ".taskmaster/tasks/task_023.txt",
+        "hash": "14713076334977114532"
+      },
+      {
+        "file": ".taskmaster/tasks/task_024.txt",
+        "hash": "16472589135136238400"
+      },
+      {
+        "file": ".taskmaster/tasks/task_025.txt",
+        "hash": "3508922664199741225"
+      },
+      {
+        "file": ".taskmaster/tasks/task_026.txt",
+        "hash": "14999915366119735215"
+      },
+      {
+        "file": ".taskmaster/tasks/task_027.txt",
+        "hash": "8279320254431100795"
+      },
+      {
+        "file": ".taskmaster/tasks/task_028.txt",
+        "hash": "9022774451098082066"
+      },
+      {
+        "file": ".taskmaster/tasks/task_029.txt",
+        "hash": "14636912968745541945"
+      },
+      {
+        "file": ".taskmaster/tasks/task_030.txt",
+        "hash": "3238051403667973264"
+      },
+      {
+        "file": ".taskmaster/tasks/task_031.txt",
+        "hash": "6224894531030272942"
+      },
+      {
+        "file": ".taskmaster/tasks/task_032.txt",
+        "hash": "16490575504282990271"
+      },
+      {
+        "file": ".taskmaster/tasks/task_033.txt",
+        "hash": "17303781957490271078"
+      },
+      {
+        "file": ".taskmaster/tasks/task_034.txt",
+        "hash": "18139138069295749658"
+      },
+      {
+        "file": ".taskmaster/tasks/task_035.txt",
+        "hash": "17265251264221602319"
+      },
+      {
+        "file": ".taskmaster/tasks/task_036.txt",
+        "hash": "11365139868810751891"
+      },
+      {
+        "file": ".taskmaster/tasks/task_037.txt",
+        "hash": "10357806588410069938"
+      },
+      {
+        "file": ".taskmaster/tasks/task_038.txt",
+        "hash": "1797466511826743714"
+      },
+      {
+        "file": ".taskmaster/tasks/task_039.txt",
+        "hash": "18131961161973652093"
+      },
+      {
+        "file": ".taskmaster/tasks/tasks.json",
+        "hash": "2926499759592098848"
+      },
+      {
+        "file": ".taskmaster/templates/example_prd.txt",
+        "hash": "14328325316668206534"
+      },
+      {
+        "file": ".testsprite/actual-run-commands.sh",
+        "hash": "508729637808075854"
+      },
+      {
+        "file": ".testsprite/config.md",
+        "hash": "4962990989555810924"
+      },
+      {
+        "file": ".testsprite/run-commands.sh",
+        "hash": "15571853966457877353"
+      },
+      {
+        "file": ".testsprite/setup-config.js",
+        "hash": "2037725499009384418"
+      },
+      {
+        "file": ".testsprite/test-credentials.md",
+        "hash": "4802033829101093637"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "5242322942730480094"
+      },
+      {
+        "file": "Header.tsx",
+        "hash": "16987189357866865891"
+      },
+      {
+        "file": "PRD.txt",
+        "hash": "2312781767830656076"
+      },
+      {
+        "file": "README.md",
+        "hash": "2841902435239951638"
+      },
+      {
+        "file": "backend/COMMUNICATION_SYSTEM_README.md",
+        "hash": "9997905736914554128"
+      },
+      {
+        "file": "backend/README.md",
+        "hash": "2515366057068309477"
+      },
+      {
+        "file": "backend/SUPABASE_MCP_README.md",
+        "hash": "13007143482914878906"
+      },
+      {
+        "file": "backend/src/lib/intrusionDetectionService.ts",
+        "hash": "17071709543915479511"
+      },
+      {
+        "file": "backend/src/lib/supabase.ts",
+        "hash": "8044029377349928304"
+      },
+      {
+        "file": "backend/src/lib/wafService.ts",
+        "hash": "13492784197043396543"
+      },
+      {
+        "file": "backend/supabase-mcp.sh",
+        "hash": "358859950391983345"
+      },
+      {
+        "file": "backend/supabase-rls-policies.sql",
+        "hash": "2568743129298396250"
+      },
+      {
+        "file": "backend/supabase/README.md",
+        "hash": "17558379957850081752"
+      },
+      {
+        "file": "backend/supabase/functions/_shared/cors.ts",
+        "hash": "6442607845156738036"
+      },
+      {
+        "file": "backend/supabase/functions/_shared/encryption.ts",
+        "hash": "2654616256357990290"
+      },
+      {
+        "file": "backend/supabase/functions/initiate-call/index.ts",
+        "hash": "702430881433702240"
+      },
+      {
+        "file": "backend/supabase/functions/payu-webhook/index.ts",
+        "hash": "1282788934262335631"
+      },
+      {
+        "file": "backend/supabase/functions/send-email/index.ts",
+        "hash": "5744415887876649141"
+      },
+      {
+        "file": "backend/supabase/functions/send-email/templates/index.ts",
+        "hash": "16925973454916907896"
+      },
+      {
+        "file": "backend/supabase/functions/send-email/templates/notification.ts",
+        "hash": "12225770367376165896"
+      },
+      {
+        "file": "backend/supabase/functions/send-email/templates/welcome.ts",
+        "hash": "2202100195659456400"
+      },
+      {
+        "file": "backend/supabase/functions/send-sms/index.ts",
+        "hash": "15049220656183687098"
+      },
+      {
+        "file": "backend/supabase/migrations/001_enable_rls_policies.sql",
+        "hash": "14309866903444099091"
+      },
+      {
+        "file": "backend/supabase/migrations/002_enhanced_schema_with_rbac_2fa_storage.sql",
+        "hash": "11006974154092928120"
+      },
+      {
+        "file": "backend/supabase/migrations/003_enhanced_rls_policies.sql",
+        "hash": "1962803533166021171"
+      },
+      {
+        "file": "backend/supabase/migrations/004_seed_rbac_data.sql",
+        "hash": "13825604899584129936"
+      },
+      {
+        "file": "backend/supabase/migrations/005_authentication_setup.sql",
+        "hash": "10022834044784603281"
+      },
+      {
+        "file": "backend/supabase/migrations/006_2fa_implementation.sql",
+        "hash": "1144583566977760443"
+      },
+      {
+        "file": "backend/supabase/migrations/007_storage_configuration.sql",
+        "hash": "550390899191453866"
+      },
+      {
+        "file": "backend/supabase/migrations/008_rbac_policy_enforcement.sql",
+        "hash": "9997370582295330832"
+      },
+      {
+        "file": "backend/supabase/migrations/009_encryption_management.sql",
+        "hash": "15203201481476254207"
+      },
+      {
+        "file": "backend/supabase/migrations/010_audit_logging_enhancement.sql",
+        "hash": "14530451463685370585"
+      },
+      {
+        "file": "backend/supabase/migrations/011_edge_functions.sql",
+        "hash": "12517089951503064054"
+      },
+      {
+        "file": "backend/supabase/migrations/012_device_management.sql",
+        "hash": "10562797673727579414"
+      },
+      {
+        "file": "backend/supabase/migrations/013_remote_support_sessions.sql",
+        "hash": "3237300654242696294"
+      },
+      {
+        "file": "backend/test-auth.sh",
+        "hash": "5287474207749212567"
+      },
+      {
+        "file": "database/README.md",
+        "hash": "14871843027203797826"
+      },
+      {
+        "file": "database/database-schema.sql",
+        "hash": "12650280055392328036"
+      },
+      {
+        "file": "database/encryption-functions.sql",
+        "hash": "17577106562388587223"
+      },
+      {
+        "file": "database/enhanced-schema.sql",
+        "hash": "11907239729409789900"
+      },
+      {
+        "file": "database/gdpr-compliance-tables.sql",
+        "hash": "17822931064732153930"
+      },
+      {
+        "file": "database/schema.sql",
+        "hash": "6873004840813294023"
+      },
+      {
+        "file": "devops/.github/workflows/ci-cd.yml",
+        "hash": "1270222971211207431"
+      },
+      {
+        "file": "devops/.github/workflows/security.yml",
+        "hash": "17852983217124938547"
+      },
+      {
+        "file": "devops/.security.yml",
+        "hash": "8841837851033136270"
+      },
+      {
+        "file": "devops/.zap/rules.tsv",
+        "hash": "9347916779319539543"
+      },
+      {
+        "file": "devops/NETLIFY_DEPLOYMENT_GUIDE.md",
+        "hash": "17707759027282178198"
+      },
+      {
+        "file": "devops/README.md",
+        "hash": "5065191427718121759"
+      },
+      {
+        "file": "devops/artillery-config.yml",
+        "hash": "5645599630098395389"
+      },
+      {
+        "file": "devops/debug-screenshot.png",
+        "hash": "1297340507187722755"
+      },
+      {
+        "file": "devops/deploy-netlify.sh",
+        "hash": "8697554818348579492"
+      },
+      {
+        "file": "devops/generate-ssl-cert.sh",
+        "hash": "6764657444933889948"
+      },
+      {
+        "file": "devops/load-test.js",
+        "hash": "4176688343491476553"
+      },
+      {
+        "file": "devops/netlify.toml",
+        "hash": "12147920002211508866"
+      },
+      {
+        "file": "devops/reports/testsprite/run_20250920_011920/00_help_header.txt",
+        "hash": "18383386713668739796"
+      },
+      {
+        "file": "devops/reports/testsprite/run_20250920_011920/01_help.txt",
+        "hash": "14668428229370152507"
+      },
+      {
+        "file": "devops/reports/testsprite/run_20250920_011920/02_help_generate_header.txt",
+        "hash": "6873336671717367079"
+      },
+      {
+        "file": "devops/reports/testsprite/run_20250920_011920/03_help_generate.txt",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "devops/run-e2e-tests.sh",
+        "hash": "14141166426425227695"
+      },
+      {
+        "file": "devops/security-scan.sh",
+        "hash": "14986000620455858751"
+      },
+      {
+        "file": "devops/sonar-project.properties",
+        "hash": "5681666689183291408"
+      },
+      {
+        "file": "devops/test-pipeline.sh",
+        "hash": "11225242407121954671"
+      },
+      {
+        "file": "devops/vulnerability-scan.sh",
+        "hash": "7391837591812820490"
+      },
+      {
+        "file": "devops/zap.yaml",
+        "hash": "8087263591978374761"
+      },
+      {
+        "file": "docker-compose.ssl.yml",
+        "hash": "15069504044963261641"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "9731709372370800090"
+      },
+      {
+        "file": "docs/IMPLEMENTATION_STATUS_REPORT.md",
+        "hash": "6089672467300073338"
+      },
+      {
+        "file": "docs/PRD.txt",
+        "hash": "17730697969181526155"
+      },
+      {
+        "file": "docs/PRIORITY_TASK_LIST.md",
+        "hash": "6851744797464534446"
+      },
+      {
+        "file": "docs/ui-audit.md",
+        "hash": "5310431401305496159"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "13074786095344479194"
+      },
+      {
+        "file": "infrastructure/README.md",
+        "hash": "16283305647454037558"
+      },
+      {
+        "file": "infrastructure/main.tf",
+        "hash": "3500322850571017969"
+      },
+      {
+        "file": "infrastructure/modules/cloudflare/main.tf",
+        "hash": "2211912036562351049"
+      },
+      {
+        "file": "infrastructure/modules/cloudflare/outputs.tf",
+        "hash": "14747864868531567736"
+      },
+      {
+        "file": "infrastructure/modules/cloudflare/variables.tf",
+        "hash": "3382784144079387316"
+      },
+      {
+        "file": "infrastructure/modules/oci/cloud-init.yaml",
+        "hash": "18381069291839199496"
+      },
+      {
+        "file": "infrastructure/modules/oci/main.tf",
+        "hash": "5071768108786829950"
+      },
+      {
+        "file": "infrastructure/modules/oci/outputs.tf",
+        "hash": "16473979746152720809"
+      },
+      {
+        "file": "infrastructure/modules/oci/variables.tf",
+        "hash": "9606588820736163736"
+      },
+      {
+        "file": "infrastructure/modules/supabase/main.tf",
+        "hash": "16617032698287552520"
+      },
+      {
+        "file": "infrastructure/modules/supabase/outputs.tf",
+        "hash": "17413674757909627166"
+      },
+      {
+        "file": "infrastructure/modules/supabase/variables.tf",
+        "hash": "5812159079939521469"
+      },
+      {
+        "file": "infrastructure/outputs.tf",
+        "hash": "2494465235474546545"
+      },
+      {
+        "file": "infrastructure/terraform.tfvars.example",
+        "hash": "11993771480674651045"
+      },
+      {
+        "file": "infrastructure/variables.tf",
+        "hash": "10698717787984026417"
+      },
+      {
+        "file": "nginx/nginx.conf",
+        "hash": "14209539717496348935"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6479871747503701858"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "18253352333559421580"
+      },
+      {
+        "file": "package.json",
+        "hash": "17589337318831975867"
+      },
+      {
+        "file": "sonar-project.properties",
+        "hash": "9279827375693308711"
+      },
+      {
+        "file": "temp_notes",
+        "hash": "17858321054507974699"
+      },
+      {
+        "file": "testsprite_tests/tmp/code_summary.json",
+        "hash": "6460659114671090113"
+      },
+      {
+        "file": "testsprite_tests/tmp/config.json",
+        "hash": "6970864765851312767"
+      },
+      {
+        "file": "tools/mcp-config.json",
+        "hash": "7981955339692325640"
+      },
+      {
+        "file": "tools/testsprite-mcp-config.json",
+        "hash": "16244501646588006295"
+      },
+      {
+        "file": "validate-setup.sh",
+        "hash": "12224322896316559959"
+      }
+    ]
+  },
+  "externalNodesHash": "10028155699178565541"
+}

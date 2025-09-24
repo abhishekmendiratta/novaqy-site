@@ -1,0 +1,63 @@
+[2m> [22mvite build
+
+[36mvite v7.1.5 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 2745 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                           [39m[1m[2m  4.75 kB[22m[1m[22m[2m │ gzip:   1.46 kB[22m
+[2mdist/[22m[35massets/index-B4w_ijKx.css            [39m[1m[2m 88.42 kB[22m[1m[22m[2m │ gzip:  14.89 kB[22m
+[2mdist/[22m[36massets/forms-vendor-Bka94B4K.js      [39m[1m[2m  0.04 kB[22m[1m[22m[2m │ gzip:   0.06 kB[22m
+[2mdist/[22m[36massets/files-vendor-Bka94B4K.js      [39m[1m[2m  0.04 kB[22m[1m[22m[2m │ gzip:   0.06 kB[22m
+[2mdist/[22m[36massets/enc-hex-6PzZXuws.js           [39m[1m[2m  0.21 kB[22m[1m[22m[2m │ gzip:   0.17 kB[22m
+[2mdist/[22m[36massets/NotFound-CfeGIkSH.js          [39m[1m[2m  0.67 kB[22m[1m[22m[2m │ gzip:   0.40 kB[22m
+[2mdist/[22m[36massets/Careers-BlAIxF7V.js           [39m[1m[2m  0.67 kB[22m[1m[22m[2m │ gzip:   0.39 kB[22m
+[2mdist/[22m[36massets/CaseStudy-B3DxCCdM.js         [39m[1m[2m  0.69 kB[22m[1m[22m[2m │ gzip:   0.41 kB[22m
+[2mdist/[22m[36massets/label-B9irRFER.js             [39m[1m[2m  1.24 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m
+[2mdist/[22m[36massets/badge-BV6j6T56.js             [39m[1m[2m  1.27 kB[22m[1m[22m[2m │ gzip:   0.63 kB[22m
+[2mdist/[22m[36massets/separator-c8-ZtXM9.js         [39m[1m[2m  1.41 kB[22m[1m[22m[2m │ gzip:   0.71 kB[22m
+[2mdist/[22m[36massets/PricingCard-DNn9-KQD.js       [39m[1m[2m  1.43 kB[22m[1m[22m[2m │ gzip:   0.68 kB[22m
+[2mdist/[22m[36massets/alert-BBjgVSKd.js             [39m[1m[2m  1.58 kB[22m[1m[22m[2m │ gzip:   0.74 kB[22m
+[2mdist/[22m[36massets/card-FaizPupz.js              [39m[1m[2m  1.79 kB[22m[1m[22m[2m │ gzip:   0.67 kB[22m
+[2mdist/[22m[36massets/input-DhhDPul-.js             [39m[1m[2m  2.42 kB[22m[1m[22m[2m │ gzip:   1.03 kB[22m
+[2mdist/[22m[36massets/PaymentFailed-DqmKMkR0.js     [39m[1m[2m  3.03 kB[22m[1m[22m[2m │ gzip:   1.20 kB[22m
+[2mdist/[22m[36massets/AcceptableUse-CrBDY42I.js     [39m[1m[2m  4.03 kB[22m[1m[22m[2m │ gzip:   1.38 kB[22m
+[2mdist/[22m[36massets/select-Bzvgh_Aj.js            [39m[1m[2m  4.37 kB[22m[1m[22m[2m │ gzip:   1.45 kB[22m
+[2mdist/[22m[36massets/RemoteDisclaimer-CSd16v8G.js  [39m[1m[2m  4.65 kB[22m[1m[22m[2m │ gzip:   1.55 kB[22m
+[2mdist/[22m[36massets/checkbox-C7WLrnzP.js          [39m[1m[2m  4.84 kB[22m[1m[22m[2m │ gzip:   2.01 kB[22m
+[2mdist/[22m[36massets/EndUserAgreement-Cq7RXOGQ.js  [39m[1m[2m  5.02 kB[22m[1m[22m[2m │ gzip:   1.46 kB[22m
+[2mdist/[22m[36massets/Terms-B4iBUJ64.js             [39m[1m[2m  5.15 kB[22m[1m[22m[2m │ gzip:   1.62 kB[22m
+[2mdist/[22m[36massets/Blog-CQ9fiYwg.js              [39m[1m[2m  5.79 kB[22m[1m[22m[2m │ gzip:   1.88 kB[22m
+[2mdist/[22m[36massets/ResetPassword-BXuC-5tW.js     [39m[1m[2m  5.88 kB[22m[1m[22m[2m │ gzip:   2.25 kB[22m
+[2mdist/[22m[36massets/CustomerStories-Cl56s3BZ.js   [39m[1m[2m  5.91 kB[22m[1m[22m[2m │ gzip:   2.34 kB[22m
+[2mdist/[22m[36massets/Shipping-DpFIUwm6.js          [39m[1m[2m  6.09 kB[22m[1m[22m[2m │ gzip:   1.96 kB[22m
+[2mdist/[22m[36massets/ReturnRefund-DCdhJKqT.js      [39m[1m[2m  6.13 kB[22m[1m[22m[2m │ gzip:   1.96 kB[22m
+[2mdist/[22m[36massets/CaseStudies-Doq9sS6N.js       [39m[1m[2m  6.14 kB[22m[1m[22m[2m │ gzip:   2.05 kB[22m
+[2mdist/[22m[36massets/Contact-Ck8IL4Mp.js           [39m[1m[2m  6.57 kB[22m[1m[22m[2m │ gzip:   2.23 kB[22m
+[2mdist/[22m[36massets/Cookies-BLh2xP_s.js           [39m[1m[2m  6.74 kB[22m[1m[22m[2m │ gzip:   1.79 kB[22m
+[2mdist/[22m[36massets/BlogPost-9_HT9kwr.js          [39m[1m[2m  6.88 kB[22m[1m[22m[2m │ gzip:   2.05 kB[22m
+[2mdist/[22m[36massets/BusinessServices-Cow2xXYn.js  [39m[1m[2m  6.93 kB[22m[1m[22m[2m │ gzip:   2.27 kB[22m
+[2mdist/[22m[36massets/dataService-C55bYVtp.js       [39m[1m[2m  7.65 kB[22m[1m[22m[2m │ gzip:   1.83 kB[22m
+[2mdist/[22m[36massets/supabaseService-CL51qkd-.js   [39m[1m[2m  8.11 kB[22m[1m[22m[2m │ gzip:   2.11 kB[22m
+[2mdist/[22m[36massets/About-AWz27zIB.js             [39m[1m[2m  8.48 kB[22m[1m[22m[2m │ gzip:   2.78 kB[22m
+[2mdist/[22m[36massets/PersonalPricing-DWFqFYNi.js   [39m[1m[2m  9.61 kB[22m[1m[22m[2m │ gzip:   2.76 kB[22m
+[2mdist/[22m[36massets/PrivacySettings-BSZLWf5L.js   [39m[1m[2m 10.09 kB[22m[1m[22m[2m │ gzip:   3.52 kB[22m
+[2mdist/[22m[36massets/BusinessPricing-DYI8qE0s.js   [39m[1m[2m 11.57 kB[22m[1m[22m[2m │ gzip:   3.26 kB[22m
+[2mdist/[22m[36massets/CookieScanner-CQ1g0J97.js     [39m[1m[2m 12.08 kB[22m[1m[22m[2m │ gzip:   4.06 kB[22m
+[2mdist/[22m[36massets/Payment-D7x4bvQg.js           [39m[1m[2m 12.73 kB[22m[1m[22m[2m │ gzip:   4.40 kB[22m
+[2mdist/[22m[36massets/Dashboard-QrQyo5Ks.js         [39m[1m[2m 13.03 kB[22m[1m[22m[2m │ gzip:   3.57 kB[22m
+[2mdist/[22m[36massets/Footer-jp09MtDv.js            [39m[1m[2m 14.46 kB[22m[1m[22m[2m │ gzip:   3.85 kB[22m
+[2mdist/[22m[36massets/Signup-CasiOK1j.js            [39m[1m[2m 15.21 kB[22m[1m[22m[2m │ gzip:   4.98 kB[22m
+[2mdist/[22m[36massets/FAQ-CEpT23F1.js               [39m[1m[2m 16.65 kB[22m[1m[22m[2m │ gzip:   6.07 kB[22m
+[2mdist/[22m[36massets/PaymentSuccess-BN9s3n2R.js    [39m[1m[2m 16.76 kB[22m[1m[22m[2m │ gzip:   5.29 kB[22m
+[2mdist/[22m[36massets/Index-Dx-yzXLg.js             [39m[1m[2m 18.29 kB[22m[1m[22m[2m │ gzip:   6.04 kB[22m
+[2mdist/[22m[36massets/Login-DJ0_GH6y.js             [39m[1m[2m 18.49 kB[22m[1m[22m[2m │ gzip:   6.38 kB[22m
+[2mdist/[22m[36massets/Pricing-iPKXvV4h.js           [39m[1m[2m 21.70 kB[22m[1m[22m[2m │ gzip:   5.07 kB[22m
+[2mdist/[22m[36massets/query-vendor-CWl5S8HH.js      [39m[1m[2m 27.52 kB[22m[1m[22m[2m │ gzip:   8.25 kB[22m
+[2mdist/[22m[36massets/utils-vendor-DqVNsweF.js      [39m[1m[2m 35.58 kB[22m[1m[22m[2m │ gzip:  12.13 kB[22m
+[2mdist/[22m[36massets/ui-vendor-5WlL74oN.js         [39m[1m[2m105.43 kB[22m[1m[22m[2m │ gzip:  32.91 kB[22m
+[2mdist/[22m[36massets/auth-vendor-CP-4ZW6D.js       [39m[1m[2m139.32 kB[22m[1m[22m[2m │ gzip:  38.20 kB[22m
+[2mdist/[22m[36massets/react-vendor-tk5Uqt6k.js      [39m[1m[2m161.65 kB[22m[1m[22m[2m │ gzip:  52.82 kB[22m
+[2mdist/[22m[36massets/index-D6sNcXUq.js             [39m[1m[2m331.55 kB[22m[1m[22m[2m │ gzip: 104.26 kB[22m
+[2mdist/[22m[36massets/Admin-CuSSq0fy.js             [39m[1m[2m468.94 kB[22m[1m[22m[2m │ gzip: 117.50 kB[22m
+[32m✓ built in 15.37s[39m

@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx vite:build",
+    "startTime": "2025-09-24T08:15:26.482Z",
+    "endTime": "2025-09-24T08:15:51.052Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "vite_react_shadcn_ts:vite:build",
+      "target": "vite:build",
+      "projectName": "vite_react_shadcn_ts",
+      "hash": "16272560201579447834",
+      "startTime": "2025-09-24T08:15:26.496Z",
+      "endTime": "2025-09-24T08:15:47.007Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

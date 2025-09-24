@@ -1,0 +1,303 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#navigation"
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - link "Novaqy home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "Novaqy logo" [ref=e11] [cursor=pointer]
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]: Novaqy
+            - generic [ref=e14] [cursor=pointer]: Cloud LLP
+        - navigation "Main navigation" [ref=e15]:
+          - link "Features" [ref=e17] [cursor=pointer]:
+            - /url: /features
+          - button "Services" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20] [cursor=pointer]: Services
+            - img [ref=e21] [cursor=pointer]
+          - link "Pricing" [ref=e24] [cursor=pointer]:
+            - /url: /pricing
+          - button "Resources" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Resources
+            - img [ref=e28] [cursor=pointer]
+          - link "About" [ref=e31] [cursor=pointer]:
+            - /url: /about
+          - link "Contact" [ref=e33] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "Personal" [ref=e36] [cursor=pointer]
+            - button "Business" [ref=e37] [cursor=pointer]
+          - link "Sign In" [ref=e38] [cursor=pointer]:
+            - /url: /login
+          - link "Get Started" [ref=e39] [cursor=pointer]:
+            - /url: /pricing
+    - generic [ref=e42]:
+      - generic [ref=e43]: Trusted by 10,000+ customers in US & Canada
+      - heading "Remote Support Services, enhanced with AI" [level=1] [ref=e44]
+      - paragraph [ref=e45]: Setup, optimization, and ongoing help—powered by secure automation workflows—to keep your technology simple, fast, and safe.
+      - generic [ref=e46]:
+        - link "Create Account" [ref=e47] [cursor=pointer]:
+          - /url: /signup
+          - text: Create Account
+          - img
+        - link "See Business Plans" [ref=e48] [cursor=pointer]:
+          - /url: /business-services
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Everything you need for stress-free technology" [level=2] [ref=e52]
+        - paragraph [ref=e53]: Friendly, patient experts helping you stay connected, secure, and confident with everyday technology.
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - heading "Personal Support Services" [level=3] [ref=e62]
+          - paragraph [ref=e64]: Friendly assistance with computers, smartphones, and smart home devices from certified technicians.
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - img [ref=e69]
+            - heading "Device Security" [level=3] [ref=e71]
+          - paragraph [ref=e73]: Antivirus setup, software updates, and security monitoring to keep your devices safe and secure.
+        - generic [ref=e74]:
+          - generic [ref=e76]:
+            - img [ref=e78]
+            - heading "Remote Troubleshooting" [level=3] [ref=e80]
+          - paragraph [ref=e82]: Quick problem resolution through secure remote access — no need to leave your home.
+        - generic [ref=e83]:
+          - generic [ref=e85]:
+            - img [ref=e87]
+            - heading "Setup & Training" [level=3] [ref=e91]
+          - paragraph [ref=e93]: Help with new device setup, software installation, and personalized training sessions.
+        - generic [ref=e94]:
+          - generic [ref=e96]:
+            - img [ref=e98]
+            - heading "System Optimization" [level=3] [ref=e103]
+          - paragraph [ref=e105]: Regular maintenance, cleanup, and performance tuning to keep your devices running smoothly.
+        - generic [ref=e106]:
+          - generic [ref=e108]:
+            - img [ref=e110]
+            - heading "Ongoing Support" [level=3] [ref=e113]
+          - paragraph [ref=e115]: Monthly check-ins, proactive maintenance, and unlimited support calls during business hours.
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - generic [ref=e120]: 10K+
+        - generic [ref=e121]: Remote support sessions delivered
+      - generic [ref=e122]:
+        - generic [ref=e123]: 5K+
+        - generic [ref=e124]: Devices optimized & cleaned
+      - generic [ref=e125]:
+        - generic [ref=e126]: 99.2%
+        - generic [ref=e127]: First-contact resolution rate
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - heading "What our customers say" [level=2] [ref=e131]
+        - paragraph [ref=e132]: People trust our patient, friendly support every day.
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - img [ref=e137]
+            - img [ref=e139]
+            - img [ref=e141]
+            - img [ref=e143]
+            - img [ref=e145]
+          - blockquote [ref=e147]: "\"They patiently set up my new laptop and transferred everything. I didn’t have to worry about a thing.\""
+          - generic [ref=e148]:
+            - generic [ref=e150]: SC
+            - generic [ref=e151]:
+              - generic [ref=e152]: Sarah Chen
+              - generic [ref=e153]: Retired Teacher at
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - img [ref=e157]
+            - img [ref=e159]
+            - img [ref=e161]
+            - img [ref=e163]
+            - img [ref=e165]
+          - blockquote [ref=e167]: "\"My computer runs faster than it has in years—regular maintenance really helps.\""
+          - generic [ref=e168]:
+            - generic [ref=e170]: MR
+            - generic [ref=e171]:
+              - generic [ref=e172]: Michael Rodriguez
+              - generic [ref=e173]: Senior User at
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - img [ref=e177]
+            - img [ref=e179]
+            - img [ref=e181]
+            - img [ref=e183]
+            - img [ref=e185]
+          - blockquote [ref=e187]: "\"I finally feel confident using online services thanks to their guidance and security tips.\""
+          - generic [ref=e188]:
+            - generic [ref=e190]: EJ
+            - generic [ref=e191]:
+              - generic [ref=e192]: Emily Johnson
+              - generic [ref=e193]: Freelance Writer at
+    - generic [ref=e195]:
+      - heading "Ready for simpler, stress‑free technology?" [level=2] [ref=e196]
+      - paragraph [ref=e197]: Get patient, friendly experts who keep you secure, connected, and confident every day.
+      - generic [ref=e198]:
+        - link "Get Started Today" [ref=e199] [cursor=pointer]:
+          - /url: /signup
+        - link "Talk to Our Team" [ref=e200] [cursor=pointer]:
+          - /url: /contact
+    - contentinfo [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "Stay Connected with Novaqy" [level=3] [ref=e204]
+          - paragraph [ref=e205]: Get helpful technology tips, security updates, and exclusive offers designed for seniors and businesses. Join thousands of satisfied customers who trust Novaqy.
+          - generic [ref=e206]:
+            - textbox "Enter your email address" [ref=e207]
+            - button "Subscribe Now" [ref=e208] [cursor=pointer]
+          - paragraph [ref=e209]: 🔒 We respect your privacy. Unsubscribe anytime. No spam, ever.
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - heading "Our Services" [level=4] [ref=e212]
+            - list [ref=e213]:
+              - listitem [ref=e214]:
+                - link "Personal Tech Support" [ref=e215] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e216]:
+                - link "Cloud Backup Services" [ref=e217] [cursor=pointer]:
+                  - /url: /pricing#backup
+              - listitem [ref=e218]:
+                - link "Business Managed Services" [ref=e219] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e220]:
+                - link "Digital Marketing" [ref=e221] [cursor=pointer]:
+                  - /url: /business-services#digital-marketing
+              - listitem [ref=e222]:
+                - link "Backup as a Service" [ref=e223] [cursor=pointer]:
+                  - /url: /business-pricing#backup
+              - listitem [ref=e224]:
+                - link "Cloud Solutions" [ref=e225] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e226]:
+                - link "Security & Protection" [ref=e227] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e228]:
+                - link "Senior-Friendly Support" [ref=e229] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=e230]:
+            - heading "Support & Resources" [level=4] [ref=e231]
+            - list [ref=e232]:
+              - listitem [ref=e233]:
+                - link "24/7 Help Center" [ref=e234] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e235]:
+                - link "Getting Started Guide" [ref=e236] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e237]:
+                - link "Video Tutorials" [ref=e238] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e239]:
+                - link "Customer Success Stories" [ref=e240] [cursor=pointer]:
+                  - /url: /customer-stories
+              - listitem [ref=e241]:
+                - link "Live Chat Support" [ref=e242] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e243]:
+                - link "Phone Support" [ref=e244] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e245]:
+            - heading "About Novaqy" [level=4] [ref=e246]
+            - list [ref=e247]:
+              - listitem [ref=e248]:
+                - link "Our Mission" [ref=e249] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e250]:
+                - link "Why Choose Us" [ref=e251] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e252]:
+                - link "Meet Our Team" [ref=e253] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e254]:
+                - link "Service Locations" [ref=e255] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e256]:
+                - link "Careers" [ref=e257] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e258]:
+                - link "Press & Media" [ref=e259] [cursor=pointer]:
+                  - /url: /about
+          - generic [ref=e260]:
+            - heading "Legal & Policies" [level=4] [ref=e261]
+            - list [ref=e262]:
+              - listitem [ref=e263]:
+                - link "Terms of Service" [ref=e264] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=e265]:
+                - link "Privacy Policy" [ref=e266] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e267]:
+                - link "Service Agreement" [ref=e268] [cursor=pointer]:
+                  - /url: /end-user-agreement
+              - listitem [ref=e269]:
+                - link "Return & Refund Policy" [ref=e270] [cursor=pointer]:
+                  - /url: /return-refund
+              - listitem [ref=e271]:
+                - link "Remote Support Terms" [ref=e272] [cursor=pointer]:
+                  - /url: /remote-disclaimer
+              - listitem [ref=e273]:
+                - link "Data Protection" [ref=e274] [cursor=pointer]:
+                  - /url: /gdpr-compliance
+        - generic [ref=e275]:
+          - generic [ref=e276]:
+            - img "Novaqy logo" [ref=e277]
+            - generic [ref=e278]:
+              - generic [ref=e279]: Novaqy Cloud LLP
+              - paragraph [ref=e280]: Trusted Technology Solutions
+          - generic [ref=e281]:
+            - generic [ref=e282]: © 2025 Novaqy Cloud LLP. All rights reserved.
+            - generic [ref=e283]:
+              - link "Privacy Settings" [ref=e284] [cursor=pointer]:
+                - /url: /privacy-settings
+              - link "Accessibility" [ref=e285] [cursor=pointer]:
+                - /url: /accessibility
+        - generic [ref=e286]:
+          - paragraph [ref=e287]: 🛡️ Your data and privacy are our top priority. We use enterprise-grade security measures to protect your information.
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - generic [ref=e290]: SOC 2 Type II Compliant
+              - generic [ref=e291]: Industry-standard security auditing
+            - generic [ref=e292]:
+              - generic [ref=e293]: 256-bit SSL Encryption
+              - generic [ref=e294]: Bank-level data protection
+            - generic [ref=e295]:
+              - generic [ref=e296]: GDPR & PIPEDA Compliant
+              - generic [ref=e297]: International privacy standards
+    - generic [ref=e301]:
+      - generic [ref=e302]:
+        - heading "We use cookies" [level=3] [ref=e303]
+        - paragraph [ref=e304]:
+          - text: We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+          - link "Learn more about our cookie policy" [ref=e305] [cursor=pointer]:
+            - /url: /cookies
+      - generic [ref=e306]:
+        - button "Reject All" [ref=e307] [cursor=pointer]
+        - button "Customize" [ref=e308] [cursor=pointer]:
+          - img
+          - text: Customize
+        - button "Accept All" [ref=e309] [cursor=pointer]
+    - generic [ref=e310]:
+      - generic:
+        - link "Call Now":
+          - /url: tel:+1-800-NOVAQY-1
+          - img
+          - generic: Call Now
+        - link "Get Started":
+          - /url: /pricing
+          - generic: Get Started
+      - button "Open actions" [ref=e311] [cursor=pointer]:
+        - img
+        - generic [ref=e312] [cursor=pointer]: Open actions
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```

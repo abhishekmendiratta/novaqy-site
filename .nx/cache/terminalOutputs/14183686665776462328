@@ -1,0 +1,75 @@
+
+[2mRunning [22m65[2m tests using [22m5[2m workers[22m
+
+[1A[2K[1/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:49:3 › Homepage › should have hero section
+[1A[2K[2/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:61:3 › Homepage › should have hero badge
+[1A[2K[3/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:37:3 › Homepage › should have mobile menu button
+[1A[2K[4/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:24:3 › Homepage › should have main navigation on desktop
+[1A[2K[5/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:4:3 › Homepage › should load homepage successfully
+[1A[2K[6/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:71:3 › Homepage › should have call-to-action buttons
+[1A[2K[7/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:101:3 › Homepage › should have features section
+[1A[2K[8/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:82:3 › Homepage › should be responsive on mobile
+[1A[2K[9/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:118:3 › Homepage › should have stats section
+[1A[2K[10/65] [chromium] › frontend\tests\e2e\homepage.spec.ts:131:3 › Homepage › should have testimonials section
+[1A[2K[11/65] [chromium] › frontend\tests\e2e\safari-compatibility.spec.ts:12:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should load page in Safari
+[1A[2K[12/65] [chromium] › frontend\tests\e2e\safari-compatibility.spec.ts:21:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should handle basic interactions in Safari
+[1A[2K[13/65] [chromium] › frontend\tests\e2e\safari-compatibility.spec.ts:34:5 › Safari/Webkit Browser Compatibility › Mobile Safari (iOS) › should work on mobile Safari viewport
+[1A[2K[14/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:61:3 › Homepage › should have hero badge
+[1A[2K[15/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:24:3 › Homepage › should have main navigation on desktop
+[1A[2K[16/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:49:3 › Homepage › should have hero section
+[1A[2K[17/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:4:3 › Homepage › should load homepage successfully
+[1A[2K[18/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:37:3 › Homepage › should have mobile menu button
+[1A[2K[19/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:71:3 › Homepage › should have call-to-action buttons
+[1A[2K[20/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:82:3 › Homepage › should be responsive on mobile
+[1A[2K[21/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:101:3 › Homepage › should have features section
+[1A[2K[22/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:118:3 › Homepage › should have stats section
+[1A[2K[23/65] [firefox] › frontend\tests\e2e\homepage.spec.ts:131:3 › Homepage › should have testimonials section
+[1A[2K[24/65] [firefox] › frontend\tests\e2e\safari-compatibility.spec.ts:12:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should load page in Safari
+[1A[2K[25/65] [firefox] › frontend\tests\e2e\safari-compatibility.spec.ts:21:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should handle basic interactions in Safari
+[1A[2K[26/65] [firefox] › frontend\tests\e2e\safari-compatibility.spec.ts:34:5 › Safari/Webkit Browser Compatibility › Mobile Safari (iOS) › should work on mobile Safari viewport
+[1A[2K[27/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:4:3 › Homepage › should load homepage successfully
+[1A[2K[28/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:61:3 › Homepage › should have hero badge
+[1A[2K[29/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:71:3 › Homepage › should have call-to-action buttons
+[1A[2K[30/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:82:3 › Homepage › should be responsive on mobile
+[1A[2K[31/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:101:3 › Homepage › should have features section
+[1A[2K[32/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:131:3 › Homepage › should have testimonials section
+[1A[2K[33/65] [webkit] › frontend\tests\e2e\safari-compatibility.spec.ts:12:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should load page in Safari
+[1A[2K[34/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:24:3 › Homepage › should have main navigation on desktop
+[1A[2K[35/65] [webkit] › frontend\tests\e2e\safari-compatibility.spec.ts:21:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should handle basic interactions in Safari
+[1A[2K[36/65] [webkit] › frontend\tests\e2e\safari-compatibility.spec.ts:34:5 › Safari/Webkit Browser Compatibility › Mobile Safari (iOS) › should work on mobile Safari viewport
+[1A[2K[37/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:37:3 › Homepage › should have mobile menu button
+[1A[2K[38/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:4:3 › Homepage › should load homepage successfully
+[1A[2K[39/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:24:3 › Homepage › should have main navigation on desktop
+[1A[2K[40/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:49:3 › Homepage › should have hero section
+[1A[2K[41/65] [webkit] › frontend\tests\e2e\homepage.spec.ts:118:3 › Homepage › should have stats section
+[1A[2K[42/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:37:3 › Homepage › should have mobile menu button
+[1A[2K[43/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:71:3 › Homepage › should have call-to-action buttons
+[1A[2K[44/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:82:3 › Homepage › should be responsive on mobile
+[1A[2K[45/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:101:3 › Homepage › should have features section
+[1A[2K[46/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:118:3 › Homepage › should have stats section
+[1A[2K[47/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:49:3 › Homepage › should have hero section
+[1A[2K[48/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:61:3 › Homepage › should have hero badge
+[1A[2K[49/65] [Mobile Chrome] › frontend\tests\e2e\homepage.spec.ts:131:3 › Homepage › should have testimonials section
+[1A[2K[50/65] [Mobile Chrome] › frontend\tests\e2e\safari-compatibility.spec.ts:12:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should load page in Safari
+[1A[2K[51/65] [Mobile Chrome] › frontend\tests\e2e\safari-compatibility.spec.ts:21:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should handle basic interactions in Safari
+[1A[2K[52/65] [Mobile Chrome] › frontend\tests\e2e\safari-compatibility.spec.ts:34:5 › Safari/Webkit Browser Compatibility › Mobile Safari (iOS) › should work on mobile Safari viewport
+[1A[2K[53/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:37:3 › Homepage › should have mobile menu button
+[1A[2K[54/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:24:3 › Homepage › should have main navigation on desktop
+[1A[2K[55/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:4:3 › Homepage › should load homepage successfully
+[1A[2K[56/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:49:3 › Homepage › should have hero section
+[1A[2K[57/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:61:3 › Homepage › should have hero badge
+[1A[2K[58/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:71:3 › Homepage › should have call-to-action buttons
+[1A[2K[59/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:82:3 › Homepage › should be responsive on mobile
+[1A[2K[60/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:101:3 › Homepage › should have features section
+[1A[2K[61/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:118:3 › Homepage › should have stats section
+[1A[2K[62/65] [Mobile Safari] › frontend\tests\e2e\homepage.spec.ts:131:3 › Homepage › should have testimonials section
+[1A[2K[63/65] [Mobile Safari] › frontend\tests\e2e\safari-compatibility.spec.ts:12:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should load page in Safari
+[1A[2K[64/65] [Mobile Safari] › frontend\tests\e2e\safari-compatibility.spec.ts:21:5 › Safari/Webkit Browser Compatibility › Basic Safari Compatibility › should handle basic interactions in Safari
+[1A[2K[65/65] [Mobile Safari] › frontend\tests\e2e\safari-compatibility.spec.ts:34:5 › Safari/Webkit Browser Compatibility › Mobile Safari (iOS) › should work on mobile Safari viewport
+[1A[2K[33m  33 skipped[39m
+[32m  32 passed[39m[2m (49.0s)[22m
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report frontend\playwright-report[39m
+[36m[39m

@@ -1,0 +1,193 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#navigation"
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - generic [ref=e8]:
+        - link "Novaqy home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "Novaqy logo" [ref=e11] [cursor=pointer]
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]: Novaqy
+            - generic [ref=e14] [cursor=pointer]: Cloud LLP
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - button "Personal" [ref=e17] [cursor=pointer]
+            - button "Business" [ref=e18] [cursor=pointer]
+          - button "Open main menu" [ref=e19] [cursor=pointer]:
+            - img
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - img [ref=e23]
+        - heading "Payment Failed" [level=1] [ref=e25]
+        - paragraph [ref=e26]: We're sorry, but your payment could not be processed at this time.
+        - generic [ref=e27]:
+          - heading "Payment Details:" [level=3] [ref=e28]
+          - generic [ref=e29]:
+            - paragraph [ref=e30]:
+              - strong [ref=e31]: "Transaction ID:"
+              - text: TEST_TXN_456
+            - paragraph [ref=e32]:
+              - strong [ref=e33]: "Amount:"
+              - text: $99.00
+            - paragraph [ref=e34]:
+              - strong [ref=e35]: "Plan:"
+              - text: Personal Plan
+            - paragraph [ref=e36]:
+              - strong [ref=e37]: "Reason:"
+              - text: Payment was declined
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - heading "What happened?" [level=3] [ref=e40]
+          - paragraph [ref=e41]: "There are several reasons why a payment might fail:"
+        - generic [ref=e42]:
+          - paragraph [ref=e43]: • Insufficient funds in your account
+          - paragraph [ref=e44]: • Incorrect card details or expiry date
+          - paragraph [ref=e45]: • Bank security restrictions
+          - paragraph [ref=e46]: • Network connectivity issues
+          - paragraph [ref=e47]: • Payment was cancelled by the user
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Don't worry! You can try again or contact our support team for assistance.
+        - generic [ref=e50]:
+          - button "Try Again" [ref=e51] [cursor=pointer]:
+            - img
+            - text: Try Again
+          - button "Contact Support" [ref=e52] [cursor=pointer]
+          - button "Go Home" [ref=e53] [cursor=pointer]:
+            - img
+            - text: Go Home
+    - contentinfo [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Stay Connected with Novaqy" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Get helpful technology tips, security updates, and exclusive offers designed for seniors and businesses. Join thousands of satisfied customers who trust Novaqy.
+          - generic [ref=e59]:
+            - textbox "Enter your email address" [ref=e60]
+            - button "Subscribe Now" [ref=e61] [cursor=pointer]
+          - paragraph [ref=e62]: 🔒 We respect your privacy. Unsubscribe anytime. No spam, ever.
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - heading "Our Services" [level=4] [ref=e65]
+            - list [ref=e66]:
+              - listitem [ref=e67]:
+                - link "Personal Tech Support" [ref=e68] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e69]:
+                - link "Cloud Backup Services" [ref=e70] [cursor=pointer]:
+                  - /url: /pricing#backup
+              - listitem [ref=e71]:
+                - link "Business Managed Services" [ref=e72] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e73]:
+                - link "Digital Marketing" [ref=e74] [cursor=pointer]:
+                  - /url: /business-services#digital-marketing
+              - listitem [ref=e75]:
+                - link "Backup as a Service" [ref=e76] [cursor=pointer]:
+                  - /url: /business-pricing#backup
+              - listitem [ref=e77]:
+                - link "Cloud Solutions" [ref=e78] [cursor=pointer]:
+                  - /url: /business-services
+              - listitem [ref=e79]:
+                - link "Security & Protection" [ref=e80] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e81]:
+                - link "Senior-Friendly Support" [ref=e82] [cursor=pointer]:
+                  - /url: /pricing
+          - generic [ref=e83]:
+            - heading "Support & Resources" [level=4] [ref=e84]
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - link "24/7 Help Center" [ref=e87] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e88]:
+                - link "Getting Started Guide" [ref=e89] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e90]:
+                - link "Video Tutorials" [ref=e91] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e92]:
+                - link "Customer Success Stories" [ref=e93] [cursor=pointer]:
+                  - /url: /customer-stories
+              - listitem [ref=e94]:
+                - link "Live Chat Support" [ref=e95] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e96]:
+                - link "Phone Support" [ref=e97] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e98]:
+            - heading "About Novaqy" [level=4] [ref=e99]
+            - list [ref=e100]:
+              - listitem [ref=e101]:
+                - link "Our Mission" [ref=e102] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e103]:
+                - link "Why Choose Us" [ref=e104] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e105]:
+                - link "Meet Our Team" [ref=e106] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e107]:
+                - link "Service Locations" [ref=e108] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e109]:
+                - link "Careers" [ref=e110] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e111]:
+                - link "Press & Media" [ref=e112] [cursor=pointer]:
+                  - /url: /about
+          - generic [ref=e113]:
+            - heading "Legal & Policies" [level=4] [ref=e114]
+            - list [ref=e115]:
+              - listitem [ref=e116]:
+                - link "Terms of Service" [ref=e117] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=e118]:
+                - link "Privacy Policy" [ref=e119] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e120]:
+                - link "Service Agreement" [ref=e121] [cursor=pointer]:
+                  - /url: /end-user-agreement
+              - listitem [ref=e122]:
+                - link "Return & Refund Policy" [ref=e123] [cursor=pointer]:
+                  - /url: /return-refund
+              - listitem [ref=e124]:
+                - link "Remote Support Terms" [ref=e125] [cursor=pointer]:
+                  - /url: /remote-disclaimer
+              - listitem [ref=e126]:
+                - link "Data Protection" [ref=e127] [cursor=pointer]:
+                  - /url: /gdpr-compliance
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - img "Novaqy logo" [ref=e130]
+            - generic [ref=e131]:
+              - generic [ref=e132]: Novaqy Cloud LLP
+              - paragraph [ref=e133]: Trusted Technology Solutions
+          - generic [ref=e134]:
+            - generic [ref=e135]: © 2025 Novaqy Cloud LLP. All rights reserved.
+            - generic [ref=e136]:
+              - link "Privacy Settings" [ref=e137] [cursor=pointer]:
+                - /url: /privacy-settings
+              - link "Accessibility" [ref=e138] [cursor=pointer]:
+                - /url: /accessibility
+        - generic [ref=e139]:
+          - paragraph [ref=e140]: 🛡️ Your data and privacy are our top priority. We use enterprise-grade security measures to protect your information.
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: SOC 2 Type II Compliant
+              - generic [ref=e144]: Industry-standard security auditing
+            - generic [ref=e145]:
+              - generic [ref=e146]: 256-bit SSL Encryption
+              - generic [ref=e147]: Bank-level data protection
+            - generic [ref=e148]:
+              - generic [ref=e149]: GDPR & PIPEDA Compliant
+              - generic [ref=e150]: International privacy standards
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```

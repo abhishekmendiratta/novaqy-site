@@ -1,0 +1,14 @@
+/* TEAM */
+Organization: Novaqy Cloud LLP
+Site: https://novaqy.cloud
+Contact: hello@novaqy.cloud
+Support: support@novaqy.cloud
+Security: security@novaqy.cloud
+Location: North America (customers), India (operations)
+
+/* PHILOSOPHY */
+We are human-led with assistive AI. Patient, plain-language support for seniors; reliable, outcome-focused IT for businesses.
+
+/* TECH */
+Frontend: React + TypeScript + Vite + Tailwind
+Security: CSP, HSTS, 2FA/SSO (where applicable), regular audits

@@ -1,0 +1,1160 @@
+{
+  "frontend": {
+    "root": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.cache": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.options": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.inputs": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.outputs": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.executor": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.options.cwd": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.options.env": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.options.command": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata.technologies": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata.technologies.0": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata.description": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata.help": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata.help.command": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.eslint:lint.metadata.help.example": [
+      "frontend/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "projectType": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.vite:build": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.options": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.cache": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.dependsOn": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.inputs": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.outputs": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.executor": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.options.cwd": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.options.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata.technologies": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata.technologies.0": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata.description": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata.help": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata.help.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:build.metadata.help.example": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.continuous": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.options": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.executor": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.options.cwd": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.options.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata.technologies": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata.technologies.0": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata.description": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata.help": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata.help.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:dev.metadata.help.example": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.continuous": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.dependsOn": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.options": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.executor": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.options.cwd": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.options.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata.technologies": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata.technologies.0": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata.description": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata.help": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata.help.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:preview.metadata.help.example": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.cache": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.inputs": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.options": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.executor": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.options.cwd": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.options.command": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.description": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.technologies": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.technologies.0": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.help": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.help.command": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.help.example": [
+      "frontend/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build-deps": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.watch-deps": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.options": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.cache": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.inputs": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.outputs": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.executor": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.options.cwd": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.options.command": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata.technologies": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata.technologies.0": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata.description": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata.help": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata.help.command": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.vite:test.metadata.help.example": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.technologies.1": [
+      "frontend/vitest.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "metadata.targetGroups": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.E2E (CI)": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).0": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).1": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).2": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).3": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).4": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).5": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "metadata.targetGroups.E2E (CI).6": [
+      "frontend/playwright.config.ts",
+      "@nx/playwright/plugin"
+    ],
+    "name": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:analyze.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.preview.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ui.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:run.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:e2e:ui.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cross-browser.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:all.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ci.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:audit.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.security:check.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.quality:check.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:check.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.predeploy:check.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postinstall.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:preview.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.deploy:prod.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline.executor": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline.options": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline.metadata": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline.options.script": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline.metadata.scriptContent": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pipeline.metadata.runCommand": [
+      "frontend/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.type:app": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.platform:web": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.mode": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.mode": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.hmr": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.hmr": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.devServerTarget": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.executor": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.outputs": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.config": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.skipInstall": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

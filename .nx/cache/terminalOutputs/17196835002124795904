@@ -1,0 +1,28 @@
+[2m> [22mvitest
+
+
+[1m[46m RUN [49m[22m [36mv3.2.4 [39m[90mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend[39m
+
+[90mstdout[2m | src/lib/payUHandler.test.ts[2m > [22m[2mPayUHandler[2m > [22m[2mverifyWebhookSignature[2m > [22m[2mshould return boolean for webhook verification
+[22m[39mPayU Webhook Verification: { received: [32m'test_hash'[39m, expected: [32m'mocked_hash'[39m, match: [33mfalse[39m }
+
+[90mstdout[2m | src/lib/payUHandler.test.ts[2m > [22m[2mPayUHandler[2m > [22m[2mprocessWebhook[2m > [22m[2mshould process webhook data
+[22m[39mPayU Webhook Verification: { received: [32m'valid_hash'[39m, expected: [32m'mocked_hash'[39m, match: [33mfalse[39m }
+
+[90mstderr[2m | src/lib/payUHandler.test.ts[2m > [22m[2mPayUHandler[2m > [22m[2mvalidateTransactionAmount[2m > [22m[2mshould reject mismatched amounts
+[22m[39mPayU amount mismatch: {
+  transactionId: [32m'TXN123'[39m,
+  expected: [33m100[39m,
+  received: [33m150[39m,
+  difference: [33m50[39m
+}
+
+ [32m✓[39m src/lib/payUHandler.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/lib/utils.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m src/components/ui/button.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 150[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[32m14 passed[39m[22m[90m (14)[39m
+[2m   Start at [22m 19:40:01
+[2m   Duration [22m 2.52s[2m (transform 157ms, setup 400ms, collect 420ms, tests 171ms, environment 2.91s, prepare 545ms)[22m
+

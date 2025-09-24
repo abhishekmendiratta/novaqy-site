@@ -1,0 +1,369 @@
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m8090[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.22.64.1:[1m8090[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.29.33:[1m8090[22m/[39m
+[2m11:52:00 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m11:52:00 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:08:34 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token, expected "}" (705:3)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.expect (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6930:12)
+    at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4670:10)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4744:36)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32)
+    at TypeScriptParserMixin.jsxParseElement (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4782:17)
+    at TypeScriptParserMixin.parseExprAtom (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4792:19) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m705[39m, column: [33m3[39m, index: [33m35587[39m },
+  pos: [33m35587[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:34 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expected '</', got ';'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:705:1]
+ 702 | 
+ 703 |       <Footer />
+ 704 |     </div>
+ 705 |   );
+     :    ^
+ 706 | };
+ 707 | 
+ 707 | export default Pricing;
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:35 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token, expected "}" (705:3)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.expect (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6930:12)
+    at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4670:10)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4744:36)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32)
+    at TypeScriptParserMixin.jsxParseElement (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4782:17)
+    at TypeScriptParserMixin.parseExprAtom (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4792:19) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m705[39m, column: [33m3[39m, index: [33m35624[39m },
+  pos: [33m35624[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:35 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expected '</', got ';'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:705:1]
+ 702 | 
+ 703 |       <Footer />
+ 704 |     </div>
+ 705 |   );
+     :    ^
+ 706 | };
+ 707 | 
+ 707 | export default Pricing;
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:37 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token, expected "..." (259:36)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.expect (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6930:12)
+    at TypeScriptParserMixin.jsxParseAttribute (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4678:12)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4700:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10067:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4695:17)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4719:33)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m259[39m, column: [33m36[39m, index: [33m9264[39m },
+  pos: [33m9264[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:37 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expected '</', got '}'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:259:1]
+ 256 |               <span className="text-sm text-muted-foreground">Currency:</span>
+ 257 |               <div className="flex items-center space-x-2">
+ 258 |                 <button
+ 259 |           {/* B2C Pricing Section */}
+     :                                     ^
+ 260 |           <section className="py-20">
+ 261 |             <div className="container">
+ 261 |               <div className="text-center mb-12">
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:38 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token (260:10)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4602:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4609:23)
+    at TypeScriptParserMixin.jsxParseAttribute (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4685:22)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4700:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10067:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4695:17)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4719:33) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m260[39m, column: [33m10[39m, index: [33m9292[39m },
+  pos: [33m9292[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:38 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expression expected
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:260:1]
+ 257 |               <div className="flex items-center space-x-2">
+ 258 |                 <button
+ 259 |                   onClick={() => setCurrency('USD')}
+ 260 |           <section className="py-20">
+     :           ^
+ 261 |             <div className="container">
+ 262 |               <div className="text-center mb-12">
+ 262 |                 <h2 className="text-4xl font-bold mb-4">🛡️ Personal Managed Services Plans</h2>
+     `----
+  x Expected '</', got 'className'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:260:1]
+ 257 |               <div className="flex items-center space-x-2">
+ 258 |                 <button
+ 259 |                   onClick={() => setCurrency('USD')}
+ 260 |           <section className="py-20">
+     :                    ^^^^^^^^^
+ 261 |             <div className="container">
+ 262 |               <div className="text-center mb-12">
+ 262 |                 <h2 className="text-4xl font-bold mb-4">🛡️ Personal Managed Services Plans</h2>
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:41 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token, expected ":" (262:19)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.expect (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6930:12)
+    at TypeScriptParserMixin.parseConditional (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10896:12)
+    at TypeScriptParserMixin.parseConditional (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:9631:18)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10889:17)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10835:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:9806:20)
+    at TypeScriptParserMixin.parseExpressionBase (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10788:23) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m262[39m, column: [33m19[39m, index: [33m9452[39m },
+  pos: [33m9452[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:41 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expected '</', got 'className'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:262:1]
+ 259 |                   onClick={() => setCurrency('USD')}
+ 260 |                   className={`px-4 py-2 rounded-lg font-medium transition-colors ${currency === 'USD'
+ 261 |                     ? 'bg-blue-600 text-white'
+ 262 |               <div className="text-center mb-12">
+     :                    ^^^^^^^^^
+ 263 |                 <h2 className="text-4xl font-bold mb-4">🛡️ Personal Managed Services Plans</h2>
+ 264 |                 <p className="text-xl text-muted-foreground">
+ 264 |                   Choose the plan that fits your needs and enjoy peace of mind all year round.
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:44 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Expected corresponding JSX closing tag for <button>. (267:14)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4760:16)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4731:32)
+    at TypeScriptParserMixin.jsxParseElement (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4782:17)
+    at TypeScriptParserMixin.parseExprAtom (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4792:19)
+    at TypeScriptParserMixin.parseExprSubscripts (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:11085:23)
+    at TypeScriptParserMixin.parseUpdate (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:11070:21)
+    at TypeScriptParserMixin.parseMaybeUnary (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:11050:23) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'MissingClosingTagElement'[39m,
+  loc: Position { line: [33m267[39m, column: [33m14[39m, index: [33m9724[39m },
+  pos: [33m9724[39m,
+  syntaxPlugin: [32m'jsx'[39m
+}
+[2m12:08:44 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expected '</', got 'jsx text (
+  |
+  |               )'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:267:1]
+ 264 |                     <p className="text-xl text-muted-foreground">
+ 265 |                       Choose the plan that fits your needs and enjoy peace of mind all year round.
+ 266 |                     </p>
+ 267 | ,->               </div>
+ 268 | |   
+ 269 | `->               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+ 270 |                     {b2cPlans.map((plan) => (
+ 271 |                       <PricingCard
+ 271 |                         key={plan.name}
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:46 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token (267:14)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4602:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4609:23)
+    at TypeScriptParserMixin.jsxParseAttribute (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4685:22)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4700:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10067:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4695:17)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4719:33) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m267[39m, column: [33m14[39m, index: [33m9623[39m },
+  pos: [33m9623[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:46 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expression expected
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:267:1]
+ 264 |                   🇺🇸 USD
+ 265 |                 </button>
+ 266 |                 <button
+ 267 |               </div>
+     :               ^
+ 268 | 
+ 269 |               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+ 269 |                 {b2cPlans.map((plan) => (
+     `----
+  x Unterminated regexp literal
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:267:1]
+ 264 |                   🇺🇸 USD
+ 265 |                 </button>
+ 266 |                 <button
+ 267 |               </div>
+     :                ^^^^^
+ 268 | 
+ 269 |               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+ 269 |                 {b2cPlans.map((plan) => (
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:48 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token (269:14)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4602:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4609:23)
+    at TypeScriptParserMixin.jsxParseAttribute (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4685:22)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4700:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10067:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4695:17)
+    at TypeScriptParserMixin.jsxParseElementAt (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:4719:33) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m269[39m, column: [33m14[39m, index: [33m9679[39m },
+  pos: [33m9679[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:48 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expression expected
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:269:1]
+ 266 |                 <button
+ 267 |                   onClick={() => setCurrency('CAD')}
+ 268 | 
+ 269 |               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+     :               ^
+ 270 |                 {b2cPlans.map((plan) => (
+ 271 |                   <PricingCard
+ 271 |                     key={plan.name}
+     `----
+  x Expected '</', got 'className'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:269:1]
+ 266 |                 <button
+ 267 |                   onClick={() => setCurrency('CAD')}
+ 268 | 
+ 269 |               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+     :                    ^^^^^^^^^
+ 270 |                 {b2cPlans.map((plan) => (
+ 271 |                   <PricingCard
+ 271 |                     key={plan.name}
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:52 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+Error processing file src\pages\Pricing.tsx: SyntaxError: Unexpected token, expected ":" (270:16)
+    at constructor (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:367:19)
+    at TypeScriptParserMixin.raise (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6630:19)
+    at TypeScriptParserMixin.unexpected (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6650:16)
+    at TypeScriptParserMixin.expect (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:6930:12)
+    at TypeScriptParserMixin.parseConditional (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10896:12)
+    at TypeScriptParserMixin.parseConditional (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:9631:18)
+    at TypeScriptParserMixin.parseMaybeConditional (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10889:17)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10835:21)
+    at TypeScriptParserMixin.parseMaybeAssign (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:9806:20)
+    at TypeScriptParserMixin.parseExpressionBase (C:\Users\ABHISHEK\novaqy-scaffold-kit\node_modules\[4m@babel[24m\parser\lib\index.js:10788:23) {
+  code: [32m'BABEL_PARSER_SYNTAX_ERROR'[39m,
+  reasonCode: [32m'UnexpectedToken'[39m,
+  loc: Position { line: [33m270[39m, column: [33m16[39m, index: [33m9830[39m },
+  pos: [33m9830[39m,
+  syntaxPlugin: [90mundefined[39m
+}
+[2m12:08:53 am[22m [31m[1m[vite][22m[39m [31mInternal server error:   x Expected '</', got '{'
+     ,-[C:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx:270:1]
+ 267 |                   onClick={() => setCurrency('CAD')}
+ 268 |                   className={`px-4 py-2 rounded-lg font-medium transition-colors ${currency === 'CAD'
+ 269 |                     ? 'bg-blue-600 text-white'
+ 270 |                 {b2cPlans.map((plan) => (
+     :                 ^
+ 271 |                   <PricingCard
+ 272 |                     key={plan.name}
+ 272 |                     title={plan.name}
+     `----
+
+
+Caused by:
+    Syntax Error[39m
+  Plugin: [35mvite:react-swc[39m
+  File: [36mC:/Users/ABHISHEK/novaqy-scaffold-kit/frontend/src/pages/Pricing.tsx[39m
+  
+[2m12:08:56 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Pricing.tsx, /src/index.css[22m
+[2m12:44:54 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:45:34 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:45:47 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m

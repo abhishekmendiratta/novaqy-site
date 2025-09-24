@@ -1,0 +1,65 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#navigation"
+  - generic [ref=e7]:
+    - link "Novaqy logo Novaqy" [ref=e9] [cursor=pointer]:
+      - /url: /
+      - img "Novaqy logo" [ref=e10] [cursor=pointer]
+      - generic [ref=e11] [cursor=pointer]: Novaqy
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - heading "Secure Log In" [level=3] [ref=e14]
+        - paragraph [ref=e15]: Access your account with enhanced security
+      - generic [ref=e16]:
+        - alert [ref=e17]:
+          - img [ref=e18]
+          - generic [ref=e20]: Your login is protected with advanced security measures including rate limiting and CSRF protection.
+        - generic [ref=e21]:
+          - button "Continue with Google" [ref=e22] [cursor=pointer]:
+            - img
+            - text: Continue with Google
+          - button "Continue with Facebook" [ref=e23] [cursor=pointer]:
+            - img
+            - text: Continue with Facebook
+          - button "Continue with Apple" [ref=e24] [cursor=pointer]:
+            - img
+            - text: Continue with Apple
+        - generic [ref=e27]: OR
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Email
+            - textbox "Email" [ref=e31]
+          - generic [ref=e32]:
+            - generic [ref=e33]: Password
+            - generic [ref=e34]:
+              - textbox "Password" [ref=e35]
+              - button [ref=e36] [cursor=pointer]:
+                - img
+          - button "Forgot password?" [ref=e38] [cursor=pointer]
+          - button "Sign In Securely" [ref=e39] [cursor=pointer]
+        - alert [ref=e40]:
+          - img [ref=e41]
+          - generic [ref=e43]:
+            - strong [ref=e44]: "Note:"
+            - text: Social authentication requires configuration in Supabase Dashboard. Email authentication is ready to use.
+        - generic [ref=e45]:
+          - text: Don't have an account?
+          - link "Create your account" [ref=e46] [cursor=pointer]:
+            - /url: /signup
+    - paragraph [ref=e48]:
+      - text: By signing in, you agree to our
+      - link "Terms of Service" [ref=e49] [cursor=pointer]:
+        - /url: /terms
+      - text: and
+      - link "Privacy Policy" [ref=e50] [cursor=pointer]:
+        - /url: /cookies
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```
