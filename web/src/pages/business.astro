@@ -13,6 +13,22 @@ const meta = getDefaultMeta({
 
 <Base meta={meta}>
   <section class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Lead capture CTA -->
+    <div class="bg-gradient-to-r from-blue-50 to-teal-50 border-2 border-blue-200 rounded-lg p-6 mb-8 text-center">
+      <h2 class="text-2xl font-semibold text-blue-800 mb-3">🏢 Ready for Professional IT Services?</h2>
+      <p class="text-slate-700 mb-4 max-w-2xl mx-auto">Get detailed information about our upcoming B2B services. Fill out our quick business inquiry form for a personalized quote and launch priority access.</p>
+      <a href="https://forms.gle/4pJe3MDSKLCXpJw38"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-flex items-center justify-center w-full max-w-md h-12 px-6 rounded-md bg-blue-600 text-white text-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+         aria-label="Open B2B Business Lead Collection Form in a new tab"
+         title="Get B2B IT services information - opens in new tab"
+         onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({'event': 'b2b_lead_capture_form_open', 'event_category': 'engagement', 'event_label': 'business_page_b2b_form'});">
+        📊 Request B2B Services Information - Get Quote
+        <span class="sr-only">(opens Google Form in new tab)</span>
+      </a>
+    </div>
+
     <!-- Hero -->
     <header class="text-center mb-10">
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-3">B2B Services — Coming soon</h1>
