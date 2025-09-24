@@ -1,0 +1,24 @@
+{
+  "name": "novaqy-site",
+  "version": "1.0.0",
+  "description": "NovaQy Lead Collection Website with Google Forms Integration",
+  "scripts": {
+    "dev": "cd web && npm run dev",
+    "build": "cd web && npm run build",
+    "preview": "cd web && npm run preview",
+    "astro": "astro"
+  },
+  "workspaces": [
+    "web",
+    "frontend",
+    "backend"
+  ],
+  "keywords": [
+    "novaqy",
+    "senior-tech-support",
+    "lead-collection",
+    "google-forms"
+  ],
+  "author": "NovaQy Cloud LLP",
+  "license": "ISC"
+}
